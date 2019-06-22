@@ -1,0 +1,97 @@
+bootstrap	引导程序  响应式
+lead		领导  	离岛
+justify		证明…有理	家私的fai
+unstyled	
+horizontal	水平的	好瑞脏同
+
+table		表格
+striped		有条纹的	死拽铺特
+bordered	有边的		播的的
+hover		徘徊		哈沃
+only		唯一的		ong里
+responsive	响应的		瑞死帮涩
+
+container	容器		康忒廊
+fluid		液体		浮路的
+offset		开端		
+push		推动		破须	
+pull		拖		铺
+lg		大
+md		中等
+sm		小
+xs		超小
+
+form		表单
+group		分组
+control		控制		康戳奥了
+addon
+disabled	残废的		得死A播的
+thumbnail	极小的		咱梦内奥
+responsive	响应的		瑞死帮涩
+
+default		默认
+muted		温和的		miuss特的
+primary		主要的		
+success		成功		塞可塞死
+info		信息
+warning		警告		望另
+danger		危险		等窘
+close		关闭
+caret		补字符号(三角符号)
+hidden		隐藏
+show		显示
+
+glyphicon
+dropdown	下拉式（菜单）	抓铺挡
+menu		菜单		瞒您油
+open		打开
+toggle		切换		她割熬
+
+
+nav		导航		
+pills		药丸		炮老子
+stacked		堆积 		死呆可特
+navbar		导航栏
+fixed		不变的		费可死特
+static
+active
+
+breadcrumb
+pagination
+pager
+previous
+next
+label
+badge
+
+
+jumbotron
+caption
+alert
+dismiss
+
+well
+progress
+media
+heading
+panel
+
+modal
+dialog
+content
+backdrop
+keyboard
+remote
+
+scroll
+tooltip
+animation
+placement
+trigger
+delay
+arrow
+
+
+
+
+

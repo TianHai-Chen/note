@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>03. Bootstrap 表格和按钮</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/gitbook/style.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/gitbook/istyle.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div data-basepath="/service/gitbook" class="book">
+    <div class="book-summary">
+        <ul class="summary">
+            <li>
+                <a href="./index.html">bootstrap备课笔记</a>
+            </li>
+            <li class="divider"></li>
+            
+                
+                
+    
+    <li data-level="1" class="chapter" data-path="01. Bootstrap 介绍.html">
+        
+        
+        <a href="./01. Bootstrap 介绍.html" ><b>1</b> 01. Bootstrap 介绍</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="2" class="chapter" data-path="02. Bootstrap 排版样式.html">
+        
+        
+        <a href="./02. Bootstrap 排版样式.html" ><b>2</b> Bootstrap 排版样式</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="3" class="chapter active" data-path="03. Bootstrap 表格和按钮.html">
+        
+        
+        <a href="./03. Bootstrap 表格和按钮.html" ><b>3</b> 03. Bootstrap 表格和按钮</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="4" class="chapter" data-path="04. Bootstrap 栅格系统.html">
+        
+        
+        <a href="./04. Bootstrap 栅格系统.html" ><b>4</b> Bootstrap 栅格系统</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="5" class="chapter" data-path="05.  Bootstrap 表单和图片.html">
+        
+        
+        <a href="./05.  Bootstrap 表单和图片.html" ><b>5</b> 04.  Bootstrap 表单和图片</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="6" class="chapter" data-path="06. 辅组类和响应式工具.html">
+        
+        
+        <a href="./06. 辅组类和响应式工具.html" ><b>6</b> 辅组类和响应式工具</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="7" class="chapter" data-path="07. 图标菜单按钮组件.html">
+        
+        
+        <a href="./07. 图标菜单按钮组件.html" ><b>7</b> 图标菜单按钮组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="8" class="chapter" data-path="08. 输入框和导航组件.html">
+        
+        
+        <a href="./08. 输入框和导航组件.html" ><b>8</b> 输入框和导航组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="9" class="chapter" data-path="09. 路径分页标签和徽章组件.html">
+        
+        
+        <a href="./09. 路径分页标签和徽章组件.html" ><b>9</b> 路径分页标签和徽章组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="10" class="chapter" data-path="10. 巨幕页头缩略图和警告框组件.html">
+        
+        
+        <a href="./10. 巨幕页头缩略图和警告框组件.html" ><b>10</b> 巨幕页头缩略图和警告框组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="11" class="chapter" data-path="11. 进度条媒体对象和Well组件.html">
+        
+        
+        <a href="./11. 进度条媒体对象和Well组件.html" ><b>11</b> 进度条媒体对象和Well组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="12" class="chapter" data-path="12. 列表组面板和嵌入组件.html">
+        
+        
+        <a href="./12. 列表组面板和嵌入组件.html" ><b>12</b> 列表组面板和嵌入组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="13" class="chapter" data-path="13. 模态框插件.html">
+        
+        
+        <a href="./13. 模态框插件.html" ><b>13</b> 模态框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="14" class="chapter" data-path="14. 下拉菜单和滚动监听插件.html">
+        
+        
+        <a href="./14. 下拉菜单和滚动监听插件.html" ><b>14</b> 下拉菜单和滚动监听插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="15" class="chapter" data-path="15. 标签页和工具提示插件.html">
+        
+        
+        <a href="./15. 标签页和工具提示插件.html" ><b>15</b> 标签页和工具提示插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="16" class="chapter" data-path="16. 弹出框和警告框插件.html">
+        
+        
+        <a href="./16. 弹出框和警告框插件.html" ><b>16</b> 弹出框和警告框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="17" class="chapter" data-path="17. 按钮和折叠插件.html">
+        
+        
+        <a href="./17. 按钮和折叠插件.html" ><b>17</b> 按钮和折叠插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="18" class="chapter" data-path="18. 轮播插件.html">
+        
+        
+        <a href="./18. 轮播插件.html" ><b>18</b> 轮播插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="19" class="chapter" data-path="19. 附加导航插件.html">
+        
+        
+        <a href="./19. 附加导航插件.html" ><b>19</b> 附加导航插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="20" class="chapter" data-path="单词.html">
+        
+        
+        <a href="./单词.html" ><b>20</b> 单词</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+        </ul>
+
+    </div>
+
+    <div class="book-body">
+        <div class="body-inner">
+
+            <div class="book-header" role="navigation">
+                <h1>
+                    <a href="./index.html" > bootstrap备课笔记</a>
+                </h1>
+            </div>
+
+            <div tabindex="-1" class="page-wrapper">
+                <div class="page-inner">
+                    <h2 class="post_title"> 03. Bootstrap 表格和按钮 </h2>
+                    <div class="post_body"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">03. Bootstrap 表格和按钮</a>
+<ul>
+<li>
+<a href="#toc_1">一．表格</a>
+<ul>
+<li>
+<a href="#toc_2">1.基本格式</a>
+</li>
+<li>
+<a href="#toc_3">2.条纹状表格</a>
+</li>
+<li>
+<a href="#toc_4">3.带边框的表格</a>
+</li>
+<li>
+<a href="#toc_5">4.悬停鼠标</a>
+</li>
+<li>
+<a href="#toc_6">5.状态类</a>
+</li>
+<li>
+<a href="#toc_7">6.隐藏某一行</a>
+</li>
+<li>
+<a href="#toc_8">7.响应式表格</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_9">二．按钮</a>
+<ul>
+<li>
+<a href="#toc_10">1.可作为按钮使用的标签或元素</a>
+</li>
+<li>
+<a href="#toc_11">注意事项有三点：</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+    <span class="md_line">本节课我们主要学习一下 Bootstrap 表格和按钮功能，通过内置的 CSS 定义，显示各种丰富的效果。</span>
+</p>
+
+
+<h2 id="toc_1">一．表格</h2>
+
+<p class="md_block">
+    <span class="md_line">Bootstrap 提供了一些丰富的表格样式供开发者使用。</span>
+</p>
+
+
+<h3 id="toc_2">1.基本格式</h3>
+
+<p class="md_block">
+    <span class="md_line">//实现基本的表格样式</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：我们可以通过 Firebug 查看相应的 CSS。</span>
+</p>
+
+
+<h3 id="toc_3">2.条纹状表格</h3>
+
+<p class="md_block">
+    <span class="md_line">//让<tbody>里的行产生一行隔一行加单色背景效果</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table table-striped&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：表格效果需要基于基本格式.table</span>
+</p>
+
+
+<h3 id="toc_4">3.带边框的表格</h3>
+
+<p class="md_block">
+    <span class="md_line">//给表格增加边框</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table table-bordered&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_5">4.悬停鼠标</h3>
+
+<p class="md_block">
+    <span class="md_line">//让<tbody>下的表格悬停鼠标实现背景效果</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table table-hover&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_6">5.状态类</h3>
+
+<p class="md_block">
+    <span class="md_line">//可以单独设置每一行的背景样式</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;success&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：一共五种不同的样式可供选择。</span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">样式</th>
+<th style="text-align:left">说明</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">active </td>
+<td style="text-align:left"> 鼠标悬停在行或单元格上</td>
+</tr>
+<tr><td style="text-align:left">success </td>
+<td style="text-align:left"> 标识成功或积极的动作</td>
+</tr>
+<tr><td style="text-align:left">info </td>
+<td style="text-align:left"> 标识普通的提示信息或动作</td>
+</tr>
+<tr><td style="text-align:left">warning </td>
+<td style="text-align:left"> 标识警告或需要用户注意</td>
+</tr>
+<tr><td style="text-align:left">danger </td>
+<td style="text-align:left"> 表示危险或潜在的带来负面影响的动作</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end-->
+<h3 id="toc_7">6.隐藏某一行</h3>
+
+<p class="md_block">
+    <span class="md_line">//隐藏行</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;sr-only&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_8">7.响应式表格</h3>
+
+<p class="md_block">
+    <span class="md_line">//表格父元素设置响应式，小于 768px 出现边框</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table-responsive&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_9">二．按钮</h2>
+
+<p class="md_block">
+    <span class="md_line">Bootstrap 提供了很多丰富按钮供开发者使用。</span>
+</p>
+
+
+<h3 id="toc_10">1.可作为按钮使用的标签或元素</h3>
+
+<p class="md_block">
+    <span class="md_line">//转化成普通按钮</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;###&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-default&quot;</span><span class="p">&gt;</span>Link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-default&quot;</span><span class="p">&gt;</span>Button<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;input&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_11">注意事项有三点：</h3>
+
+<p class="md_block">
+    <span class="md_line">(1).针对组件的注意事项<br /></span>
+    <span class="md_line">虽然按钮类可以应用到<code>&lt;a&gt;</code>和 <code>&lt;button&gt;</code> 元素上，但是，导航和导航条组件只支持<code>&lt;button&gt;</code> 元素。<br /></span>
+    <span class="md_line">(2).链接被作为按钮使用时的注意事项<br /></span>
+    <span class="md_line">如果 <code>&lt;a&gt;</code> 元素被作为按钮使用 -- 并用于在当前页面触发某些功能 -- 而不是用于链接其他页面或链接当前页面中的其他部分，那么，务必为其设置<code>role=&quot;button&quot;</code> 属性。<br /></span>
+    <span class="md_line">(3).跨浏览器展现我们总结的最佳实践是：强烈建议尽可能使用 <code>&lt;button&gt;</code>元素来获得在各个浏览器上获得相匹配的绘制效果。<br /></span>
+    <span class="md_line">另外，我们还发现了 Firefox &lt;30 版本的浏览器上出现的一个 bug，其表现是：阻止我们为基于<code>input</code>元素所创建的按钮设置 <code>line-height</code> 属性，这就导致在Firefox 浏览器上不能完全和其他按钮保持一致的高度。<br /></span>
+    <span class="md_line">2.预定义样式<br /></span>
+    <span class="md_line">//一般信息</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-info&quot;</span><span class="p">&gt;</span>Button<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="./asset/gitbook/app.js"></script>
+
+<script>require(["gitbook"], function (gitbook) {
+    var config = {"fontSettings": {"theme": null, "family": "sans", "size": 2}};
+    gitbook.start(config);
+});
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

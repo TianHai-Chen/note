@@ -1,0 +1,61 @@
+1.JAVA环境配置
+	1.在系统环境变量中增加 JAVA_HOME  值是   JDK的安装路径(必须)
+	2.在系统环境变量path的值,在最前面加上	%JAVA_HOME%\bin;	一定记得完了加到分号
+	3.检测JAVA环境好了没有?打开新的DOS窗口	输入 java -version	查看正确的版本.
+
+2.安装Gitblit
+	2.1.前提
+		2.1.1	gitblit是JAVA开发的,必须提前安装配置好java环境.
+		2.2.2	gitblit是绿色软件,不需要安装,只需要简单配置就能用.
+	2.2 安装过程
+		把gitblit解压到一个没有中文,路径中没有空格的文件夹中.
+		我的解压路径是:D:\programfiles\gitblit-1.8.0
+		
+3.配置gitblit
+	# D:\programfiles\gitblit-1.8.0\data\defaults.properties
+	# (建议修改)31行:配置托管中心版本为存放路径:${baseFolder}/git指向的是:D:\programfiles\gitblit-1.8.0\data\git\
+	git.repositoriesFolder = D:/programfiles/gitblit-1.8.0/myreps
+	
+	# (必须)1993行:配置http协议的网络端口
+	server.httpPort = 888
+
+	# (了解)2001行:配置https协议的网络端口(默认值为8443,我们记一下,不改也行)
+	server.httpsPort = 8443
+
+	# (了解)2020行:如果服务器是多IP配置,我们就可以用它指定用某个IP,注意:动态IP千万别配
+	server.httpBindInterface = http协议使用的IP地址  
+	server.httpsBindInterface = https协议使用的IP地址
+
+5.把gitblit安装成操作系统服务.
+	1.修改D:\programfiles\gitblit-1.8.0\installService.cmd   #安装到操作系统服务
+	2.修改D:\programfiles\gitblit-1.8.0\uninstallService.cmd #卸载操作系统服务
+	
+	在文件中找到:@REM arch = x86, amd64, or ia32  32位系统用x86 64位用amd64 位置,修改成如下:增加SET CD = XXXX这行.
+	@REM arch = x86, amd64, or ia32  32位系统用x86 64位用amd64
+	SET ARCH=amd64
+	@REM 必须增加这个变量,值是gitblit的安装根目录.
+	SET CD=D:\programfiles\gitblit-1.8.0
+
+	安装时要记得installService.cmd-->鼠标右键-->以管理员身份运行.
+	启动服务:net start gitblit   
+		如果启动不成功,记得防火墙设置一下....(直接关闭防火墙),你也可以单独设置:	64位操作系统:D:\programfiles\gitblit-1.8.0\ia64\gitblit.exe 允许入站
+	
+6.我们可以访问自己安装的托管中心了...
+	浏览器访问:http://localhost:888    或 https://localhost:8443
+
+7.在网页上创建空仓库.
+
+8.从本地进行推送.
+
+
+
+
+有点插曲,报错:
+错误提示:SSL certificate problem: self signed certificate in certificate chain
+则要配置让GIT 不启用SSL验证
+git config --global http.sslVerify false
+
+
+	
+	
+

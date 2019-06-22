@@ -1,0 +1,80 @@
+1.初始化仓库
+	1.1 在指定项目中打开git命令窗口
+	1.2 执行初始化指令:git init
+
+2.配置全局或项目用户,邮箱
+	# 配置全局的,保存在操作系统用目根目.gitconfig文件中
+	git config --global user.name huodeming
+	git config --global user.email huodeming1@163.com
+	
+	#配置项目的,保存在项目.git/config文件中
+	#git config user.name huodeming
+	#git config user.email huodeming1@163.com	
+	
+	# 注意:一般不是特别项目需求,配置全局的就可以了.
+
+3.查看当前项目状态:(工作区,暂存区)
+	git status
+
+4.把工作区新增文件,或修改过内容的文件添加到暂存区
+	git add 文件名
+
+5.把暂存区内容提交到版本历史库
+	git commit -m "备注内容" [文件名:可选参数]
+	注意:如果提交时不带-m参数,则会自动打开文件编辑器(如vim)进行编辑备注.写在第一行
+
+5.查看版本库日志
+	git log	#显示版库日志(最详细)
+	git log --pretty=oneline # 按行显示
+	git log --oneline	#按行显示,版本号显示前7位	
+	
+	git reflog		#显示版库日志
+	
+	了解版本号生成方式:用的是hash(散列)算法.
+
+6.版本回退[一般情况都用硬切换]
+	# 语法 git reset [--hard | --mixed | --soft] 版本号(一般前几位就行)
+	git reset --hard 版本号		# 硬切换版本,同时同步版本库,暂存区,工作区
+	git reset --mixed 版本号	# 混合(不硬不软)切换版本,同时同步版本库,暂存区,不同步工作区内容
+	git reset --soft 版本号		# 软切换版本,只切换版本库,不同步暂存区与工作区
+
+7.比较文件差异[比较工作区与暂存区]
+	git diff 文件名
+
+8.分支管理
+	#创建分支
+	git branch 分支名
+	
+	#查看分支
+	git branch -v
+	
+	#切换分支
+	git checkout 分支名
+
+	#合并分支[分2步:1.先切换到接受修改的分支(被合并，增加新内容)上,2.执行合并命令]
+		例:把blue分支合并到master分支上去.
+			# 1.先切换到master分支.
+			git checkout master
+
+			# 2.执行合并命令
+			git merge blue
+
+	#冲突与解决
+		在分支合并的时候,如果同一个文件同一个地方被两个分支都修改了,就会冲突
+		1.看合并时的提示:CONFLICT (content): Merge conflict in index.html
+		2.查看下一条命令提示:...... (master|MERGING)
+
+		解决分支
+		1.修改冲突的文件内容,修改到你想要状态.
+		2.提交到新版本,注意:解决冲突的提交不能带具体文件名,必须是整个分支提交.(如果提交不带-a,就记得add再提交)
+			git commit -a -m "备注"
+
+
+
+
+
+
+
+
+
+

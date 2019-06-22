@@ -1,0 +1,26 @@
+1.SSH是什么?是一种加密可逆的.(密钥,公钥)
+
+2.在本地电脑生成KEY(生成密钥,公钥),-C一定要大写
+ssh-keygen -t rsa -C huodeming1@163.com
+
+3.查看:在用户根目录(C:\Users\当前登陆系统的用户\.ssh)
+	cat ~/.ssh/id_rsa.pub    
+	得到公钥:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDd9bIeCHQziRMBF03qU38B2Fn9VgTQH5P3sX3wzq/VFi9f56u4Lu/lDZe8wTSF/vU8zEA/rQ/KejiSimYyUWaxi0jjR5lkOJeU4HX3Iee9/Ru5qcvmrxbh1jmm/gH3hTvagf3VPVaeAhvDjZAi54sd4q/GcbXTjdmPHdjS12jIRWmgjrP6cX8g7MNcdFxzxXkciHVxaeLO+p6anB8kF+5G1133COKjiduHDnNEgq3tMHyE5ChA/RaBwelTmOuhsu9IIRLzB6OxGshP5TCRoUfAyXTzFVYDm0WibeqrrBEtBKSIREqwHGSs0CYu+W/hzsBUoyU8zJeJhypWIyY8ysKt huodeming1@163.com
+
+4.把公钥复制到托管中心用户设置中.
+
+5.如果关了SSH认证,就请打开.如果没关,就不管:git config --global http.sslVerify false
+	#现在就可以往托管中心仓库推送了.URL用ssh的那个.
+	git push ssh://admin@localhost:29418/test.git master
+	
+	#当然也可以在本地库创建个远程别名,也是一样的
+	git remote origin ssh://admin@localhost:29418/test.git
+	git push origin master
+	
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+1.在远程创建空仓库:右上角+号 --> New repository --> Repository name(仓库名必填)-->权限:public;不要创建README
+	仓库创建完成拿到它的远程地址:https://github.com/huodeming/test.git
+
+2.推送本地项目到远程仓库:在自己电脑上操作:
+	2.1 增加一个远程仓库别名: git remote add 别名 远程仓库地址
+		,别名删除 git remote remove 别名
+	git remote add origin https://github.com/huodeming/test.git
+
+	2.2 把本地项目 推送到远程仓库 git push 远程仓库地址或别名 本地分支名
+	git push origin master
+	git push origin dev
+
+3.从远程服务器上克隆仓库到本地:
+	git clone https://github.com/huodeming/test.git
+	#克隆做了几件事件:
+		1.把远程仓库中的项目下载到本地(并自动创建了master分支.)
+		2.在本地创建了远程仓库别名:origin
+		3.初始化好了本地仓库
+		4.并做好了本地master分支与远程master分支的关联.
+	
+	下面三个命令在克隆到本地后在本地执行查看相关信息
+	# git remote -v  #查看远程库别名及链接地址
+	# git branch -r  #查看远程库分支信息
+	# git branch -vv #查看本地分支与远程分支的关系
+
+4.从远程服务器更新到本地项目:pull是两个命令的合并体   fetch 与 merge
+	git pull 远程服务器别名 分支名
+	
+
+总结:
+给项目增加远程库:	git remote add 别名 远程地址
+本地项目推送到远程: 	git push 远程仓库别名或地址 本地分支名
+从远程服务器拉取到本地: git pull 远程库地址别名 远程分支名
+从远程服务器克隆到本地: git clone 远程仓库地址
+
+5.解决团队合作中的冲突:与解决分支冲突一样处理.
+	比如   我用11版本个改index.html第3行...   肖宇枫也用11本版修改了index.html第3行,他比我快,提交了,推送到远程了.
+   	这时我也进行了提交.推送时报错.说你要先拉取再推送....服务器上有新内容了...
+	这时我也只好先拉取(拉回本地fetch,合并两步merge).冲突来源于合并.....
+	
+	解决冲突的方法与  合拼分支的方法相同.
+	1.从提示中找到冲突的文件..
+	2.修改内容到你想要的状态..
+	3.进行add.....commit,但切记,commit不能带文件名....
+	4.可以推送到远程了........
+

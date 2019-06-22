@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>列表组面板和嵌入组件</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/gitbook/style.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/gitbook/istyle.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div data-basepath="/service/gitbook" class="book">
+    <div class="book-summary">
+        <ul class="summary">
+            <li>
+                <a href="./index.html">bootstrap备课笔记</a>
+            </li>
+            <li class="divider"></li>
+            
+                
+                
+    
+    <li data-level="1" class="chapter" data-path="01. Bootstrap 介绍.html">
+        
+        
+        <a href="./01. Bootstrap 介绍.html" ><b>1</b> 01. Bootstrap 介绍</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="2" class="chapter" data-path="02. Bootstrap 排版样式.html">
+        
+        
+        <a href="./02. Bootstrap 排版样式.html" ><b>2</b> Bootstrap 排版样式</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="3" class="chapter" data-path="03. Bootstrap 表格和按钮.html">
+        
+        
+        <a href="./03. Bootstrap 表格和按钮.html" ><b>3</b> 03. Bootstrap 表格和按钮</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="4" class="chapter" data-path="04. Bootstrap 栅格系统.html">
+        
+        
+        <a href="./04. Bootstrap 栅格系统.html" ><b>4</b> Bootstrap 栅格系统</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="5" class="chapter" data-path="05.  Bootstrap 表单和图片.html">
+        
+        
+        <a href="./05.  Bootstrap 表单和图片.html" ><b>5</b> 04.  Bootstrap 表单和图片</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="6" class="chapter" data-path="06. 辅组类和响应式工具.html">
+        
+        
+        <a href="./06. 辅组类和响应式工具.html" ><b>6</b> 辅组类和响应式工具</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="7" class="chapter" data-path="07. 图标菜单按钮组件.html">
+        
+        
+        <a href="./07. 图标菜单按钮组件.html" ><b>7</b> 图标菜单按钮组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="8" class="chapter" data-path="08. 输入框和导航组件.html">
+        
+        
+        <a href="./08. 输入框和导航组件.html" ><b>8</b> 输入框和导航组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="9" class="chapter" data-path="09. 路径分页标签和徽章组件.html">
+        
+        
+        <a href="./09. 路径分页标签和徽章组件.html" ><b>9</b> 路径分页标签和徽章组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="10" class="chapter" data-path="10. 巨幕页头缩略图和警告框组件.html">
+        
+        
+        <a href="./10. 巨幕页头缩略图和警告框组件.html" ><b>10</b> 巨幕页头缩略图和警告框组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="11" class="chapter" data-path="11. 进度条媒体对象和Well组件.html">
+        
+        
+        <a href="./11. 进度条媒体对象和Well组件.html" ><b>11</b> 进度条媒体对象和Well组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="12" class="chapter active" data-path="12. 列表组面板和嵌入组件.html">
+        
+        
+        <a href="./12. 列表组面板和嵌入组件.html" ><b>12</b> 列表组面板和嵌入组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="13" class="chapter" data-path="13. 模态框插件.html">
+        
+        
+        <a href="./13. 模态框插件.html" ><b>13</b> 模态框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="14" class="chapter" data-path="14. 下拉菜单和滚动监听插件.html">
+        
+        
+        <a href="./14. 下拉菜单和滚动监听插件.html" ><b>14</b> 下拉菜单和滚动监听插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="15" class="chapter" data-path="15. 标签页和工具提示插件.html">
+        
+        
+        <a href="./15. 标签页和工具提示插件.html" ><b>15</b> 标签页和工具提示插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="16" class="chapter" data-path="16. 弹出框和警告框插件.html">
+        
+        
+        <a href="./16. 弹出框和警告框插件.html" ><b>16</b> 弹出框和警告框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="17" class="chapter" data-path="17. 按钮和折叠插件.html">
+        
+        
+        <a href="./17. 按钮和折叠插件.html" ><b>17</b> 按钮和折叠插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="18" class="chapter" data-path="18. 轮播插件.html">
+        
+        
+        <a href="./18. 轮播插件.html" ><b>18</b> 轮播插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="19" class="chapter" data-path="19. 附加导航插件.html">
+        
+        
+        <a href="./19. 附加导航插件.html" ><b>19</b> 附加导航插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="20" class="chapter" data-path="单词.html">
+        
+        
+        <a href="./单词.html" ><b>20</b> 单词</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+        </ul>
+
+    </div>
+
+    <div class="book-body">
+        <div class="body-inner">
+
+            <div class="book-header" role="navigation">
+                <h1>
+                    <a href="./index.html" > bootstrap备课笔记</a>
+                </h1>
+            </div>
+
+            <div tabindex="-1" class="page-wrapper">
+                <div class="page-inner">
+                    <h2 class="post_title"> 列表组面板和嵌入组件 </h2>
+                    <div class="post_body"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">列表组面板和嵌入组件</a>
+<ul>
+<li>
+<a href="#toc_1">列表组组件</a>
+</li>
+<li>
+<a href="#toc_2">面板组件</a>
+</li>
+<li>
+<a href="#toc_3">响应式嵌入组件</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">列表组组件</h2>
+
+<p class="md_block">
+    <span class="md_line">列表组组件用于显示一组列表的组件。<br /></span>
+    <span class="md_line">//基本实例<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-05-13-22-33-56.jpg';this.onerror=null;"  class="" src="/_image/2018-05-13-22-33-56.jpg" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">一个普通的ul_li,给ul加上 class=&quot;list-group&quot; ,然后给每个li加上class=&quot;list-group-item&quot;</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>1.这是起始<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>2.这是第二条数据<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>3.这是第三排信息<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>4.这是末尾<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//列表项带勋章<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-05-13-22-35-37.jpg';this.onerror=null;"  class="" src="/_image/2018-05-13-22-35-37.jpg" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>1.这是起始
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;badge&quot;</span><span class="p">&gt;</span>10<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//链接和首选</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">把ul_li改成 div_a标签就好了.记得给a标签加上href=&quot;&quot;,不然鼠标移上去没效果.</span>
+<span class="c">首选项 class=&quot;active&quot; 颜色有点不同.</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item active&quot;</span><span class="p">&gt;</span>1.这是起始
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;badge&quot;</span><span class="p">&gt;</span>10<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>2.这是第二条数据<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>3.这是第三排信息<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>4.这是末尾<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//按钮式列表</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">注意宽度默认不是100%,旧版本有点难看.可以自己写个样式调整下宽度(新版本已好了).</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item active&quot;</span><span class="p">&gt;</span>1.这是起始 <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;badge&quot;</span><span class="p">&gt;</span>10<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>2.这是第二条数据<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>3.这是第三排信息<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>4.这是末尾<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//设置项目被禁用</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span>class=&quot;list-group-item disabled&quot;
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//情景类</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item list-group-item-success&quot;</span><span class="p">&gt;</span>3.这是第三排信息<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//定制内容<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-05-13-22-44-54.jpg';this.onerror=null;"  class="" src="/_image/2018-05-13-22-44-54.jpg" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">我们一般用div_a的写法.可以做到混合编写</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item active&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>内容标题<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item-text&quot;</span><span class="p">&gt;</span>这里是相关内容详情！<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>内容标题<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item-text&quot;</span><span class="p">&gt;</span>这里是相关内容详情！<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>内容标题<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item-text&quot;</span><span class="p">&gt;</span>这里是相关内容详情！<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_2">面板组件</h2>
+
+<p class="md_block">
+    <span class="md_line">面板组件就是一个存放内容的容器组件。<br /></span>
+    <span class="md_line">//基本实例</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel panel-default&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-body&quot;</span><span class="p">&gt;</span>
+这里是详细内容区！
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//带标题容器的面板</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel panel-default&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-heading&quot;</span><span class="p">&gt;</span>面板标题<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-body&quot;</span><span class="p">&gt;</span>这里是详细内容区！<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//也可以设置标题元素</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-heading&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-title&quot;</span><span class="p">&gt;</span>面板标题<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//带注脚的面板</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-footer&quot;</span><span class="p">&gt;</span>
+这里是底部
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//情景效果：default、success、info、warning、danger、primary</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel panel-success&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//表格类面板</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel panel-default&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-heading&quot;</span><span class="p">&gt;</span>表格标题<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-body&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>这里是表格标题的详细内容！<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//列表类面板</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel panel-default&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-heading&quot;</span><span class="p">&gt;</span>表格标题<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-body&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>这里是表格标题的详细内容！<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>1.这里是首页<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>2.这里是第二个项目<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>3.这里是第三个项目<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>4.这里是第四个项目<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">响应式嵌入组件</h2>
+
+<p class="md_block">
+    <span class="md_line">根据被嵌入内容的外部容器的宽度，自动创建一个固定的比例，从而让浏览器自动确定<br /></span>
+    <span class="md_line">内容的尺寸，能够在各种设备上缩放。<br /></span>
+    <span class="md_line">这些规则可以直接用于<code>&lt;iframe&gt;</code>、<code>&lt;embed&gt;</code>、<code>&lt;video&gt;</code>和<code>&lt;object&gt;</code>元素,因这些元素很难直接响应式。<br /></span>
+    <span class="md_line">//16:9 响应式</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">注意多媒体的宽度与高度此时已无效,建议都写成100%,响应式目前就流行16:9 与 4:3</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;embed-responsive embed-responsive-16by9&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">embed</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;http://www.tudou.com/v/OUG5JBZ8udc/&amp;bid=05&amp;rpid=50797543&amp;resourceId=50797543_05_05_99/v.swf&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">allowscriptaccess</span><span class="o">=</span><span class="s">&quot;always&quot;</span> <span class="na">allowfullscreen</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="na">wmode</span><span class="o">=</span><span class="s">&quot;opaque&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">embed</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//4:3 响应式</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;embed-responsive embed-responsive-4by3&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">embed</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;http://www.tudou.com/v/OUG5JBZ8udc/&amp;bid=05&amp;rpid=50797543&amp;resourceId=50797543_05_05_99/v.swf&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">allowscriptaccess</span><span class="o">=</span><span class="s">&quot;always&quot;</span> <span class="na">allowfullscreen</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="na">wmode</span><span class="o">=</span><span class="s">&quot;opaque&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">embed</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="./asset/gitbook/app.js"></script>
+
+<script>require(["gitbook"], function (gitbook) {
+    var config = {"fontSettings": {"theme": null, "family": "sans", "size": 2}};
+    gitbook.start(config);
+});
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

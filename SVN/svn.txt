@@ -1,0 +1,81 @@
+1.创建版本库
+svnadmin create 版本库目录
+
+2.启动服务
+svnserve -d -r 版本库目录
+查看服服是否启动
+netstat -a 
+如3690占用说明它已启动.
+
+3.注册WINDOWS服务
+sc create SVNService binpath= "D:\ProgramFilesX86\Subversion\bin\svnserve.exe --service -r D:\svnRepertory"  start= auto depend= Tcpip
+第一次建错了  直拉用 sc delete SVNService 删除成功再建
+
+4.常用命令
+
+01先进工作目录,然后..检出(下载):svn checkout svn://localhost/oa
+
+	要先入版本库才以提交上传:svn add 文件名
+02先进目录,上传: svn commit 文件名,会自动被全,按TAB键
+	第一次上传:svn commit -m "第一次提交" 文件名  如没权限修改版本库中svnserve.conf中anon-access = write
+
+
+
+1.SVN使用,第一步安装,安装路径千万注意空格与中文目录...
+
+2.第二步,用DOS命令以管理员模式注册WINDOWS服务 
+sc create SVNService binpath= "D:\ProgramFilesX86\Subversion\bin\svnserve.exe --service -r D:\svnRepertory"  start= auto depend= Tcpip
+sc create SVNService binpath= "D:\ProgramFilesX86\Subversion\bin\SVN路径..... --service -r 仓库根目录....."  start= auto depend= Tcpip
+并用net start SVNService启动它.
+
+3.在仓库根目录下建立各种创库  比如 OA  TEST 等....
+D:\svnRepertory\OA
+D:\svnRepertory\TEST
+
+4.创建SVN仓库
+svnadmin create D:\svnRepertory\OA
+svnadmin create D:\svnRepertory\TEST
+
+5.提交  检出  更新...解决冲突(建议不用DOS命令,用客户端或ECLIPSE插件等)
+	01先进工作目录,然后..检出(下载):svn checkout svn://localhost/oa
+
+	要先入版本库才以提交上传:svn add 文件名
+	02先进目录,上传: svn commit 文件名,会自动被全,按TAB键
+	第一次上传:svn commit -m "第一次提交" 文件名  如没权限修改版本库中svnserve.conf中anon-access = write
+
+6.权限设置 在仓库目录下svnserve.conf文件中设置权限 帐号与权限权配合passwd文件与authz文件.
+	
+svnserve.conf文件设置:
+# anon-access = read #匿名访问,在SVN中,看不到以前版本,须把匿名访问打开并设置值为:none 如(anon-access = none);
+# auth-access = write #授权访问
+# password-db = passwd #密码选项
+# authz-db = authz #权限文件
+
+
+passwd文件设置:开启授权访问后需要创建的用户与密码
+# harry = harryssecret
+# sally = sallyssecret
+admin = admin
+huodeming = 123456
+hdm = 123456
+test = 123456
+
+authz文件设置:
+[groups] #创建一个用户组
+kaifa = admin,huodeming
+
+
+# [/foo/bar] #某目录权限
+# harry = rw #rw表示读写,如果是组,用@符号
+# &joe = r #r表示读
+# * =  # 表是其他用户都没权限
+[/] #目录
+@kaifa = rw 组名加个@ 用户名直接写.最后一行加个 * = 表示其他用户无权限.
+hdm = rw
+test = r
+* =
+
+7.提交冲突处理.1.软件处理,编辑冲突. 2.tortoisesvn处理,升级后取消然后编辑冲突...
+	
+
+

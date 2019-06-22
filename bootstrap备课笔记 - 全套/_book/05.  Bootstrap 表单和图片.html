@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>04.  Bootstrap 表单和图片</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/gitbook/style.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/gitbook/istyle.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div data-basepath="/service/gitbook" class="book">
+    <div class="book-summary">
+        <ul class="summary">
+            <li>
+                <a href="./index.html">bootstrap备课笔记</a>
+            </li>
+            <li class="divider"></li>
+            
+                
+                
+    
+    <li data-level="1" class="chapter" data-path="01. Bootstrap 介绍.html">
+        
+        
+        <a href="./01. Bootstrap 介绍.html" ><b>1</b> 01. Bootstrap 介绍</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="2" class="chapter" data-path="02. Bootstrap 排版样式.html">
+        
+        
+        <a href="./02. Bootstrap 排版样式.html" ><b>2</b> Bootstrap 排版样式</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="3" class="chapter" data-path="03. Bootstrap 表格和按钮.html">
+        
+        
+        <a href="./03. Bootstrap 表格和按钮.html" ><b>3</b> 03. Bootstrap 表格和按钮</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="4" class="chapter" data-path="04. Bootstrap 栅格系统.html">
+        
+        
+        <a href="./04. Bootstrap 栅格系统.html" ><b>4</b> Bootstrap 栅格系统</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="5" class="chapter active" data-path="05.  Bootstrap 表单和图片.html">
+        
+        
+        <a href="./05.  Bootstrap 表单和图片.html" ><b>5</b> 04.  Bootstrap 表单和图片</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="6" class="chapter" data-path="06. 辅组类和响应式工具.html">
+        
+        
+        <a href="./06. 辅组类和响应式工具.html" ><b>6</b> 辅组类和响应式工具</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="7" class="chapter" data-path="07. 图标菜单按钮组件.html">
+        
+        
+        <a href="./07. 图标菜单按钮组件.html" ><b>7</b> 图标菜单按钮组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="8" class="chapter" data-path="08. 输入框和导航组件.html">
+        
+        
+        <a href="./08. 输入框和导航组件.html" ><b>8</b> 输入框和导航组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="9" class="chapter" data-path="09. 路径分页标签和徽章组件.html">
+        
+        
+        <a href="./09. 路径分页标签和徽章组件.html" ><b>9</b> 路径分页标签和徽章组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="10" class="chapter" data-path="10. 巨幕页头缩略图和警告框组件.html">
+        
+        
+        <a href="./10. 巨幕页头缩略图和警告框组件.html" ><b>10</b> 巨幕页头缩略图和警告框组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="11" class="chapter" data-path="11. 进度条媒体对象和Well组件.html">
+        
+        
+        <a href="./11. 进度条媒体对象和Well组件.html" ><b>11</b> 进度条媒体对象和Well组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="12" class="chapter" data-path="12. 列表组面板和嵌入组件.html">
+        
+        
+        <a href="./12. 列表组面板和嵌入组件.html" ><b>12</b> 列表组面板和嵌入组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="13" class="chapter" data-path="13. 模态框插件.html">
+        
+        
+        <a href="./13. 模态框插件.html" ><b>13</b> 模态框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="14" class="chapter" data-path="14. 下拉菜单和滚动监听插件.html">
+        
+        
+        <a href="./14. 下拉菜单和滚动监听插件.html" ><b>14</b> 下拉菜单和滚动监听插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="15" class="chapter" data-path="15. 标签页和工具提示插件.html">
+        
+        
+        <a href="./15. 标签页和工具提示插件.html" ><b>15</b> 标签页和工具提示插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="16" class="chapter" data-path="16. 弹出框和警告框插件.html">
+        
+        
+        <a href="./16. 弹出框和警告框插件.html" ><b>16</b> 弹出框和警告框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="17" class="chapter" data-path="17. 按钮和折叠插件.html">
+        
+        
+        <a href="./17. 按钮和折叠插件.html" ><b>17</b> 按钮和折叠插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="18" class="chapter" data-path="18. 轮播插件.html">
+        
+        
+        <a href="./18. 轮播插件.html" ><b>18</b> 轮播插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="19" class="chapter" data-path="19. 附加导航插件.html">
+        
+        
+        <a href="./19. 附加导航插件.html" ><b>19</b> 附加导航插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="20" class="chapter" data-path="单词.html">
+        
+        
+        <a href="./单词.html" ><b>20</b> 单词</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+        </ul>
+
+    </div>
+
+    <div class="book-body">
+        <div class="body-inner">
+
+            <div class="book-header" role="navigation">
+                <h1>
+                    <a href="./index.html" > bootstrap备课笔记</a>
+                </h1>
+            </div>
+
+            <div tabindex="-1" class="page-wrapper">
+                <div class="page-inner">
+                    <h2 class="post_title"> 04.  Bootstrap 表单和图片 </h2>
+                    <div class="post_body"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">04.  Bootstrap 表单和图片</a>
+<ul>
+<li>
+<a href="#toc_1">一．表单</a>
+<ul>
+<li>
+<a href="#toc_2">1.基本格式</a>
+</li>
+<li>
+<a href="#toc_3">2.内联表单</a>
+</li>
+<li>
+<a href="#toc_4">3.表单合组</a>
+</li>
+<li>
+<a href="#toc_5">4.水平排列</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">二．图片</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+    <span class="md_line">本节课我们主要学习一下 Bootstrap 表单和图片功能，通过内置的 CSS 定义，显示各种丰富的效果。</span>
+</p>
+
+
+<h2 id="toc_1">一．表单</h2>
+
+<p class="md_block">
+    <span class="md_line">Bootstrap 提供了一些丰富的表单样式供开发者使用。</span>
+</p>
+
+
+<h3 id="toc_2">1.基本格式</h3>
+
+<p class="md_block">
+    <span class="md_line">//实现基本的表单样式</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>电子邮件<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span>
+<span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;请输入您的电子邮件&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>密码<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span>
+<span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;请输入您的密码&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：只有正确设置了输入框的 type 类型，才能被赋予正确的样式。支持的输入框控件<br /></span>
+    <span class="md_line">包括：text、password、datetime、datetime-local、date、month、time、week、<br /></span>
+    <span class="md_line">number、email、url、search、tel 和 color。</span>
+</p>
+
+
+<h3 id="toc_3">2.内联表单</h3>
+
+<p class="md_block">
+    <span class="md_line">//让表单左对齐浮动，并表现为 inline-block 内联块结构</span>
+</p>
+
+
+<pre><code>&lt;form class="form-inline"&gt;</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：当小于 768px，会恢复独占样式</span>
+</p>
+
+
+<h3 id="toc_4">3.表单合组</h3>
+
+<p class="md_block">
+    <span class="md_line">//前后增加片段</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">input前后加片段</span>
+<span class="c">input-group:合并</span>
+<span class="c">input-group-addon + form-control</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input-group&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input-group-addon &quot;</span><span class="p">&gt;</span>￥<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;请输入金额&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input-group-addon&quot;</span><span class="p">&gt;</span>.00<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_5">4.水平排列</h3>
+
+<p class="md_block">
+    <span class="md_line">//让表单内的元素保持水平排列</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">    让表单内的元素保持水平排列</span>
+<span class="c">    1.设置表单class=&quot;form-horizontal&quot;  //水平的</span>
+<span class="c">    2.&lt;label class=&quot;col-sm-2 control-label&quot;&gt;电子邮件&lt;/label&gt;  //contral-label:与form去同步. 并用后面的栅格系统参数</span>
+<span class="c">    3.input标签 class=&quot;form-control&quot;要包在一个容器中，且容器class=&quot;col-sm-10&quot;</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-horizontal&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-2 control-label&quot;</span><span class="p">&gt;</span>电子邮件<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-10&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;请输入您的电子邮件&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;control-label col-sm-2&quot;</span><span class="p">&gt;</span>用户名<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-10&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;请输入用户名&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：这里用到了 col-sm 栅格系统，后面章节会重点讲解，而 control-label 表示和<br /></span>
+    <span class="md_line">父元素样式同步。<br /></span>
+    <span class="md_line">5.复选框和单选框<br /></span>
+    <span class="md_line">//设置复选框，单独在一行</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span><span class="p">&gt;</span>体育
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span><span class="p">&gt;</span>音乐
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//设置禁用的复选框</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--把input设置成disabled,请把DIV也加个disabled--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;checkbox disabled&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">disabled</span><span class="p">&gt;</span>音乐
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//设置内联一行显示的复选框:checkbox-inline</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span><span class="p">&gt;</span>体育
+<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;checkbox-inline disabled&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">disabled</span><span class="p">&gt;</span>音乐
+<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//设置单选框</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;radio disabled&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span> <span class="na">disabled</span><span class="p">&gt;</span>男
+<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">6.下拉列表<br /></span>
+    <span class="md_line">//设置下拉列表</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">7.校验状态<br /></span>
+    <span class="md_line">//设置为错误状态</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group has-error&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：还有其他状态如下</span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">样式</th>
+<th style="text-align:left">说明</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">has-error </td>
+<td style="text-align:left"> 错误状态</td>
+</tr>
+<tr><td style="text-align:left">has-success </td>
+<td style="text-align:left"> 成功状态</td>
+</tr>
+<tr><td style="text-align:left">has-warning </td>
+<td style="text-align:left"> 警告状态</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//label 标签同步相应状态</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">    标签同步响应状态</span>
+<span class="c">    1.把上面的邮件代码拿过来.在div加上has-success,成功状态input变成绿色. :&lt;div class=&quot;form-group has-success&quot;&gt;</span>
+<span class="c">    2.&lt;label class=&quot;control-label&quot;&gt;电子邮件&lt;/label&gt;同步上面的状态,让label也变成绿色.:class=&quot;control-label</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group has-success&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;control-label&quot;</span><span class="p">&gt;</span>电子邮件<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">8.添加额外的图标<br /></span>
+    <span class="md_line">//文本框右侧内置文本图标</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">    标签同步响应状态</span>
+<span class="c">    1.在input后面增加下span标签,&lt;span class=&quot;glyphicon glyphicon-ok form-control-feedback&quot;&gt;&lt;/span&gt;  //图标 成功图标 反馈控制配合父标签has-feedback一起使用</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group has-success has-feedback&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;control-label&quot;</span><span class="p">&gt;</span>电子邮件<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;请输入email地址&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;glyphicon glyphicon-ok form-control-feedback&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：除了 glyphicon-ok 外，还有几个如下表：</span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">样式</th>
+<th style="text-align:left">说明</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">glyphicon-ok </td>
+<td style="text-align:left"> 成功状态</td>
+</tr>
+<tr><td style="text-align:left">glyphicon-warning-sign </td>
+<td style="text-align:left"> 警告状态</td>
+</tr>
+<tr><td style="text-align:left">glyphicon-remove </td>
+<td style="text-align:left"> 错误状态</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">9.控制尺寸<br /></span>
+    <span class="md_line">//从大到小</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control input-lg&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control input-sm&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注：也可以设置父元素 form-group-lg、form-group-sm，来调整。</span>
+</p>
+
+
+<h2 id="toc_6">二．图片</h2>
+
+<p class="md_block">
+    <span class="md_line">Bootstrap 提供了一些丰富的图片样式供开发者使用。<br /></span>
+    <span class="md_line">1.图片形状<br /></span>
+    <span class="md_line">//三种形状:圆角矩形,方形,缩略图样式(最好看)</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/pic.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;图片&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-rounded&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/pic.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;图片&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-circle&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/pic.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;图片&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-thumbnail&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//响应式图片</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/pic.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;图片&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-responsive&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="./asset/gitbook/app.js"></script>
+
+<script>require(["gitbook"], function (gitbook) {
+    var config = {"fontSettings": {"theme": null, "family": "sans", "size": 2}};
+    gitbook.start(config);
+});
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

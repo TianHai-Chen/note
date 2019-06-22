@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>下拉菜单和滚动监听插件</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/gitbook/style.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/gitbook/istyle.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div data-basepath="/service/gitbook" class="book">
+    <div class="book-summary">
+        <ul class="summary">
+            <li>
+                <a href="./index.html">bootstrap备课笔记</a>
+            </li>
+            <li class="divider"></li>
+            
+                
+                
+    
+    <li data-level="1" class="chapter" data-path="01. Bootstrap 介绍.html">
+        
+        
+        <a href="./01. Bootstrap 介绍.html" ><b>1</b> 01. Bootstrap 介绍</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="2" class="chapter" data-path="02. Bootstrap 排版样式.html">
+        
+        
+        <a href="./02. Bootstrap 排版样式.html" ><b>2</b> Bootstrap 排版样式</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="3" class="chapter" data-path="03. Bootstrap 表格和按钮.html">
+        
+        
+        <a href="./03. Bootstrap 表格和按钮.html" ><b>3</b> 03. Bootstrap 表格和按钮</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="4" class="chapter" data-path="04. Bootstrap 栅格系统.html">
+        
+        
+        <a href="./04. Bootstrap 栅格系统.html" ><b>4</b> Bootstrap 栅格系统</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="5" class="chapter" data-path="05.  Bootstrap 表单和图片.html">
+        
+        
+        <a href="./05.  Bootstrap 表单和图片.html" ><b>5</b> 04.  Bootstrap 表单和图片</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="6" class="chapter" data-path="06. 辅组类和响应式工具.html">
+        
+        
+        <a href="./06. 辅组类和响应式工具.html" ><b>6</b> 辅组类和响应式工具</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="7" class="chapter" data-path="07. 图标菜单按钮组件.html">
+        
+        
+        <a href="./07. 图标菜单按钮组件.html" ><b>7</b> 图标菜单按钮组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="8" class="chapter" data-path="08. 输入框和导航组件.html">
+        
+        
+        <a href="./08. 输入框和导航组件.html" ><b>8</b> 输入框和导航组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="9" class="chapter" data-path="09. 路径分页标签和徽章组件.html">
+        
+        
+        <a href="./09. 路径分页标签和徽章组件.html" ><b>9</b> 路径分页标签和徽章组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="10" class="chapter" data-path="10. 巨幕页头缩略图和警告框组件.html">
+        
+        
+        <a href="./10. 巨幕页头缩略图和警告框组件.html" ><b>10</b> 巨幕页头缩略图和警告框组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="11" class="chapter" data-path="11. 进度条媒体对象和Well组件.html">
+        
+        
+        <a href="./11. 进度条媒体对象和Well组件.html" ><b>11</b> 进度条媒体对象和Well组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="12" class="chapter" data-path="12. 列表组面板和嵌入组件.html">
+        
+        
+        <a href="./12. 列表组面板和嵌入组件.html" ><b>12</b> 列表组面板和嵌入组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="13" class="chapter" data-path="13. 模态框插件.html">
+        
+        
+        <a href="./13. 模态框插件.html" ><b>13</b> 模态框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="14" class="chapter active" data-path="14. 下拉菜单和滚动监听插件.html">
+        
+        
+        <a href="./14. 下拉菜单和滚动监听插件.html" ><b>14</b> 下拉菜单和滚动监听插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="15" class="chapter" data-path="15. 标签页和工具提示插件.html">
+        
+        
+        <a href="./15. 标签页和工具提示插件.html" ><b>15</b> 标签页和工具提示插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="16" class="chapter" data-path="16. 弹出框和警告框插件.html">
+        
+        
+        <a href="./16. 弹出框和警告框插件.html" ><b>16</b> 弹出框和警告框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="17" class="chapter" data-path="17. 按钮和折叠插件.html">
+        
+        
+        <a href="./17. 按钮和折叠插件.html" ><b>17</b> 按钮和折叠插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="18" class="chapter" data-path="18. 轮播插件.html">
+        
+        
+        <a href="./18. 轮播插件.html" ><b>18</b> 轮播插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="19" class="chapter" data-path="19. 附加导航插件.html">
+        
+        
+        <a href="./19. 附加导航插件.html" ><b>19</b> 附加导航插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="20" class="chapter" data-path="单词.html">
+        
+        
+        <a href="./单词.html" ><b>20</b> 单词</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+        </ul>
+
+    </div>
+
+    <div class="book-body">
+        <div class="body-inner">
+
+            <div class="book-header" role="navigation">
+                <h1>
+                    <a href="./index.html" > bootstrap备课笔记</a>
+                </h1>
+            </div>
+
+            <div tabindex="-1" class="page-wrapper">
+                <div class="page-inner">
+                    <h2 class="post_title"> 下拉菜单和滚动监听插件 </h2>
+                    <div class="post_body"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">下拉菜单和滚动监听插件</a>
+<ul>
+<li>
+<a href="#toc_1">下拉菜单</a>
+</li>
+<li>
+<a href="#toc_2">滚动监听</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">下拉菜单</h2>
+
+<p class="md_block">
+    <span class="md_line">常规使用中，和组件方法一样，代码如下：<br /></span>
+    <span class="md_line">//声明式用法</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;dropdown&quot;</span><span class="p">&gt;</span>下拉菜单<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;caret&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-menu&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>首页<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>产品<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>资讯<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>关于<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">声明式用法的关键核心：<br /></span>
+    <span class="md_line">1.外围容器使用 class=&quot;dropdown&quot;包裹；<br /></span>
+    <span class="md_line">2.内部点击按钮事件绑定 data-toggle=&quot;dropdown&quot;；<br /></span>
+    <span class="md_line">3.菜单元素使用 class=&quot;dropdown-menu&quot;。<br /></span>
+    <span class="md_line">//如果按钮在容器外部，可以通过 data-target 进行绑定,但显示出来的菜单位置不对.需要手工调整。</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;btn&quot;</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">data-target</span><span class="o">=</span><span class="s">&quot;#dropdown&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">在 JavaScript 调用中，没有属性，方法并不好用，下面介绍四个基本事件。<br /></span>
+    <span class="md_line">//下拉菜单方法，但仍然需要 data-*</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#btn&#39;</span><span class="p">).</span><span class="nx">dropdown</span><span class="p">();</span><span class="c1">//可以显示出来,但关不掉,不适用.</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#btn&#39;</span><span class="p">).</span><span class="nx">dropdown</span><span class="p">(</span><span class="s1">&#39;toggle&#39;</span><span class="p">);</span><span class="c1">//默认打开状态,并关不掉,不适用.</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">下拉菜单支持 4 种事件，分别对应弹出前、弹出后、关闭前和关闭后。</span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">事件类型</th>
+<th style="text-align:left">描述</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">show.bs.dropdown </td>
+<td style="text-align:left">在 show 方法调用时立即触发。</td>
+</tr>
+<tr><td style="text-align:left">shown.bs.dropdown</td>
+<td style="text-align:left"> 在下拉菜单完全显示出来，并且等 CSS 动画完成之后触发。</td>
+</tr>
+<tr><td style="text-align:left">hide.bs.dropdown</td>
+<td style="text-align:left"> 在 hide 方法调用时，但还未关闭隐藏时触发。</td>
+</tr>
+<tr><td style="text-align:left">hidden.bs.dropdown</td>
+<td style="text-align:left"> 在下拉菜单完全隐藏之后，并且等 CSS 动画完成之后触发。</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end--><div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">//事件，其他雷同</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#dropdown&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;show.bs.dropdown&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;在调用 show 方法时立即触发！&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_2">滚动监听</h2>
+
+<p class="md_block">
+    <span class="md_line">滚动监听插件是用来根据滚动条所处在的位置自动更新导航项目，显示导航项目高亮显<br /></span>
+    <span class="md_line">示。<br /></span>
+    <span class="md_line">//基本实例</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">1.上面是导航,下面是内容.</span>
+<span class="c">2.用a标签把菜单与内容区的ID关联起来. 可以实现点击菜单跳到相应描点.</span>
+<span class="c">3.内容区DIV加上后面内容,下面有表格说明:data-spy=&quot;scroll&quot;就有效果了.但位置不对,我们要对容器进行position: relative;这时就对了,我们加上data-offset=&quot;0&quot;,就是距离?像素内它就认为到了.data-target=&quot;#nav&quot;项是指定监听菜单(什么时候用?有多个菜单时.防止产生错误),</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">nav</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nav&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar navbar-default&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar-brand&quot;</span><span class="p">&gt;</span>Web 开发<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav navbar-nav&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#html5&quot;</span><span class="p">&gt;</span>HTML5<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#bootstrap&quot;</span><span class="p">&gt;</span>Bootstrap<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;dropdown&quot;</span><span class="p">&gt;</span>JavaScript <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;caret&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-menu&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#jquery&quot;</span><span class="p">&gt;</span>jQuery<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#yui&quot;</span><span class="p">&gt;</span>Yui<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#extjs&quot;</span><span class="p">&gt;</span>Extjs<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+<span class="c">&lt;!-- </span>
+<span class="c">1.容器一定要定位:position: relative</span>
+<span class="c">2.data-offset: 当靠近N个像素时,菜单项自动激活</span>
+<span class="c">3.data-target: 当有多个这种功能的菜单时,要指定绑定哪个菜单.</span>
+<span class="c">4.data-spy:绑定容器进行滚动监听.</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">data-offset</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">data-target</span><span class="o">=</span><span class="s">&quot;#nav&quot;</span> <span class="na">data-spy</span><span class="o">=</span><span class="s">&quot;scroll&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;height: 200px; overflow: auto; position: relative;padding: 0 10px;&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;html5&quot;</span><span class="p">&gt;</span>HTML5<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>标准通用标记语言下的一个应用 HTML 标准自 1999 年 12 月发布的 HTML4.01后，后继的 HTML5 和其它标准被束之高阁，为了推动 Web 标准化运动的发展，一些公司联合起来，成立了一个叫做 Web Hypertext Application Technology Working Group（Web 超文本应用技术工作组 -WHATWG） 的组织。WHATWG 致力于 Web 表单和应用程序，而 W3C（World Wide Web Consortium，万维网联盟） 专注于 XHTML2.0。在 2006 年，双方决定进行合作，来创建一新版本的 HTML。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;bootstrap&quot;</span><span class="p">&gt;</span>Bootstrap<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1] 它由 Twitter的设计师 Mark Otto 和 Jacob Thornton 合作开发，是一个 CSS/HTML 框架。Bootstrap提供了优雅的 HTML 和 CSS 规范，它即是由动态 CSS 语言 Less 写成。Bootstrap 一经推出后颇受欢迎，一直是 GitHub 上的热门开源项目，包括 NASA 的 MSNBC（微软全国广播公司）的 Breaking News 都使用了该项目。[2] 国内一些移动开发者较为熟悉的框架，如 WeX5前端开源框架等，也是基于 Bootstrap 源码进行性能优化而来。[3] <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;jquery&quot;</span><span class="p">&gt;</span>jQuery<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>JQuery 是继 prototype 之后又一个优秀的 Javascript 库。它是轻量级的 js库 ，它兼容 CSS3，还兼容各种浏览器（IE 6.0+, FF 1.5+, Safari 2.0+, Opera 9.0+），jQuery2.0 及后续版本将不再支持 IE6/7/8 浏览器。jQuery 使用户能更方便地处理 HTML（标准通用标记语言下的一个应用）、events、实现动画效果，并且方便地为网站提供 AJAX交互。jQuery 还有一个比较大的优势是，它的文档说明很全，而且各种应用也说得很详细，同时还有许多成熟的插件可供选择。jQuery 能够使用户的 html 页面保持代码和 html 内容分离，也就是说，不用再在 html 里面插入一堆 js 来调用命令了，只需要定义 id 即可。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;yui&quot;</span><span class="p">&gt;</span>Yui<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>近几年随着 jQuery、Ext 以及 CSS3 的发展，以 Bootstrap 为代表的前端开发框架如雨后春笋般挤入视野，可谓应接不暇。不论是桌面浏览器端还是移动端都涌现出很多优秀的框架，极大丰富了开发素材，也方便了大家的开发。这些框架各有特点，本文对这些框架进行初步的介绍与比较，希望能够为大家选择框架提供一点帮助，也为后续详细研究这些框架的抛砖引玉。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;extjs&quot;</span><span class="p">&gt;</span>Extjs<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>ExtJS 可以用来开发 RIA 也即富客户端的 AJAX 应用，是一个用 javascript写的，主要用于创建前端用户界面，是一个与后台技术无关的前端 ajax 框架。因此，可以把 ExtJS 用在.Net、Java、Php 等各种开发语言开发的应用中。ExtJs 最开始基于 YUI 技术，由开发人员 JackSlocum 开发，通过参考 JavaSwing 等机制来组织可视化组件，无论从 UI 界面上 CSS 样式的应用，到数据解析上的异常处理，都可算是一款不可多得的JavaScript 客户端技术的精品。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">这里有两个重要的属性，如下图：</span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">属性名</th>
+<th style="text-align:left">描述</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">data-offset </td>
+<td style="text-align:left">默认值为 10，固定弄内容距滚动容器 10 像素以内，就高亮显示所对应的菜单。</td>
+</tr>
+<tr><td style="text-align:left">data-spy </td>
+<td style="text-align:left">设置 scroll，将设置滚动容器监听。</td>
+</tr>
+<tr><td style="text-align:left">data-target </td>
+<td style="text-align:left">设置#nav，绑定指定监听的菜单</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">PS：在一个菜单和一个容易的时候，data-target 不设置也可以稳定实现滚动监听高亮。但多个导航时，你不关联其中一个，会导致错误，所以，一般要加上。<br /></span>
+    <span class="md_line">如果使用 JavaScript 脚本方式，可以去掉 data-*，使用脚本属性定义：offset、spy和 target。具体方法如下：<br /></span>
+    <span class="md_line">//使用脚本方式定义属性</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">//我们要给内容DIV加个ID=&quot;content&quot;,然后调下下面代码.</span>
+    <span class="c1">//&lt;div data-offset=&quot;0&quot; data-target=&quot;#nav&quot; data-spy=&quot;scroll&quot; style=&quot;height: 200px; overflow: auto; position: relative;padding: 0 10px;&quot;&gt;</span>
+    <span class="c1">//把上行代码改成&lt;div id=&quot;content&quot; style=&quot;height: 200px; overflow: auto; position: relative;padding: 0 10px;&quot;&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#content&#39;</span><span class="p">).</span><span class="nx">scrollspy</span><span class="p">({</span>
+<span class="nx">offset</span> <span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nx">target</span> <span class="o">:</span> <span class="s1">&#39;#nav&#39;</span><span class="p">,</span>
+<span class="p">});</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">滚动监听还有一个切换到新条目的事件。<br /></span>
+    <span class="md_line">//如果我们以后往容器中增加或修改或增加条目时,我们发现锚点可能不对了,我们就需要刷新一次.</span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">事件名</th>
+<th style="text-align:left">描述</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">activate.bs.scrollspy</td>
+<td style="text-align:left"> 每当一个新条目被激活后都将由滚动监听插件触发此事件。</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//事件绑定在导航上</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#nav&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;activate.bs.scrollspy&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;新条目被激活后触发此事件！&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">滚动监听还有一个更新容器 DOM 的方法。</span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">方法名</th>
+<th style="text-align:left">描述</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">refresh </td>
+<td style="text-align:left"> 更新容器 DOM 的方法。</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//HTML 部分</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!-- 我们给每个锚及内容加个section标签包裹起来,然后class=&quot;sec&quot;,方便删除--&gt;</span>
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;sec&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;html5&quot;</span><span class="p">&gt;</span>HTML5<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;removeSec(this)&quot;</span><span class="p">&gt;</span>删除此项<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//删除内容时，刷新一下 DOM，避免导航监听错位</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">removeSec</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nx">e</span><span class="p">).</span><span class="nx">parents</span><span class="p">(</span><span class="s1">&#39;.sec&#39;</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#content&#39;</span><span class="p">).</span><span class="nx">scrollspy</span><span class="p">(</span><span class="s1">&#39;refresh&#39;</span><span class="p">);</span><span class="c1">//刷新,如果不刷新则菜单点击不正常了.</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注意：这个方法必须使用 data-*声明式。</span>
+</p> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="./asset/gitbook/app.js"></script>
+
+<script>require(["gitbook"], function (gitbook) {
+    var config = {"fontSettings": {"theme": null, "family": "sans", "size": 2}};
+    gitbook.start(config);
+});
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

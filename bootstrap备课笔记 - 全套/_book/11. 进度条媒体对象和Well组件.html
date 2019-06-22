@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>进度条媒体对象和Well组件</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/gitbook/style.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/gitbook/istyle.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div data-basepath="/service/gitbook" class="book">
+    <div class="book-summary">
+        <ul class="summary">
+            <li>
+                <a href="./index.html">bootstrap备课笔记</a>
+            </li>
+            <li class="divider"></li>
+            
+                
+                
+    
+    <li data-level="1" class="chapter" data-path="01. Bootstrap 介绍.html">
+        
+        
+        <a href="./01. Bootstrap 介绍.html" ><b>1</b> 01. Bootstrap 介绍</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="2" class="chapter" data-path="02. Bootstrap 排版样式.html">
+        
+        
+        <a href="./02. Bootstrap 排版样式.html" ><b>2</b> Bootstrap 排版样式</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="3" class="chapter" data-path="03. Bootstrap 表格和按钮.html">
+        
+        
+        <a href="./03. Bootstrap 表格和按钮.html" ><b>3</b> 03. Bootstrap 表格和按钮</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="4" class="chapter" data-path="04. Bootstrap 栅格系统.html">
+        
+        
+        <a href="./04. Bootstrap 栅格系统.html" ><b>4</b> Bootstrap 栅格系统</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="5" class="chapter" data-path="05.  Bootstrap 表单和图片.html">
+        
+        
+        <a href="./05.  Bootstrap 表单和图片.html" ><b>5</b> 04.  Bootstrap 表单和图片</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="6" class="chapter" data-path="06. 辅组类和响应式工具.html">
+        
+        
+        <a href="./06. 辅组类和响应式工具.html" ><b>6</b> 辅组类和响应式工具</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="7" class="chapter" data-path="07. 图标菜单按钮组件.html">
+        
+        
+        <a href="./07. 图标菜单按钮组件.html" ><b>7</b> 图标菜单按钮组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="8" class="chapter" data-path="08. 输入框和导航组件.html">
+        
+        
+        <a href="./08. 输入框和导航组件.html" ><b>8</b> 输入框和导航组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="9" class="chapter" data-path="09. 路径分页标签和徽章组件.html">
+        
+        
+        <a href="./09. 路径分页标签和徽章组件.html" ><b>9</b> 路径分页标签和徽章组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="10" class="chapter" data-path="10. 巨幕页头缩略图和警告框组件.html">
+        
+        
+        <a href="./10. 巨幕页头缩略图和警告框组件.html" ><b>10</b> 巨幕页头缩略图和警告框组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="11" class="chapter active" data-path="11. 进度条媒体对象和Well组件.html">
+        
+        
+        <a href="./11. 进度条媒体对象和Well组件.html" ><b>11</b> 进度条媒体对象和Well组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="12" class="chapter" data-path="12. 列表组面板和嵌入组件.html">
+        
+        
+        <a href="./12. 列表组面板和嵌入组件.html" ><b>12</b> 列表组面板和嵌入组件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="13" class="chapter" data-path="13. 模态框插件.html">
+        
+        
+        <a href="./13. 模态框插件.html" ><b>13</b> 模态框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="14" class="chapter" data-path="14. 下拉菜单和滚动监听插件.html">
+        
+        
+        <a href="./14. 下拉菜单和滚动监听插件.html" ><b>14</b> 下拉菜单和滚动监听插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="15" class="chapter" data-path="15. 标签页和工具提示插件.html">
+        
+        
+        <a href="./15. 标签页和工具提示插件.html" ><b>15</b> 标签页和工具提示插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="16" class="chapter" data-path="16. 弹出框和警告框插件.html">
+        
+        
+        <a href="./16. 弹出框和警告框插件.html" ><b>16</b> 弹出框和警告框插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="17" class="chapter" data-path="17. 按钮和折叠插件.html">
+        
+        
+        <a href="./17. 按钮和折叠插件.html" ><b>17</b> 按钮和折叠插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="18" class="chapter" data-path="18. 轮播插件.html">
+        
+        
+        <a href="./18. 轮播插件.html" ><b>18</b> 轮播插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="19" class="chapter" data-path="19. 附加导航插件.html">
+        
+        
+        <a href="./19. 附加导航插件.html" ><b>19</b> 附加导航插件</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="20" class="chapter" data-path="单词.html">
+        
+        
+        <a href="./单词.html" ><b>20</b> 单词</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+        </ul>
+
+    </div>
+
+    <div class="book-body">
+        <div class="body-inner">
+
+            <div class="book-header" role="navigation">
+                <h1>
+                    <a href="./index.html" > bootstrap备课笔记</a>
+                </h1>
+            </div>
+
+            <div tabindex="-1" class="page-wrapper">
+                <div class="page-inner">
+                    <h2 class="post_title"> 进度条媒体对象和Well组件 </h2>
+                    <div class="post_body"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">进度条媒体对象和Well组件</a>
+<ul>
+<li>
+<a href="#toc_1">Well 组件</a>
+</li>
+<li>
+<a href="#toc_2">进度条组件</a>
+</li>
+<li>
+<a href="#toc_3">媒体对象组件</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">Well 组件</h2>
+
+<p class="md_block">
+    <span class="md_line">这个组件可以实现简单的嵌入效果。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-05-13-21-56-20.jpg';this.onerror=null;"  class="" src="/_image/2018-05-13-21-56-20.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">//嵌入效果</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;well&quot;</span><span class="p">&gt;</span>
+Bootstrap
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//有 lg 和 sm 两种可选值</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;well well-lg&quot;</span><span class="p">&gt;</span>
+Bootstrap
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_2">进度条组件</h2>
+
+<p class="md_block">
+    <span class="md_line">进度条组件为当前工作流程或动作提供时时反馈。<br /></span>
+    <span class="md_line">//基本进度条</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress-bar&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 60%;&quot;</span><span class="p">&gt;</span>60%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//最低值进度条</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">0%时看不清要显示的文字,所以我们给个最小的进度.以展示文字.注意min-width不会引响进度显示.</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress-bar&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width:20px&quot;</span><span class="p">&gt;</span>0%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//结合情景的进度条</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress-bar progress-bar-success&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width:20px;width:60%&quot;</span><span class="p">&gt;</span>60%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//条纹状，IE10+支持<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-05-13-22-04-58.jpg';this.onerror=null;"  class="" src="/_image/2018-05-13-22-04-58.jpg" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--  progress-bar-striped 斑马线--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress-bar progress-bar-success progress-bar-striped&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width:20px;width:60%&quot;</span><span class="p">&gt;</span>60%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//动画效果</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--  progress-bar-striped 斑马线 只要它才能有动画效果 active就行了.--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress-bar progress-bar-success progress-bar-striped active&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width:20px;width:60%&quot;</span><span class="p">&gt;</span>60%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//堆叠效果<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-05-13-22-04-35.jpg';this.onerror=null;"  class="" src="/_image/2018-05-13-22-04-35.jpg" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress-bar progress-bar-success&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width:20px;width:35%&quot;</span><span class="p">&gt;</span>35%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress-bar progress-bar-warning&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width:20px;width:20%&quot;</span><span class="p">&gt;</span>20%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;progress-bar progress-bar-danger&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width:20px;width:10%&quot;</span><span class="p">&gt;</span>10%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">媒体对象组件</h2>
+
+<p class="md_block">
+    <span class="md_line">媒体对象可以包含图片、视频或音频等媒体，以达到对象和文本组合显示的样式效果。<br /></span>
+    <span class="md_line">//基本实例<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-05-13-22-15-27.jpg';this.onerror=null;"  class="" src="/_image/2018-05-13-22-15-27.jpg" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">1.写一&lt;div class=&quot;media&quot;&gt;容器.</span>
+<span class="c">2.里面内容分左边与主要内容.常用于论坛,留言等.我左边(media-left)用的是图片,为了控制大小,我用了缩略图功能,但为了显示出来.限制了最小宽度,注意左边还可以media-top,media-middle,media-bottom来控制垂直对齐,右边是主要内容区域.</span>
+<span class="c">3.注意,文本并不是环绕图片.而是一个在左,一个在右.</span>
+<span class="c">  --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-left&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/Desert.jpg&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-thumbnail&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width: 300px;&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-object&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-body&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-heading&quot;</span><span class="p">&gt;</span>标题<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>企鹅（学名：Spheniscidae）：有“海洋之舟”美称的企鹅是一种最古老 的游禽，它们很可能在地球穿上冰甲之前，就已经在南极安家落户。全世界的企鹅共有 17 种，大多数都分布在南半球。主要生活在南半球，属于企鹅目，企鹅科。特征为不能飞翔； 脚生于身体最下部，故呈直立姿势；趾间有蹼；跖行性（其他鸟类以趾着地）；前肢成鳍状； 羽毛短，以减少摩擦和湍流；羽毛间存留一层空气，用以保温。背部黑色，腹部白色。各个 种的主要区别在于头部色型和个体大小。
+                <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//媒体对象在右边</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">1.把&lt;div class=&quot;media-left&quot;&gt;改成&lt;div class=&quot;media-right&quot;&gt; 但它只是过去了一点点.</span>
+<span class="c">2.把&lt;div class=&quot;media-right&quot;&gt;放到&lt;div class=&quot;media-body&quot;&gt;的后面去.就行了.</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-body&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h4</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-heading&quot;</span><span class="p">&gt;</span>标题<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>企鹅（学名：Spheniscidae）：有“海洋之舟”美称的企鹅是一种最古老
+的游禽，它们很可能在地球穿上冰甲之前，就已经在南极安家落户。全世界的企鹅共有 17
+种，大多数都分布在南半球。主要生活在南半球，属于企鹅目，企鹅科。特征为不能飞翔；
+脚生于身体最下部，故呈直立姿势；趾间有蹼；跖行性（其他鸟类以趾着地）；前肢成鳍状；
+羽毛短，以减少摩擦和湍流；羽毛间存留一层空气，用以保温。背部黑色，腹部白色。各个
+种的主要区别在于头部色型和个体大小。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-right&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/small.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-object&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_img">
+    <span class="md_line">//媒体对象列表:主要是评论,回贴功能.</span>
+</p>
+
+<img onerror="this.src='../_image/2018-05-13-22-24-12.jpg';this.onerror=null;"  class="" src="/_image/2018-05-13-22-24-12.jpg" alt="" title="" ><div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!--</span>
+<span class="c">&lt;ul class=&quot;media-list&quot;&gt;</span>
+<span class="c">&lt;li class=&quot;media&quot;&gt;</span>
+<span class="c">将每个 media 存放在 media-body 内后即可,可多层嵌套</span>
+<span class="c">...代码较多,此处省略,把li改成div</span>
+<span class="c">&lt;/li&gt;</span>
+<span class="c">&lt;/ul&gt;</span>
+<span class="c">--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-list&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-left&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/Desert.jpg&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-thumbnail&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width: 200px;&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-object&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-body&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-heading&quot;</span><span class="p">&gt;</span>标题<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>企鹅（学名：Spheniscidae）：有“海洋之舟”美称的企鹅是一种最古老 的游禽，它们很可能在地球穿上冰甲之前，就已经在南极安家落户。全世界的企鹅共有 17 种，大多数都分布在南半球。主要生活在南半球，属于企鹅目，企鹅科。特征为不能飞翔； 脚生于身体最下部，故呈直立姿势；趾间有蹼；跖行性（其他鸟类以趾着地）；前肢成鳍状； 羽毛短，以减少摩擦和湍流；羽毛间存留一层空气，用以保温。背部黑色，腹部白色。各个 种的主要区别在于头部色型和个体大小。
+            <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="c">&lt;!-- ========嵌套内容:start=============  --&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-left&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/Desert.jpg&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-thumbnail&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-width: 200px;&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-object&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-body&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;media-heading&quot;</span><span class="p">&gt;</span>标题<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>企鹅（学名：Spheniscidae）：有“海洋之舟”美称的企鹅是一种最古老 的游禽，它们很可能在地球穿上冰甲之前，就已经在南极安家落户。全世界的企鹅共有 17 种，大多数都分布在南半球。主要生活在南半球，属于企鹅目，企鹅科。特征为不能飞翔； 脚生于身体最下部，故呈直立姿势；趾间有蹼；跖行性（其他鸟类以趾着地）；前肢成鳍状； 羽毛短，以减少摩擦和湍流；羽毛间存留一层空气，用以保温。背部黑色，腹部白色。各个 种的主要区别在于头部色型和个体大小。
+                    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="c">&lt;!-- =========嵌套内容:end===========   --&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="./asset/gitbook/app.js"></script>
+
+<script>require(["gitbook"], function (gitbook) {
+    var config = {"fontSettings": {"theme": null, "family": "sans", "size": 2}};
+    gitbook.start(config);
+});
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
