@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>09.运算符</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="selected">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 09.运算符 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">09.运算符</a>
+<ul>
+<li>
+<a href="#toc_1">什么是运算符</a>
+</li>
+<li>
+<a href="#toc_2">常用运算符</a>
+<ul>
+<li>
+<a href="#toc_3">算术运算符</a>
+<ul>
+<li>
+<a href="#toc_4">一元(只要一个元素参于运算 就两个 ++ --)</a>
+</li>
+<li>
+<a href="#toc_5">二元(常规的需要两个元素参于运算 + - * / %)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">字符串运算符</a>
+</li>
+<li>
+<a href="#toc_7">赋值运算符</a>
+</li>
+<li>
+<a href="#toc_8">比较运算符</a>
+</li>
+<li>
+<a href="#toc_9">逻辑运算符</a>
+</li>
+<li>
+<a href="#toc_10">执行运算符</a>
+</li>
+<li>
+<a href="#toc_11">错误抑制符</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_12">运算符优先级</a>
+</li>
+<li>
+<a href="#toc_13">三元运算符</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">什么是运算符</h2>
+
+<p class="md_block">
+    <span class="md_line">运算符是可以通过给出一的个或多个值来产生新值的.</span>
+</p>
+
+
+<h2 id="toc_2">常用运算符</h2>
+
+<h3 id="toc_3">算术运算符</h3>
+
+<pre><code>+   -  *   /   % ++ -- </code></pre>
+
+<!--block_code_end-->
+<h4 id="toc_4">一元(只要一个元素参于运算 就两个 ++ --)</h4>
+
+<pre><code>++  --  </code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">前置++ --</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">echo</span> <span class="o">++</span><span class="nv">$a</span><span class="p">;</span><span class="c1">//11</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">后置 ++ --</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$a</span><span class="o">--</span><span class="p">;</span><span class="c1">//10:--后置,它要等语句执行完后才自减.</span>
+<span class="k">echo</span> <span class="nv">$a</span><span class="p">;</span><span class="c1">//9</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">注意:<br /></span>
+    <span class="md_line">1.如果把控不好前置还是后置,请把++或--独立放在一个语句中.<br /></span>
+    <span class="md_line">2.在使用++ 或 -- 时,注意变量要提前赋值.</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span>  <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nv">$a</span><span class="o">++</span><span class="p">;</span><span class="c1">//$a = $a+1;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">3.前置++比一般运算符优先级都高,但在连续运算中,也会出现例外:</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">+</span> <span class="o">++</span><span class="nv">$a</span> <span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="c1">//23  //前置++优先级高,是23没错.</span>
+
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">echo</span> <span class="mi">1</span><span class="o">+</span> <span class="nv">$a</span> <span class="o">+</span> <span class="o">++</span><span class="nv">$a</span> <span class="p">;</span><span class="c1">//22  //前置++在第三位时,前置优先不生效了</span>
+</pre></div>
+
+<!--block_code_end-->
+<h4 id="toc_5">二元(常规的需要两个元素参于运算 + - * / %)</h4>
+
+<p class="md_block">
+    <span class="md_line">二元运算符就是我们常用的 + - * / %</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span><span class="c1">//11</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">-</span> <span class="nv">$b</span><span class="p">;</span><span class="c1">//5</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">*</span> <span class="nv">$b</span><span class="p">;</span><span class="c1">//50</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">/</span> <span class="nv">$b</span><span class="p">;</span><span class="c1">//2</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">%</span> <span class="nv">$b</span><span class="p">;</span><span class="c1">//0   //$a / $b = 2...0</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_6">字符串运算符</h3>
+
+<p class="md_block">
+    <span class="md_line">连接字符串用.(点)</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$str</span> <span class="o">=</span> <span class="s1">&#39;我在鲲鹏5班&#39;</span><span class="p">;</span>
+<span class="nv">$str</span> <span class="o">=</span><span class="nv">$str</span><span class="o">.</span><span class="s1">&#39;学PHP!&#39;</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$str</span><span class="p">;</span><span class="c1">//我在鲲鹏5班学PHP!</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注意:用.运算符时,所有类型会自动转换为字符中型.再进行连接.</span>
+</p>
+
+
+<h3 id="toc_7">赋值运算符</h3>
+
+<pre><code>=   +=  -=  *=  /=  %=  .=</code></pre>
+
+<!--block_code_end--><div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//简单赋值运算,把10赋值给变量$a</span>
+<span class="nv">$a</span> <span class="o">+=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//$a = $a+10; //结果是:20</span>
+<span class="nv">$a</span> <span class="o">-=</span> <span class="mi">5</span><span class="p">;</span><span class="c1">//$a = $a-5; //结果就是:15</span>
+<span class="nv">$a</span> <span class="o">*=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//$a =$a *10;//结果是150</span>
+<span class="nv">$a</span> <span class="o">/=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//$a = $a / 10; //结果是15</span>
+<span class="nv">$a</span> <span class="o">%=</span> <span class="mi">4</span><span class="p">;</span><span class="c1">//$a = $a % 4;//结果是15 / 4 = 3...3</span>
+<span class="k">echo</span> <span class="nv">$a</span><span class="p">;</span><span class="c1">//3</span>
+<span class="c1">//.=是字符串连接用</span>
+<span class="nv">$str</span> <span class="o">=</span> <span class="s1">&#39;我在鲲鹏10班&#39;</span><span class="p">;</span>
+<span class="c1">//$str =$str.&#39;学PHP!&#39;;</span>
+<span class="c1">//可以写成</span>
+<span class="nv">$str</span> <span class="o">.=</span> <span class="s1">&#39;学PHP!&#39;</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$str</span><span class="p">;</span><span class="c1">//我在鲲鹏5班学PHP!</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_8">比较运算符</h3>
+
+<pre><code>  &gt;   &lt;   &gt;=  &lt;=  !=或&lt;&gt;  ==  === !==</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">比较运算符实际开发中基本都用于条件判断.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="s1">&#39;10&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">&gt;</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>  <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">&lt;</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>  <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">&gt;=</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>  <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//true</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">&lt;=</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>  <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//true</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>  <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//true 两个不同类型的变量进行比较时,会自动转换</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">&lt;&gt;</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>  <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">===</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>  <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false  恒等  值相等,同时类型也要相等</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">!==</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>  <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//true </span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注意:<br /></span>
+    <span class="md_line">两个不同类型的值进行比较运算时,自动转换类型如下</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span>    <span class="c1">//不同类型自动转换优先级:bool  --&gt; 数字  --&gt;字符串  :如布尔型与字符串比较,字符串默认转bool型,</span>
+    <span class="cm">/*</span>
+<span class="cm">     * 比较运算符总结:</span>
+<span class="cm">     *      string 比较 null  转  string </span>
+<span class="cm">     *      string 比较 数字  转  数字</span>
+<span class="cm">     *      其它类型相比都转bool再比较</span>
+<span class="cm">     */</span>    
+    <span class="nv">$a</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">;</span>
+    <span class="nv">$b</span> <span class="o">=</span> <span class="s1">&#39;10aaa&#39;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="nv">$b</span> <span class="o">==</span> <span class="nv">$a</span><span class="p">;</span><span class="c1">//字符串与数字进行比较运算,默认转成数字.</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+    
+    <span class="nv">$a</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span><span class="p">;</span>
+    <span class="nv">$b</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="nv">$a</span> <span class="o">==</span> <span class="nv">$b</span><span class="p">;</span><span class="c1">//与布尔型进行比较运算,转换成布尔型</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_9">逻辑运算符</h3>
+
+<pre><code>&amp;&amp;(and)  ||(or)  !    xor</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">逻辑运算符用于多个条件进行综合判断.<br /></span>
+    <span class="md_line">要注意:虽然<code>&amp;&amp;</code> 与 <code>and</code>都是逻辑与,但它们的优先级不同.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span>    <span class="nv">$a</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
+    <span class="nv">$b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">60</span><span class="p">];</span>
+    <span class="c1">//逻辑与 :多个条件进行比较时所有返回true它才返回true,(只要有一个是false,它就是false)</span>
+    <span class="c1">//短路:从左向左,只要遇到false,后面的不执行,效率</span>
+    <span class="k">if</span><span class="p">((</span><span class="nv">$b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$a</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nv">$b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$a</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nv">$b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$a</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nv">$b</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$a</span><span class="p">)){</span>
+        <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+    
+<span class="c1">//逻辑或:多个条件进行比较时所有返回false它才返回false,(只要有一个是true,它就是true)</span>
+    <span class="c1">//左向右,一健美遇到true,它就短路.</span>
+    <span class="k">if</span><span class="p">((</span><span class="nv">$b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$a</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="nv">$b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$a</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="nv">$b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$a</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="nv">$b</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$a</span><span class="p">)){</span>
+        <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//短路实例</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+    <span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="c1">//按PHP官方所说,前置++优先级比&amp;&amp;要高,按理说会先++再进行逻辑判断,但实际PHP优先进行短路.</span>
+    <span class="k">if</span><span class="p">(</span><span class="mi">1</span><span class="o">&gt;</span><span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="o">++</span><span class="nv">$a</span><span class="p">){</span>
+        <span class="k">echo</span> <span class="s1">&#39;true&lt;br /&gt;&#39;</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="k">echo</span> <span class="s1">&#39;false&lt;br /&gt;&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span><span class="c1">//int(10)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">逻辑非:取反,结果返回true它就是false   返回false它就取true</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">true</span><span class="p">){</span><span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span> <span class="p">}</span><span class="k">else</span><span class="p">{</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;}</span> <span class="p">;</span><span class="c1">//false</span>
+<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">){</span><span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span> <span class="p">}</span><span class="k">else</span><span class="p">{</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;}</span> <span class="p">;</span><span class="c1">//false</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">逻辑异或:  多个条件判断时,一true 一 false 它则返回true,只要丙边条件判断结果相同(同是true,或 同时false),它都返回 false</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="k">true</span> <span class="k">xor</span> <span class="k">true</span><span class="p">){</span><span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;}</span> <span class="k">else</span><span class="p">{</span><span class="k">echo</span>  <span class="s1">&#39;false&#39;</span><span class="p">;}</span><span class="c1">//false</span>
+<span class="k">if</span><span class="p">(</span><span class="k">false</span> <span class="k">xor</span> <span class="k">false</span><span class="p">){</span><span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;}</span> <span class="k">else</span><span class="p">{</span><span class="k">echo</span>  <span class="s1">&#39;false&#39;</span><span class="p">;}</span><span class="c1">//false</span>
+<span class="k">if</span><span class="p">(</span><span class="k">true</span> <span class="k">xor</span> <span class="k">false</span><span class="p">){</span><span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;}</span> <span class="k">else</span><span class="p">{</span><span class="k">echo</span>  <span class="s1">&#39;false&#39;</span><span class="p">;}</span><span class="c1">//true</span>
+<span class="k">if</span><span class="p">(</span><span class="k">false</span> <span class="k">xor</span> <span class="k">true</span><span class="p">){</span><span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;}</span> <span class="k">else</span><span class="p">{</span><span class="k">echo</span>  <span class="s1">&#39;false&#39;</span><span class="p">;}</span><span class="c1">//true</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_10">执行运算符</h3>
+
+<p class="md_block">
+    <span class="md_line">反引号: 它的功能与 shell_exec(); 函数功能一样</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//我们可以让它执行一些DOS命令</span>
+<span class="k">echo</span> <span class="sb">`ipconfig/all`</span><span class="p">;</span>
+<span class="nb">shell_exec</span><span class="p">(</span><span class="s1">&#39;ping 192.168.22.73&#39;</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_11">错误抑制符</h3>
+
+<p class="md_block">
+    <span class="md_line">@: 把它放在可能出错的代码之前,可以屏蔽错误提示</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">echo</span> <span class="o">@</span><span class="nv">$aaa</span><span class="p">;</span><span class="c1">//屏蔽错误</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_12">运算符优先级</h2>
+<table>
+ <thead><tr><th style="text-align:left">结合方向</th>
+<th style="text-align:left">运算符</th>
+<th style="text-align:left">附加信息</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">无 </td>
+<td style="text-align:left"> clone new </td>
+<td style="text-align:left"> clone 和 new</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> [ </td>
+<td style="text-align:left"> array()</td>
+</tr>
+<tr><td style="text-align:left">右 </td>
+<td style="text-align:left">** </td>
+<td style="text-align:left"> 算术运算符 幂 echo 5 ** 3;//125</td>
+</tr>
+<tr><td style="text-align:left">右 </td>
+<td style="text-align:left"> ++ -- ~ </td>
+<td style="text-align:left"> (int) (float) (string) (array) (object) (bool) @ 类型和递增/递减 (类型转换)</td>
+</tr>
+<tr><td style="text-align:left">无 </td>
+<td style="text-align:left"> instanceof </td>
+<td style="text-align:left"> 类型</td>
+</tr>
+<tr><td style="text-align:left">右 </td>
+<td style="text-align:left"> ! </td>
+<td style="text-align:left"> 逻辑运算符</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"><ul>
+<li>/ % </li>
+</ul></td>
+<td style="text-align:left"> 算术运算符(乘 除 求余)</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> + - . </td>
+<td style="text-align:left"> 算术运算符和字符串运算符(加 减 连接字符串)</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> << >> </td>
+<td style="text-align:left"> 位运算符(位左移 位右移)</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> < <= > >= </td>
+<td style="text-align:left"> 比较运算符</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> == != === !== <> <=> </td>
+<td style="text-align:left"> 比较运算符</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> & </td>
+<td style="text-align:left"> 位运算符和引用(位与)</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> ^ </td>
+<td style="text-align:left"> 位运算符(位异或)</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> l </td>
+<td style="text-align:left"> 位运算符(位或)</td>
+</tr>
+<tr><td style="text-align:left">左 </td>
+<td style="text-align:left"> && </td>
+<td style="text-align:left"> 逻辑运算符</td>
+</tr>
+<tr><td style="text-align:left">左    </td>
+<td style="text-align:left"> ll </td>
+<td style="text-align:left"> 逻辑运算符</td>
+</tr>
+<tr><td style="text-align:left">左    </td>
+<td style="text-align:left"> ?? </td>
+<td style="text-align:left"> 比较运算符</td>
+</tr>
+<tr><td style="text-align:left">左    </td>
+<td style="text-align:left"> ? : </td>
+<td style="text-align:left"> 三元运算符</td>
+</tr>
+<tr><td style="text-align:left">右    </td>
+<td style="text-align:left"> = += -= *= **= /= .= %= &= l= ^=  <<= >>= </td>
+<td style="text-align:left"> 赋值运算符</td>
+</tr>
+<tr><td style="text-align:left">左    </td>
+<td style="text-align:left"> and </td>
+<td style="text-align:left"> 逻辑运算符</td>
+</tr>
+<tr><td style="text-align:left">左    </td>
+<td style="text-align:left"> xor </td>
+<td style="text-align:left"> 逻辑运算符</td>
+</tr>
+<tr><td style="text-align:left">左    </td>
+<td style="text-align:left"> or </td>
+<td style="text-align:left"> 逻辑运算符</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end-->
+<h2 id="toc_13">三元运算符</h2>
+
+<p class="md_block">
+    <span class="md_line">条件运算符,要注意,它不是if语句,不能独立作为一个语句来使用,一般要结合其它运算符来使用.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">&gt;=</span> <span class="mi">10</span> <span class="o">?</span> <span class="mi">100</span> <span class="o">:</span> <span class="mi">200</span><span class="p">;</span><span class="c1">//$b=100</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">&gt;</span> <span class="nv">$b</span> <span class="o">?</span> <span class="mi">50</span> <span class="o">:</span> <span class="mi">500</span><span class="p">;</span><span class="c1">//$c=500</span>
+<span class="c1">//注意,第二个参数(?后面的参数)可以不写,但第三个参数(:后面的参数)必须写</span>
+<span class="c1">//第二个参数如果不写,它返回最前面的条件内容,如果前面是字符串,他返回字符串内容,若果用比较运算符进行条件判断,则返回判断结果</span>
+<span class="nv">$d</span> <span class="o">=</span> <span class="s1">&#39;这是一个字符串&#39;</span> <span class="o">?</span>  <span class="o">:</span> <span class="s1">&#39;false&#39;</span> <span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$d</span><span class="p">;</span><span class="c1">//这是一个字符串</span>
+<span class="c1">//测试的第二个参数不写,第一个条件判断用对象与数组进行测试,看返回值</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

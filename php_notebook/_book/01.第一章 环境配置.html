@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>第一章:环境配置</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./01.第一章 环境配置.html" class="selected">第一章:环境配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 第一章:环境配置 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">第一章:环境配置</a>
+<ul>
+<li>
+<a href="#toc_1">一.集成环境PHPStudy下载与安装</a>
+</li>
+<li>
+<a href="#toc_2">二.手动安装Apache与PHP配置</a>
+</li>
+<li>
+<a href="#toc_3">三.IIS安装与PHP环境配置</a>
+<ul>
+<li>
+<a href="#toc_4">重要:IIS的正常维护与管理</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">一.集成环境PHPStudy下载与安装</h2>
+
+<ol>
+<li>下载phpstudy安装包:<a class="md_compiled" href="http://www.phpstudy.net/phpstudy/phpStudy20161103.zip">http://phpstudy.net下载20161103版本</a></li>
+<li>安装前必须安装:vc++9  vc++11</li>
+<li>我们安装到D:\PHPStudy目录</li>
+<li>
+<p class="md_block">
+    <span class="md_line">打开PHPStudy,启动服务....</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">4.1 如果服务不能启动:1.检测防火墙 2.查看端口是否被占用 3.重新安装,安装时关掉相关杀毒软件与安全卫士.5.重复第二步:检测VC++运行库,最好是9-15各版本32位与64位全安装一遍.</span>
+</p></li>
+</ol>
+<div class="codehilite code_lang_shell  highlight"><pre><span></span>MSSQL:1433 端口
+apache:80 端口   
+mysql:3306 端口
+
+-- 查看本机端口使用情况
+netstat -ano
+
+-- 单独查看某个端口是否已打开<span class="o">(</span>开启WINDOWS的TELNET客户端功能,在控制面板--&gt;程序--&gt;打开或关闭WINDOWS功能<span class="o">)</span>
+telnet IP 端口
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_2">二.手动安装Apache与PHP配置</h2>
+
+<ol>
+<li>
+<p class="md_block">
+    <span class="md_line">下载apache与php</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">下载apache<br /></span>
+    <span class="md_line">http://www.apachehaus.com/cgi-bin/download.plx<br /></span>
+    <span class="md_line">下载PHP:注意线程安全版本(Thread Safe)可以用第4步方法用模块配置,如果是NTS版本,则须用第5步的方法来配置<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2017-10-24-09-03-21.jpg';this.onerror=null;"  class="" src="/_image/2017-10-24-09-03-21.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">http://windows.php.net/download#php-5.6<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2017-10-24-09-31-10.jpg';this.onerror=null;"  class="" src="/_image/2017-10-24-09-31-10.jpg" alt="" title="" ></span>
+</p></li>
+<li>
+<p class="md_block md_has_block_below md_has_block_below_img">
+    <span class="md_line">把apache与php统一解压到D:\phpserver\下面.</span>
+</p>
+
+<img onerror="this.src='../_image/2018-11-06-09-12-56.jpg';this.onerror=null;"  class="" src="/_image/2018-11-06-09-12-56.jpg" alt="" title="" ></li>
+<li>
+<p class="md_block">
+    <span class="md_line">配置与安装Apache</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">去Apache目录下拿记事本打开:D:\phpserver\Apache24\conf\httd.conf  找到 Define SRVROOT &quot;/Apache24&quot;改成Define SRVROOT &quot;D:/phpserver/Apache24&quot;<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-11-06-09-13-52.jpg';this.onerror=null;"  class="" src="/_image/2018-11-06-09-13-52.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">安装Apache:以管理员身份启动DOS,进入到D:\phpserver\Apache24\bin目录,输入:httpd -k install (由于我安装了多次,为了服务名不重复 用了 -n 服务名参数) 等待安装完成.如果报错,重装.提示“The &#39;Apache2.4&#39; service is successfully installed.”，说明安装成功<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-11-06-09-15-35.jpg';this.onerror=null;"  class="" src="/_image/2018-11-06-09-15-35.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">检查Apache是否安装成功:我的电脑右键--&gt;管理--&gt;服务与应用程序--&gt;服务--找找有没有apache2.4这个服务(在DOS下输入services.msc)<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-11-06-09-16-13.jpg';this.onerror=null;"  class="" src="/_image/2018-11-06-09-16-13.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">把Apache2.4改成手动启动...  (net start apache2.4     停止:net  stop apache2.4)<br /></span>
+    <span class="md_line">卸载apache   (DOS管理员 --&gt; sc delete apache2.4  注意:删除前必须先停止服务)</span>
+</p></li>
+<li>
+<p class="md_block">
+    <span class="md_line">让APACHE支持PHP(PHP的常用配置), 以mod模式开启Apache服务----添加php支持（php必须为ts版）</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">让 Apache 加载 PHP模块，打开 D:\phpserver\Apache24\conf\httpd.conf，在文件末尾增加</span>
+</p>
+
+
+<pre><code>PHPIniDir "D:\phpserver\php5.6.31x64"
+LoadModule php5_module "D:\phpserver\php5.6.31x64\php5apache2_4.dll"
+&lt;IfModule php5_module&gt;
+AddType application/x-httpd-php .php
+AddType application/x-httpd-php .php3
+AddType application/x-httpd-php .php5
+&lt;/IfModule&gt;</code></pre>
+
+<!--block_code_end--></li>
+<li>
+<p class="md_block">
+    <span class="md_line">配置FCGI 记Apache支持PHP(推荐这种配置方法),这种方法与方法(4. 让APACHE支持PHP(PHP的常用配置), 以mod模式开启Apache服务----添加php支持（php必须为ts版）)二选一就行.没必要两种都配置</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">5.1 进入<code>https://www.apachehaus.com/cgi-bin/download.plx</code>下载apache 2.4 modules 如下图<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-11-05-16-43-43.jpg';this.onerror=null;"  class="" src="/_image/2018-11-05-16-43-43.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">5.2 我下载的是VC14的FCGI模块,下载地址 https://www.apachehaus.com/cgi-bin/download.plx#MODULES24VC14<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-11-05-16-46-42.jpg';this.onerror=null;"  class="" src="/_image/2018-11-05-16-46-42.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">5.3 解压下载的FCEG模块(mod_fcgid-2.3.9a-2.4.x-x64-vc14.zip),把里面的Apache24覆盖到Apache目录.</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">5.4 配置Apache2.4的配置文件 conf/httpd.conf </span>
+</p>
+
+
+<pre><code># ###############################################
+# 在第183行:就是模块加载的末尾处增加一行配置
+LoadModule fcgid_module modules/mod_fcgid.so
+
+# 在第536行处:就是配置文件加载和末尾处增加一行配置
+Include conf/extra/httpd-fcgid.conf
+# ###############################################</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">5.5 配置 conf/extra/httpd-fcgid.conf 文件,可直接替换,注意里面修改的三处地方</span>
+</p>
+
+
+<pre><code># ###########################################################
+# Configuration for mod_fcgid 
+# FileName: conf/extras/mod_fcgid_php.conf
+&lt;IfModule fcgid_module&gt;
+# Fast CGI module Settings (PHP 5.3, 5.4)
+    # 下面两行修改为PHP的所在路径
+    FcgidInitialEnv PHPRC "D:\\phpserver\\php-5.6.38-nts"
+    FcgidInitialEnv PATH "D:\\phpserver\\php-5.6.38-nts;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;"
+    FcgidInitialEnv SystemRoot "C:\\Windows"
+    FcgidInitialEnv SystemDrive "C:"
+    FcgidInitialEnv TEMP "C:\\WINDOWS\\TEMP"
+    FcgidInitialEnv TMP "C:\\WINDOWS\\TEMP"
+    FcgidInitialEnv windir "C:\\WINDOWS"
+# Global mod_fcgid settings
+    FcgidIOTimeout 40
+    FcgidConnectTimeout 10
+    FcgidMaxProcesses 8
+    FcgidOutputBufferSize 64
+    ProcessLifeTime 240
+    FcgidMaxRequestsPerProcess 500
+    FcgidMinProcessesPerClass 0
+# Global Config Example
+# Comment out next 4 lines to use per-Directory or per-VirtualHost configuration
+  &lt;Files ~ "\.php$"&gt;
+    Options ExecCGI
+    AddHandler fcgid-script .php
+    # FcgidWrapper "C:/php/php-cgi.exe" .php
+    # 注释上面一行,下行改成php-cgi.exe所在的路径
+    FcgidWrapper "D:/phpserver/php-5.6.38-nts/php-cgi.exe" .php
+  &lt;/Files&gt;
+&lt;/IfModule&gt;
+# ############################################################</code></pre>
+
+<!--block_code_end--></li>
+<li>
+<p class="md_block">
+    <span class="md_line">PHP的基本配置与常用功能开启</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">打开 PHP 目录(D:\phpserver\php5.6.31x64)，复制 php.ini-development 文件，重命名为 php.ini 并打开，配置 PHP 扩展，去除下面几个常用扩展前面的分号“;”</span>
+</p>
+
+
+<pre><code># 时区设置 常用的值有三个 (PRC 或 Asia/Shanghai 或 Asia/Chongqing)
+;date.timezone =      改成    date.timezone = PRC
+# 扩展目录指定
+;extension_dir = "ext" 改成 extension_dir = "D:\phpserver\php5.6.31x64\ext"
+#下面的都是打开常用扩展, 去掉注释就行了(行首分号)
+;extension=php_curl.dll 改成 extension=php_curl.dll
+;extension=php_gd2.dll 改成 extension=php_gd2.dll
+;extension=php_mbstring.dll 改成 extension=php_mbstring.dll
+;extension=php_mysql.dll 改成 extension=php_mysql.dll
+;extension=php_mysqli.dll 改成 extension=php_mysqli.dll
+;extension=php_pdo_mysql.dll 改成 extension=php_pdo_mysql.dll</code></pre>
+
+<!--block_code_end--></li>
+<li>
+<p class="md_block">
+    <span class="md_line">所有配置完成了记得重启Apache服务.........</span>
+</p></li>
+</ol>
+
+<h2 id="toc_3">三.IIS安装与PHP环境配置</h2>
+
+<ol>
+<li>
+<p class="md_block">
+    <span class="md_line">安装IIS(XP下是6.0 win7下是7.5)</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">开始--&gt;控制面板--&gt;程序--&gt;打开或关闭WINDOWS功能--&gt;钩选internet information services可承载的web核心--&gt;钩选Internet信息服务下面除(FTP服务器以外的)所有功能.<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-11-06-09-50-35.jpg';this.onerror=null;"  class="" src="/_image/2018-11-06-09-50-35.jpg" alt="" title="" ></span>
+</p></li>
+<li>
+<p class="md_block">
+    <span class="md_line">在IIS下配置PHP</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">开始--&gt;控制面板--&gt;管理工具(小图标视图)--&gt;Internet 信息服务(IIS)管理器--&gt;选择左边的根--&gt;处理程序映射--&gt;添加模块映射--&gt;(请求路径:*.php ; 模块:FastCgiModule; 可执行文件:D:\phpStudy\php\php-5.4.45-nts\php-cgi.exe;名称:PHP)注:IIS配置PHP要求PHP是NTS(线程非安全)版本.<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-11-06-10-31-33.jpg';this.onerror=null;"  class="" src="/_image/2018-11-06-10-31-33.jpg" alt="" title="" ><br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../_image/2018-11-06-10-30-39.jpg';this.onerror=null;"  class="" src="/_image/2018-11-06-10-30-39.jpg" alt="" title="" ></span>
+</p></li>
+<li>
+<p class="md_block">
+    <span class="md_line">重启IIS,在C:\inetpub\wwwroot下创建PHP文件测试.</span>
+</p></li>
+</ol>
+
+<h3 id="toc_4">重要:IIS的正常维护与管理</h3>
+
+<ol>
+<li>
+<p class="md_block">
+    <span class="md_line">把IIS Admin Service服务设为手动启动</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">服务名称：IISADMIN<br /></span>
+    <span class="md_line">显示名称：IIS Admin Service<br /></span>
+    <span class="md_line">描述：允许此服务器管理 IIS 元数据库。IIS 元数据库存储 SMTP 和 FTP 服务的配置。如果停止此服务，服务器将无法配置 SMTP 或 FTP。如果禁用此服务，则任何明确依赖于它的服务都将无法启动。</span>
+</p></li>
+<li>
+<p class="md_block">
+    <span class="md_line">把World Wide Web Publishing Service服务设为手动启动</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">服务名称：W3SVC<br /></span>
+    <span class="md_line">显示名称：World Wide Web Publishing Service<br /></span>
+    <span class="md_line">描述：通过 Internet 信息服务管理器提供 Web 连接和管理</span>
+</p></li>
+<li>
+<p class="md_block">
+    <span class="md_line">在桌面创建批处理文件对IIS进行启动与停止.</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">这样改了以后，下次使用时又要再开启需要多点几次鼠标，为了省事，我尝试着写了个开启和关闭服务的脚本，献丑了……互联网+搜索引擎=爱因斯坦 :)<br /></span>
+    <span class="md_line">将此文件保存为start_iis.bat即可,后缀名也可以用.cmd</span>
+</p>
+
+
+<pre><code>@echo off
+echo 开启IIS Admin Service
+net start IISADMIN
+echo 开启World Wide Web Publishing Service
+net start W3SVC
+pause</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">将此文件保存为stop_iis.bat即可,后缀名也可以用.cmd</span>
+</p>
+
+
+<pre><code>@echo off
+echo 停止IIS Admin Service
+net stop IISADMIN
+echo 停止World Wide Web Publishing Service
+net stop W3SVC
+pause</code></pre>
+
+<!--block_code_end--></li>
+</ol> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

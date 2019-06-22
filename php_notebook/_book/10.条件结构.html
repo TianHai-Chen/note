@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>10.条件结构</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="selected">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 10.条件结构 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">10.条件结构</a>
+<ul>
+<li>
+<a href="#toc_1">if条件</a>
+<ul>
+<li>
+<a href="#toc_2">简单if(exp){}</a>
+</li>
+<li>
+<a href="#toc_3">如果..否则语句:if(exp){}else{}</a>
+</li>
+<li>
+<a href="#toc_4">如果...否则如果...否则 if(exp){}elseif(exp){}...else{}</a>
+</li>
+<li>
+<a href="#toc_5">PHP中if的另外一种写法.不常用.了解.</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">switch($变量或常量){case}</a>
+<ul>
+<li>
+<a href="#toc_7">条件结构体嵌套</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_8">作业</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">if条件</h2>
+
+<h3 id="toc_2">简单if(exp){}</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span>  <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">10</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s1">&#39;$a的值是10&#39;</span><span class="p">;</span><span class="c1">//条件成立时才会输出</span>
+<span class="p">}</span>
+<span class="c1">//如果条件中语句块只有一句.可以省略大括号,如果有多条句语,则大知号不能省.</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">10</span><span class="p">)</span> 
+    <span class="k">echo</span> <span class="s1">&#39;$a的值是10&#39;</span><span class="p">;</span><span class="c1">//条件成立时才会输出</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_3">如果..否则语句:if(exp){}else{}</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s1">&#39;$a的值是10&#39;</span><span class="p">;</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="k">echo</span> <span class="s1">&#39;$a的值不是10&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//如果if或else语句块只有一句.可以省略大括号,如果有多条句语,则大知号不能省.</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_4">如果...否则如果...否则 if(exp){}elseif(exp){}...else{}</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s1">&#39;值是1&#39;</span><span class="p">;</span>
+<span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span><span class="c1">//可选的</span>
+     <span class="k">echo</span> <span class="s1">&#39;值是2&#39;</span><span class="p">;</span>
+<span class="p">}</span><span class="k">elseif</span><span class="p">(){</span>
+     <span class="k">echo</span> <span class="s1">&#39;值是3&#39;</span><span class="p">;</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span> <span class="c1">//else是可选的</span>
+    <span class="k">echo</span> <span class="s1">&#39;以上都不对这行显示&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_5">PHP中if的另外一种写法.不常用.了解.</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="o">:</span>
+    <span class="k">echo</span> <span class="s1">&#39;$a的值是1&#39;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">&#39;试一下多行输出&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">elseif</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span><span class="mi">2</span><span class="p">)</span><span class="o">:</span>
+    <span class="k">echo</span> <span class="s1">&#39;$a的值是2&#39;</span><span class="p">;</span>
+<span class="k">elseif</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span><span class="o">:</span>
+    <span class="k">echo</span> <span class="s1">&#39;$a的值是3&#39;</span><span class="p">;</span>
+<span class="k">else</span><span class="o">:</span>
+    <span class="k">echo</span> <span class="s1">&#39;以上都不对时执行else中内容.&#39;</span><span class="p">;</span>
+<span class="k">endif</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_6">switch($变量或常量){case}</h2>
+
+<p class="md_block">
+    <span class="md_line">switch能做的事情,基本上if语句都能做到.if能做的事情,switch不一定能做到.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">switch</span><span class="p">(</span><span class="nv">$a</span><span class="p">){</span>
+    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;你获得了第一名&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;你获得了第二名&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;你获得了第三名&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span><span class="o">:</span>    
+     <span class="k">echo</span> <span class="s1">&#39;不好意思,再接再励,下次再来!&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">注意:在switch中,case只是入口,下一下case并不是出口,所以我们在用它时要注意,使用break;跳出switch;<br /></span>
+    <span class="md_line">实例:用switch_case语句判断某个月是大月还是小月还是二月</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$month</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span><span class="c1">//月份</span>
+<span class="c1">//1.功能实现,2.数据边界,3.效率</span>
+<span class="k">switch</span><span class="p">(</span><span class="nv">$month</span><span class="p">){</span>
+     <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+     <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>
+     <span class="k">case</span> <span class="mi">5</span><span class="o">:</span>    
+     <span class="k">case</span> <span class="mi">7</span><span class="o">:</span>
+     <span class="k">case</span> <span class="mi">8</span><span class="o">:</span>
+     <span class="k">case</span> <span class="mi">10</span><span class="o">:</span>
+     <span class="k">case</span> <span class="mi">12</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;输入的&#39;</span><span class="o">.</span><span class="nv">$month</span><span class="o">.</span><span class="s1">&#39;月是大月&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>     
+    <span class="k">case</span> <span class="mi">4</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mi">6</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mi">9</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mi">11</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;输入的&#39;</span><span class="o">.</span><span class="nv">$month</span><span class="o">.</span><span class="s1">&#39;月是小月&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;输入的&#39;</span><span class="o">.</span><span class="nv">$month</span><span class="o">.</span><span class="s1">&#39;月是2月&#39;</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span> 
+    <span class="k">default</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s1">&#39;你的输入有误,或输入的不是月份&#39;</span><span class="p">;</span>    
+<span class="p">}</span>
+<span class="c1">//以上语句用if来实现</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$month</span> <span class="o">&gt;</span> <span class="mi">12</span> <span class="o">||</span> <span class="nv">$month</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">){</span>
+    <span class="k">echo</span> <span class="s1">&#39;你的输入有误,或输入的不是月份&#39;</span><span class="p">;</span>  
+<span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nv">$month</span> <span class="o">==</span> <span class="mi">4</span> <span class="o">||</span> <span class="nv">$month</span> <span class="o">==</span> <span class="mi">6</span> <span class="o">||</span> <span class="nv">$month</span> <span class="o">==</span> <span class="mi">9</span> <span class="o">||</span> <span class="nv">$month</span> <span class="o">==</span> <span class="mi">11</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s1">&#39;输入的&#39;</span><span class="o">.</span><span class="nv">$month</span><span class="o">.</span><span class="s1">&#39;月是小月&#39;</span><span class="p">;</span>
+<span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nv">$month</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s1">&#39;输入的&#39;</span><span class="o">.</span><span class="nv">$month</span><span class="o">.</span><span class="s1">&#39;月是2月&#39;</span><span class="p">;</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="k">echo</span> <span class="s1">&#39;输入的&#39;</span><span class="o">.</span><span class="nv">$month</span><span class="o">.</span><span class="s1">&#39;月是大月&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_7">条件结构体嵌套</h3>
+
+<p class="md_block">
+    <span class="md_line">所有结构体可以嵌套,但不能写错.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$name</span> <span class="o">=</span> <span class="s1">&#39;huodeming&#39;</span><span class="p">;</span>
+<span class="nv">$age</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="nv">$sex</span> <span class="o">=</span> <span class="s1">&#39;女&#39;</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$age</span> <span class="o">&gt;=</span> <span class="mi">40</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$sex</span> <span class="o">==</span> <span class="s1">&#39;男&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="nv">$name</span> <span class="o">.</span> <span class="s1">&#39;叔叔&#39;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="nv">$name</span> <span class="o">.</span> <span class="s1">&#39;阿姨&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="k">elseif</span> <span class="p">(</span><span class="nv">$age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$sex</span> <span class="o">==</span> <span class="s1">&#39;男&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="nv">$name</span> <span class="o">.</span> <span class="s1">&#39;先生&#39;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="nv">$name</span> <span class="o">.</span> <span class="s1">&#39;女士&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$name</span> <span class="o">.</span> <span class="s1">&#39;小朋友&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_8">作业</h2>
+
+<ol>
+<li>申明三个变量作为三角形的三个边,判断是否能组成三角形,或是等边,等腰,普通三角形.</li>
+<li>申明一个变量 $y是个年份,判断是平年还是闰年</li>
+<li>申明两个变量$y,$m 是年份,月份,判断某年某月有多少天</li>
+</ol> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

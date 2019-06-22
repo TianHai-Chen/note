@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06.数据类型转换</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="selected">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 06.数据类型转换 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">06.数据类型转换</a>
+<ul>
+<li>
+<a href="#toc_1">自动转换(隐式转换)</a>
+<ul>
+<li>
+<a href="#toc_2">其它类型转数数字类型</a>
+</li>
+<li>
+<a href="#toc_3">其它类型转字符串类型</a>
+</li>
+<li>
+<a href="#toc_4">其它类型转bool类型</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_5">强制转换(显式转换)</a>
+<ul>
+<li>
+<a href="#toc_6">临时转换(把转换结果给别的变量,本身类型不变)</a>
+</li>
+<li>
+<a href="#toc_7">永久转换(改变量本身的类型)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">自动转换(隐式转换)</h2>
+
+<p class="md_block">
+    <span class="md_line">因PHP是弱类型语言,与JAVASCRIPT差不多,很多时候数据类型会自动进行转换,(<em>比如:拿一个字符串去与一个数字进行数学运算,它就会把字符串转成数字</em>.)</span>
+</p>
+
+
+<h3 id="toc_2">其它类型转数数字类型</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//bool转数字:true转数字1;false转数字0</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="o">+</span><span class="mi">0</span><span class="p">;</span><span class="c1">//1 总结:true转成数字是1</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="o">+</span><span class="mi">0</span><span class="p">;</span><span class="c1">//0 总结:false转成数字是0</span>
+
+<span class="c1">//字符串转数字:要看字符串是不是一个合法的数字表达式,或都字符串开始部分是不是一个合法的数字表达式.</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="s1">&#39;10.5&#39;</span><span class="p">;</span><span class="c1">//数字字符串</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="o">+</span><span class="mi">0</span><span class="p">;</span><span class="c1">//10.5</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="s1">&#39;105中国人&#39;</span><span class="p">;</span><span class="c1">//字符串开始部分合法数字表达</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="o">+</span><span class="mi">0</span><span class="p">;</span><span class="c1">//105   字符串开始部分能转的数字给我们转了.</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="s1">&#39;0xff中国人&#39;</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="o">+</span><span class="mi">0</span><span class="p">;</span><span class="c1">//255  把字符串开始部分16进制的值转成了数字.</span>
+<span class="nv">$var</span> <span class="s1">&#39;2.05e2中国人&#39;</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="o">+</span><span class="mi">0</span><span class="p">;</span><span class="c1">//205 把字符串开始部分科学计数法部分转成了数字</span>
+
+<span class="c1">//null类型转数字是0</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="o">+</span><span class="mi">0</span><span class="p">;</span><span class="c1">//0 NULL类型转数字都是0</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">转数字总结://TRUE:1 , FALSE或NULL:0 , 字符串看左边有效数字部分/没有返回0, 数组/对象/资源无意义(但资源可以返回数字是他的ID.)</span>
+</p>
+
+</blockquote>
+
+<h3 id="toc_3">其它类型转字符串类型</h3>
+
+<p class="md_block">
+    <span class="md_line">把所有类型转字符串所用的工具就是echo语句.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//true转字符串是1</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="p">;</span><span class="c1">//1</span>
+<span class="c1">//false转字符串是空字符串</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="p">;</span><span class="c1">//&quot;&quot;   定界符中什么都没有,表示空字符串</span>
+<span class="c1">//null转字符串也是空字符串</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="k">null</span><span class="p">;</span><span class="c1">//或大写的NULL也一样</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="p">;</span><span class="c1">//&quot;&quot;   定界符中什么都没有,表示空字符串</span>
+<span class="c1">//数字转字符串:所有数字转字符,是数字的原样</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="mf">100.555</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$var</span><span class="p">;</span><span class="c1">//100.555</span>
+<span class="c1">//array直接转字符串,没有意义,但有结果</span>
+<span class="nv">$arr</span> <span class="o">=</span><span class="k">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$arr</span><span class="p">;</span><span class="c1">//Array ,报错:级别注意</span>
+<span class="c1">//resource转字符串,没有意义,但有结果</span>
+<span class="nv">$src</span> <span class="o">=</span> <span class="nb">fopen</span><span class="p">(</span><span class="s1">&#39;index.php&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$src</span><span class="p">;</span><span class="c1">//Resource id # 3</span>
+<span class="c1">//对象直接转字符串,报错(不能直接转)</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">转字符串总结:转字符串:数字按原样,TRUE转1,FALSE或NULL转空字符串,数组/对象/资源转字符无意义.  </span>
+</p>
+
+</blockquote>
+
+<h3 id="toc_4">其它类型转bool类型</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$var</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$var</span><span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span> <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$var</span><span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span> <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$var</span><span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span> <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span><span class="c1">//$var = &quot;&quot;;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$var</span><span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span> <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="k">null</span><span class="p">;</span><span class="c1">//未赋值,或大写的NULL</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$var</span><span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span> <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span><span class="c1">//$var = [];//空数组</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$var</span><span class="p">)</span> <span class="k">echo</span> <span class="s1">&#39;true&#39;</span><span class="p">;</span> <span class="k">else</span> <span class="k">echo</span> <span class="s1">&#39;false&#39;</span><span class="p">;</span><span class="c1">//false</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">转布尔型总结:所有类型都能用于条件判断...要注意除(0 ; 0.0 ; 空字符串 , &#39;0&#39; , null ,array())会转成FALSE,其它所有都转成TRUE;</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_5">强制转换(显式转换)</h2>
+
+<p class="md_block">
+    <span class="md_line">在PHP开发的很多时候,我们需要把数据类型转换一下再使用,这时就需要显式转换.</span>
+</p>
+
+
+<h3 id="toc_6">临时转换(把转换结果给别的变量,本身类型不变)</h3>
+
+<p class="md_block">
+    <span class="md_line">允许的强制转换的类型有： </span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">• (int), (integer) </td>
+<td style="text-align:left"> 转换为整形 integer</td>
+</tr>
+<tr><td style="text-align:left">• (bool), (boolean) </td>
+<td style="text-align:left"> 转换为布尔类型 boolean</td>
+</tr>
+<tr><td style="text-align:left">• (float), (double), (real) </td>
+<td style="text-align:left"> 转换为浮点型 float</td>
+</tr>
+<tr><td style="text-align:left">• (string) </td>
+<td style="text-align:left"> 转换为字符串 string</td>
+</tr>
+<tr><td style="text-align:left">• (array) </td>
+<td style="text-align:left"> 转换为数组 array</td>
+</tr>
+<tr><td style="text-align:left">• (object) </td>
+<td style="text-align:left"> 转换为对象 object</td>
+</tr>
+<tr><td style="text-align:left">• (unset) </td>
+<td style="text-align:left"> 转换为 NULL (PHP 5)</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end--><div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//浮点型转整数时,小数部分会被丢弃.</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="mf">10.999</span><span class="p">;</span>
+<span class="k">echo</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$var</span><span class="p">;</span><span class="c1">//10  </span>
+<span class="c1">//整数在WINDOWS下取值范围是-2147483648 到 2147483647如果超出范围数据会次正确.确切数值很难记下,以后记得近似值,是-21亿到21亿之间.</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="mi">2147483648</span><span class="p">;</span>
+<span class="k">echo</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$var</span><span class="p">;</span><span class="c1">//-2147483648</span>
+
+<span class="c1">//变量转数组时,会产生一个元素的数组</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nb">print_r</span><span class="p">((</span><span class="k">array</span><span class="p">)</span><span class="nv">$var</span><span class="p">);</span><span class="c1">//Array ( [0] =&gt; 10 )</span>
+<span class="c1">//其它类型强制转换见上面自动转换结果.</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_7">永久转换(改变量本身的类型)</h3>
+
+<p class="md_block">
+    <span class="md_line">在PHP中,我们可以用settype($变量名)函数对已存在的变量进行强制的永久的数据类型转换.<br /></span>
+    <span class="md_line">settype($变量名,类型);</span>
+</p>
+
+<table>
+ <thead><tr><th style="text-align:left">数据类型</th>
+<th style="text-align:left">说明</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">"boolean" </td>
+<td style="text-align:left">（或为"bool"，从 PHP 4.2.0 起）</td>
+</tr>
+<tr><td style="text-align:left">"integer" </td>
+<td style="text-align:left">（或为"int"，从 PHP 4.2.0 起）</td>
+</tr>
+<tr><td style="text-align:left">"float" </td>
+<td style="text-align:left">（只在 PHP 4.2.0 之后可以使用，对于旧版本中使用的"double"现已停用）</td>
+</tr>
+<tr><td style="text-align:left">"string"  </td>
+<td style="text-align:left"> 字符串</td>
+</tr>
+<tr><td style="text-align:left">"array"  </td>
+<td style="text-align:left"> 数组</td>
+</tr>
+<tr><td style="text-align:left">"object"  </td>
+<td style="text-align:left"> 对象</td>
+</tr>
+<tr><td style="text-align:left">"null"</td>
+<td style="text-align:left"> 空（从 PHP 4.2.0 起）</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end--><div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//注意settype的用法.</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">;</span>
+<span class="nb">settype</span><span class="p">(</span><span class="nv">$var</span><span class="p">,</span><span class="s1">&#39;int&#39;</span><span class="p">);</span><span class="c1">//把$var进行强转</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$var</span><span class="p">);</span><span class="c1">//int(10)</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

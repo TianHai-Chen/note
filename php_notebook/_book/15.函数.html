@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>15.函数</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="selected">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 15.函数 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">15.函数</a>
+<ul>
+<li>
+<a href="#toc_1">如何申明函数</a>
+</li>
+<li>
+<a href="#toc_2">调用函数</a>
+</li>
+<li>
+<a href="#toc_3">函数的参数</a>
+<ul>
+<li>
+<a href="#toc_4">形参</a>
+<ul>
+<li>
+<a href="#toc_5">必选参数</a>
+</li>
+<li>
+<a href="#toc_6">可选参数</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_7">实参</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_8">变量的作用域</a>
+<ul>
+<li>
+<a href="#toc_9">局部变量</a>
+<ul>
+<li>
+<a href="#toc_10">动态变量</a>
+</li>
+<li>
+<a href="#toc_11">静态变量</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_12">全局变量</a>
+</li>
+<li>
+<a href="#toc_13">在函数体外声明的变量</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_14">函数的传值与传引用</a>
+</li>
+<li>
+<a href="#toc_15">特殊形式的函数</a>
+<ul>
+<li>
+<a href="#toc_16">变量函数</a>
+</li>
+<li>
+<a href="#toc_17">回调函数</a>
+</li>
+<li>
+<a href="#toc_18">递归函数</a>
+</li>
+<li>
+<a href="#toc_19">匿名函数</a>
+</li>
+<li>
+<a href="#toc_20">闭包函数</a>
+</li>
+<li>
+<a href="#toc_21">可变参数形式的函数</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_22">常用函数</a>
+<ul>
+<li>
+<a href="#toc_23">function_exists()</a>
+</li>
+<li>
+<a href="#toc_24">get_defined_functions()</a>
+</li>
+<li>
+<a href="#toc_25">require/require_once</a>
+</li>
+<li>
+<a href="#toc_26">include/include_once</a>
+</li>
+<li>
+<a href="#toc_27">get_include_path()</a>
+</li>
+<li>
+<a href="#toc_28">set_include_path()</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">如何申明函数</h2>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">函数名称</span><span class="p">([</span><span class="nx">参数</span><span class="o">...</span><span class="p">]){</span>
+    <span class="nx">函数体</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">返回值</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">注意<br /></span>
+    <span class="md_line">1.函数名称不要包含特殊字符,以字母或者下划线开始,跟上数字字母下划线<br /></span>
+    <span class="md_line">2.函数名称最好含义明确,最好以动词开头<br /></span>
+    <span class="md_line">3.函数名称最好遵循驼峰标记法或者下划线法<br /></span>
+    <span class="md_line">4.函数名称不支持重名<br /></span>
+    <span class="md_line">5.函数名称不区分大小写,但调用的时候最好遵循大小写<br /></span>
+    <span class="md_line">6.函数参数不是必须的<br /></span>
+    <span class="md_line">7.函数默认返回NULL,也可以通过return添加返回值,函数碰到return立即结束</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_2">调用函数</h2>
+
+<p class="md_block">
+    <span class="md_line">函数名称([参数...])</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nx">writeTable</span><span class="p">();</span><span class="c1">//调用函数</span>
+<span class="k">function</span> <span class="nf">writeTable</span><span class="p">(){</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot; width=&quot;200&quot;&gt;&#39;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;tr&gt;&#39;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;td&gt; A &lt;/td&gt;&#39;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;/tr&gt;&#39;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;/table&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">函数的参数</h2>
+
+<h3 id="toc_4">形参</h3>
+
+<p class="md_block">
+    <span class="md_line">定义函数时声明的参数</span>
+</p>
+
+
+<h4 id="toc_5">必选参数</h4>
+
+<p class="md_block">
+    <span class="md_line">调用函数的时候必需要参数</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span> <span class="nx">Ctable</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span><span class="c1">//5行3列,使用函数,如果有参数则传参,没有参数则小括号中留空</span>
+ <span class="k">function</span> <span class="nf">Ctable</span><span class="p">(</span><span class="nv">$row</span><span class="p">,</span><span class="nv">$column</span><span class="p">){</span> 
+    <span class="k">echo</span> <span class="s1">&#39;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot; width=&quot;200&quot;&gt;&#39;</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$row</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="k">echo</span> <span class="s1">&#39;&lt;tr&gt;&#39;</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="nv">$j</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$j</span> <span class="o">&lt;</span> <span class="nv">$column</span> <span class="p">;</span> <span class="nv">$j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> 
+            <span class="k">echo</span> <span class="s1">&#39;&lt;td&gt; A &lt;/td&gt;&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">echo</span> <span class="s1">&#39;&lt;/tr&gt;&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;/table&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h4 id="toc_6">可选参数</h4>
+
+<p class="md_block">
+    <span class="md_line">调用函数的时候如果不传参数,使用默认值:如果传参使用传入的值</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nx">c_table</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+ <span class="k">function</span> <span class="nf">c_table</span><span class="p">(</span><span class="nv">$row</span><span class="p">,</span><span class="nv">$column</span><span class="o">=</span><span class="mi">1</span><span class="p">){</span>  
+    <span class="k">echo</span> <span class="s1">&#39;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot; width=&quot;200&quot;&gt;&#39;</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$row</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="k">echo</span> <span class="s1">&#39;&lt;tr&gt;&#39;</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="nv">$j</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$j</span> <span class="o">&lt;</span> <span class="nv">$column</span> <span class="p">;</span> <span class="nv">$j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> 
+            <span class="k">echo</span> <span class="s1">&#39;&lt;td&gt; A &lt;/td&gt;&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">echo</span> <span class="s1">&#39;&lt;/tr&gt;&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;/table&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_7">实参</h3>
+
+<p class="md_block">
+    <span class="md_line">调用函数是实际传入的值</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">aaa</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$a</span><span class="p">){</span>
+    <span class="nv">$a</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$a</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="nv">$a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span><span class="c1">//在这里a是100</span>
+ <span class="nx">aaa</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span><span class="c1">//传给了函数进行处理,函数参数是引用数组</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_8">变量的作用域</h2>
+
+<h3 id="toc_9">局部变量</h3>
+
+<h4 id="toc_10">动态变量</h4>
+
+<p class="md_block">
+    <span class="md_line">函数体内声明的变量,在函数执行之后就被释放掉</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">test1</span><span class="p">(){</span>
+    <span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="o">++</span><span class="nv">$a</span><span class="o">.</span><span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="nx">test1</span><span class="p">();</span>
+ <span class="nx">test1</span><span class="p">();</span>
+ <span class="nx">test1</span><span class="p">();</span>
+</pre></div>
+
+<!--block_code_end-->
+<h4 id="toc_11">静态变量</h4>
+
+<p class="md_block">
+    <span class="md_line">通过static关键字在函数体内声明的变量,在函数执行完毕之后保存在静态内存中</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">test2</span><span class="p">(){</span>
+    <span class="k">static</span> <span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span><span class="c1">//静态的</span>
+    <span class="k">echo</span> <span class="o">++</span><span class="nv">$a</span><span class="o">.</span><span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="nx">test2</span><span class="p">();</span><span class="c1">//第一次调用会初始化</span>
+ <span class="nx">test2</span><span class="p">();</span><span class="c1">//第二次调用就拿来用,静态变量不会自动释放</span>
+ <span class="nx">test2</span><span class="p">();</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_12">全局变量</h3>
+
+<p class="md_block">
+    <span class="md_line">函数体外声明的变量</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span><span class="mi">100</span><span class="p">;</span>
+ <span class="k">function</span> <span class="nf">test</span><span class="p">(){</span>
+    <span class="c1">//global $a;//用global关键字引入全局变量才可以使用</span>
+    <span class="c1">//$a = 50;</span>
+    <span class="k">echo</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="nx">test</span><span class="p">();</span><span class="c1">//50</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_13">在函数体外声明的变量</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//通过global关键字</span>
+<span class="nv">$a</span> <span class="o">=</span><span class="mi">100</span><span class="p">;</span>
+ <span class="k">function</span> <span class="nf">test</span><span class="p">(){</span>
+    <span class="k">global</span> <span class="nv">$a</span><span class="p">;</span><span class="c1">//用global关键字引入全局变量才可以使用</span>
+    <span class="nv">$a</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="nx">test</span><span class="p">();</span>
+
+<span class="c1">//通过$GLOBALS超全局变量</span>
+<span class="nv">$a</span> <span class="o">=</span><span class="mi">100</span><span class="p">;</span>
+ <span class="k">function</span> <span class="nf">test</span><span class="p">(){</span>
+    <span class="k">echo</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="nx">test</span><span class="p">();</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_14">函数的传值与传引用</h2>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//传值在函数体内对变量做更改不影响变量本身</span>
+ <span class="k">function</span> <span class="nf">aaa</span><span class="p">(</span><span class="nv">$a</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nv">$a</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="nv">$a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span><span class="c1">//在这里a是100</span>
+ <span class="nx">aaa</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span><span class="c1">//传给了函数进行处理,函数参数是引用数组</span>
+ <span class="k">echo</span> <span class="nv">$a</span><span class="o">.</span><span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="p">;</span><span class="c1">//a的值是100</span>
+ 
+<span class="c1">//传引用在函数体内对变量做更改影响变量本身</span>
+ <span class="k">function</span> <span class="nf">aaa</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$a</span><span class="p">){</span>
+    <span class="nv">$a</span><span class="o">++</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="nv">$a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span><span class="c1">//在这里a是100</span>
+ <span class="nx">aaa</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span><span class="c1">//传给了函数进行处理,函数参数是引用数组</span>
+ <span class="k">echo</span> <span class="nv">$a</span><span class="o">.</span><span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="p">;</span><span class="c1">//a的值变成了101</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_15">特殊形式的函数</h2>
+
+<h3 id="toc_16">变量函数</h3>
+
+<p class="md_block">
+    <span class="md_line">将函数名称赋值给变量,调用的时候通过变量名称加上小括号的形式进行调用</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span> <span class="nv">$aaa</span> <span class="o">=</span> <span class="s1">&#39;fun&#39;</span><span class="p">;</span> <span class="c1">//等量代换</span>
+ <span class="k">function</span> <span class="nf">fun</span><span class="p">(){</span>
+    <span class="k">echo</span> <span class="s1">&#39;aaaaaaaaaaaa&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="nv">$aaa</span><span class="p">();</span> <span class="c1">// fun()</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_17">回调函数</h3>
+
+<p class="md_block">
+    <span class="md_line">在开发系统的过程中,有时候希望针对一个对象或者一个值执行多个不相干的操作,那么此时运用回调将是最好的方式</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span> <span class="c1">//回调函数:函数的参数也可以是函数,那这个参数就是回调函数</span>
+ <span class="k">function</span> <span class="nf">aaa</span><span class="p">(</span><span class="nv">$fun</span><span class="p">){</span>
+    <span class="c1">//&#39;f&#39;</span>
+    <span class="nv">$fun</span><span class="p">();</span><span class="c1">//f();</span>
+ <span class="p">}</span>
+ <span class="k">function</span> <span class="nf">f</span><span class="p">(){</span>
+    <span class="k">echo</span> <span class="s1">&#39;fffffffffffffffffffff&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="nv">$a</span> <span class="o">=</span> <span class="s1">&#39;f&#39;</span><span class="p">;</span>
+ <span class="nx">aaa</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span>
+ 
+ <span class="c1">//例1:  call_user_func();  call_user_func_array();</span>
+ <span class="k">function</span> <span class="nf">fun1</span><span class="p">(){</span>
+    <span class="k">echo</span> <span class="s1">&#39;fun111111111&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="k">function</span> <span class="nf">fun2</span><span class="p">(</span><span class="nv">$text</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s1">&#39;fun222222222&#39;</span><span class="o">.</span><span class="nv">$text</span><span class="o">.</span><span class="s1">&#39;&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="k">function</span> <span class="nf">fun3</span><span class="p">(</span><span class="nv">$t1</span><span class="p">,</span><span class="nv">$t2</span><span class="p">,</span><span class="nv">$t3</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s2">&quot;fun333333333</span><span class="si">{</span><span class="nv">$t1</span><span class="si">}{</span><span class="nv">$t2</span><span class="si">}{</span><span class="nv">$t3</span><span class="si">}</span><span class="s2">&lt;br&gt;&lt;br&gt;&quot;</span><span class="p">;</span>
+ <span class="p">}</span>
+ 
+  <span class="c1">//call_user_func();</span>
+ <span class="nb">call_user_func</span><span class="p">(</span><span class="s1">&#39;fun1&#39;</span><span class="p">);</span><span class="c1">//第一个参数是函数名</span>
+ <span class="nx">fun1</span><span class="p">();</span>
+ <span class="nb">call_user_func</span><span class="p">(</span><span class="s1">&#39;fun2&#39;</span><span class="p">,</span><span class="s1">&#39;测试一下&#39;</span><span class="p">);</span><span class="c1">//第一个参数是函数名</span>
+ <span class="nx">fun2</span><span class="p">(</span><span class="s1">&#39;测试一下&#39;</span><span class="p">);</span>
+ <span class="nb">call_user_func</span><span class="p">(</span><span class="s1">&#39;fun3&#39;</span><span class="p">,</span><span class="s1">&#39;参数1&#39;</span><span class="p">,</span><span class="s1">&#39;参数2&#39;</span><span class="p">,</span><span class="s1">&#39;参数3&#39;</span><span class="p">);</span><span class="c1">//第一个参数是函数名</span>
+ <span class="nx">fun3</span><span class="p">(</span><span class="s1">&#39;参数1&#39;</span><span class="p">,</span><span class="s1">&#39;参数2&#39;</span><span class="p">,</span><span class="s1">&#39;参数3&#39;</span><span class="p">);</span>
+ 
+ <span class="c1">//call_user_func_array();</span>
+ <span class="nb">call_user_func_array</span><span class="p">(</span><span class="s1">&#39;fun1&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">());</span><span class="c1">//不合适调用没有参数的回调函数</span>
+ <span class="nb">call_user_func_array</span><span class="p">(</span><span class="s1">&#39;fun2&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;===再测试一下===&#39;</span><span class="p">));</span>
+ <span class="nb">call_user_func_array</span><span class="p">(</span><span class="s1">&#39;fun3&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;=参数1=&#39;</span><span class="p">,</span><span class="s1">&#39;=参数2=&#39;</span><span class="p">,</span><span class="s1">&#39;=参数3=&#39;</span><span class="p">]);</span>
+ 
+ <span class="c1">//例2: 通过回调函数自定义数组排序...</span>
+ <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;baaa&#39;</span><span class="p">,</span><span class="s1">&#39;daaa&#39;</span><span class="p">,</span><span class="s1">&#39;gaaa&#39;</span><span class="p">,</span><span class="s1">&#39;ca&#39;</span><span class="p">,</span><span class="s1">&#39;啊国&#39;</span><span class="p">,</span><span class="s1">&#39;0aa&#39;</span><span class="p">];</span>
+ <span class="nv">$fff</span> <span class="o">=</span> <span class="s1">&#39;u_sort&#39;</span><span class="p">;</span>
+ <span class="k">function</span> <span class="nf">u_sort</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span><span class="nv">$b</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="nv">$a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&gt;</span> <span class="nb">ord</span><span class="p">(</span><span class="nv">$b</span><span class="p">[</span><span class="mi">0</span><span class="p">])){</span>
+        <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+    <span class="p">}</span>
+ <span class="p">}</span>
+ <span class="nb">usort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">,</span><span class="nv">$fff</span><span class="p">);</span>
+ <span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+ <span class="k">echo</span> <span class="s1">&#39;&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_18">递归函数</h3>
+
+<p class="md_block">
+    <span class="md_line">函数体自己调用自己本身</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span> <span class="c1">//线性递归</span>
+    <span class="c1">//用循环实现:循环是顺向思维</span>
+    <span class="k">function</span> <span class="nf">sum_u</span><span class="p">(</span><span class="nv">$min</span><span class="p">,</span><span class="nv">$max</span><span class="p">){</span>
+     <span class="nv">$sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+     <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="nv">$min</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="nv">$max</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+            <span class="nv">$sum</span> <span class="o">+=</span> <span class="nv">$i</span><span class="p">;</span>
+        <span class="p">}</span>
+       <span class="k">return</span> <span class="nv">$sum</span><span class="p">;</span>
+     <span class="p">}</span>
+     <span class="k">echo</span> <span class="nx">sum_u</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
+     <span class="k">echo</span> <span class="s1">&#39;&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+  
+    <span class="c1">//用递归实现:递归是逆向思维</span>
+    <span class="k">function</span> <span class="nf">sum_i</span><span class="p">(</span><span class="nv">$min</span><span class="p">,</span><span class="nv">$max</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$min</span> <span class="o">==</span> <span class="nv">$max</span><span class="p">){</span>
+            <span class="k">return</span> <span class="nv">$min</span><span class="p">;</span>
+         <span class="p">}</span>
+         <span class="k">return</span> <span class="nv">$max</span><span class="o">+</span><span class="nx">sum_i</span><span class="p">(</span><span class="nv">$min</span><span class="p">,</span> <span class="nv">$max</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="nx">sum_i</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+ 
+ <span class="c1">//非线性递归</span>
+ <span class="k">function</span> <span class="nf">tu</span><span class="p">(</span><span class="nv">$m</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$m</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">||</span> <span class="nv">$m</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">tu</span><span class="p">(</span><span class="nv">$m</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="nx">tu</span><span class="p">(</span><span class="nv">$m</span><span class="o">-</span><span class="mi">2</span><span class="p">);</span>
+ <span class="p">}</span>
+ <span class="k">echo</span> <span class="nx">tu</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="s1">&#39;&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_19">匿名函数</h3>
+
+<p class="md_block">
+    <span class="md_line">没有函数名,在JS中常用,是PHP5.3新功能</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span> <span class="k">function</span> <span class="nf">bbb</span><span class="p">(</span><span class="nv">$fun</span><span class="p">){</span>
+    <span class="nv">$fun</span><span class="p">();</span>
+ <span class="p">}</span>
+ <span class="nx">bbb</span><span class="p">(</span>
+    <span class="k">function</span><span class="p">(){</span>
+        <span class="k">echo</span> <span class="s1">&#39;bbbbbbbbbbb&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+ <span class="p">);</span><span class="c1">//实参函数就是匿名函数</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_20">闭包函数</h3>
+
+<p class="md_block">
+    <span class="md_line">在函数中的函数,而且能使用外层函数局部变量的函数,称闭包函数,后面用类能很好解决<br /></span>
+    <span class="md_line">1.在外层函数之外的任何地方访问不到<br /></span>
+    <span class="md_line">2.没有什么用处,新功能</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">test_1</span><span class="p">(){</span>
+    <span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="nv">$b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+    <span class="k">function</span> <span class="nf">abc</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span><span class="nv">$b</span><span class="p">){</span>
+        <span class="k">return</span> <span class="nv">$a</span><span class="o">+</span><span class="nv">$b</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">abc</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span><span class="nv">$b</span><span class="p">);</span>
+ <span class="p">}</span>
+ <span class="k">echo</span> <span class="nx">test_1</span><span class="p">();</span>
+ <span class="k">echo</span> <span class="s1">&#39;&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_21">可变参数形式的函数</h3>
+
+<p class="md_block">
+    <span class="md_line">申明时不带参数,使用时参数个数可以随便给</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">excel_sum</span><span class="p">(){</span>
+    <span class="c1">//func_num_args();//得到参数个数</span>
+    <span class="c1">//echo func_get_arg(5);//得到第几个参数的值</span>
+    <span class="c1">//print_r(func_get_args());//得到所有参数的集合</span>
+    
+    <span class="nv">$sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">//循环每一个参数,进行求和</span>
+    <span class="k">foreach</span><span class="p">(</span><span class="nb">func_get_args</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$value</span><span class="p">){</span>
+        <span class="c1">//如果参数是数字或数字字符串时才进行求和...</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">is_numeric</span><span class="p">(</span><span class="nv">$value</span><span class="p">)){</span>
+            <span class="nv">$sum</span> <span class="o">+=</span> <span class="nv">$value</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nv">$sum</span><span class="p">;</span><span class="c1">//返回求和</span>
+ <span class="p">}</span>
+ <span class="k">echo</span> <span class="nx">excel_sum</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;aa&#39;</span><span class="p">,</span><span class="mi">6</span><span class="p">);</span>
+ <span class="k">echo</span> <span class="s1">&#39;&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+ 
+ <span class="c1">//===============================================</span>
+ <span class="c1">//新版本第二种写法</span>
+ <span class="k">function</span> <span class="nf">my_fun</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span> <span class="o">...</span><span class="nv">$args</span><span class="p">){</span>
+     <span class="c1">//这时$args就是一个数组....得到$a后面所有的参数.</span>
+ <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_22">常用函数</h2>
+
+<h3 id="toc_23">function_exists()</h3>
+
+<p class="md_block">
+    <span class="md_line">检测函数是否存在</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;aaa&#39;</span><span class="p">)){</span>
+    <span class="k">function</span> <span class="nf">aaa</span><span class="p">(){}</span>
+ <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="k">echo</span> <span class="s1">&#39;这个函数已经有了!&lt;br&gt;&lt;br&gt;&#39;</span><span class="p">;</span>
+ <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_24">get_defined_functions()</h3>
+
+<p class="md_block">
+    <span class="md_line">得到已定义过的所有函数,包括系统与用户函数</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span> <span class="nv">$arr</span> <span class="o">=</span> <span class="nb">get_defined_functions</span><span class="p">();</span>
+ <span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_25">require/require_once</h3>
+
+<p class="md_block">
+    <span class="md_line">导入并执行文件,与include/include_once作用一样,只是返回错误的方式不一样,require/require_once返回错误时报错不能继续执行,include/include_once返回错误时警告,还能继续执行</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">require</span> <span class="s1">&#39;prepend.php&#39;</span><span class="p">;</span>
+<span class="k">require</span> <span class="nv">$somefile</span><span class="p">;</span>
+<span class="k">require</span> <span class="p">(</span><span class="s1">&#39;somefile.txt&#39;</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_26">include/include_once</h3>
+
+<p class="md_block">
+    <span class="md_line">导入并执行文件,与require/require_once作用一样,只是返回错误的方式不一样,require/require_once返回错误时报错不能继续执行,include/include_once返回错误时警告,还能继续执行</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nx">vars</span><span class="o">.</span><span class="nx">php</span>
+<span class="o">&lt;?</span><span class="nx">php</span>
+<span class="nv">$color</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span><span class="p">;</span>
+<span class="nv">$fruit</span> <span class="o">=</span> <span class="s1">&#39;apple&#39;</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+
+<span class="x">test.php</span>
+<span class="cp">&lt;?php</span>
+<span class="k">echo</span> <span class="s2">&quot;A </span><span class="si">$color</span><span class="s2"> </span><span class="si">$fruit</span><span class="s2">&quot;</span><span class="p">;</span> <span class="c1">// A</span>
+<span class="k">include</span> <span class="s1">&#39;vars.php&#39;</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s2">&quot;A </span><span class="si">$color</span><span class="s2"> </span><span class="si">$fruit</span><span class="s2">&quot;</span><span class="p">;</span> <span class="c1">// A green apple</span>
+<span class="cp">?&gt;</span><span class="x"> </span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_27">get_include_path()</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//Works as of PHP 4.3.0</span>
+ <span class="k">echo</span> <span class="nb">get_include_path</span><span class="p">();</span>
+
+ <span class="c1">//Works in all PHP versions</span>
+ <span class="k">echo</span> <span class="nb">ini_get</span><span class="p">(</span><span class="s1">&#39;include_path&#39;</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_28">set_include_path()</h3>
+
+<p class="md_block">
+    <span class="md_line">在同时需要去一个目录下导入很多文件,先把这个目录导入,那很多个文件就需要每个都写路径了,只要文件名.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span> <span class="c1">// Works as of PHP 4.3.0</span>
+ <span class="nb">set_include_path</span><span class="p">(</span><span class="s1">&#39;/usr/lib/pear&#39;</span><span class="p">);</span>
+
+ <span class="c1">// Works in all PHP versions</span>
+ <span class="nb">ini_set</span><span class="p">(</span><span class="s1">&#39;include_path&#39;</span><span class="p">,</span> <span class="s1">&#39;/usr/lib/pear&#39;</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

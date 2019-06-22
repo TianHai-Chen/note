@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>13.数组</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="selected">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 13.数组 </h1>
+            <div class="doc_post"> <p class="md_block md_has_block_below md_has_block_below_ol">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">13.数组</a>
+<ul>
+<li>
+<a href="#toc_1">数组的分类,申明与赋值</a>
+<ul>
+<li>
+<a href="#toc_2">索引数组</a>
+</li>
+<li>
+<a href="#toc_3">关联数组</a>
+</li>
+<li>
+<a href="#toc_4">数组申明与赋值注意事项</a>
+</li>
+<li>
+<a href="#toc_5">快速创建数组</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">数组与比较运算符</a>
+</li>
+<li>
+<a href="#toc_7">数组遍历</a>
+<ul>
+<li>
+<a href="#toc_8">for,与while循环遍历</a>
+</li>
+<li>
+<a href="#toc_9">foreach循环遍历(增加for循环)</a>
+</li>
+<li>
+<a href="#toc_10">数组指针结合循环遍历数组</a>
+</li>
+<li>
+<a href="#toc_11">list 结合 each遍历数组</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_12">多维数组</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">数组的分类,申明与赋值</h2>
+
+<pre><code>在PHP中,数组有两种,以数字为下标的称索引数组,以字符串为下标的称关联数组.</code></pre>
+
+<!--block_code_end-->
+<h3 id="toc_2">索引数组</h3>
+
+<p class="md_block">
+    <span class="md_line">什么是索引数组</span>
+</p>
+
+
+<ol>
+<li>下标要求全是数字,</li>
+</ol>
+
+<p class="md_block md_has_block_below md_has_block_below_ol">
+    <span class="md_line">申明与赋值</span>
+</p>
+
+
+<ol>
+<li>赋值时可以指定下标为数字,也可以不指定下标赋值</li>
+<li>赋值的方式如下:</li>
+</ol>
+<div class="codehilite code_lang_php  highlight"><pre><span></span>    <span class="c1">//申明一个变量,没有赋值</span>
+    <span class="nv">$arr</span><span class="p">;</span>
+    
+    <span class="c1">//申明了一个变量,赋值为空数组,下面两种格式一样,只是写法不同.</span>
+    <span class="nv">$arr</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+    <span class="nv">$arr</span> <span class="o">=</span> <span class="p">[];</span>
+    
+    <span class="c1">//申明时给数组赋值</span>
+    <span class="nv">$arr</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">);</span><span class="c1">//不指定下标赋值</span>
+    <span class="nv">$arr</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">0</span><span class="o">=&gt;</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="o">=&gt;</span><span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">=&gt;</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">=&gt;</span><span class="mi">20</span><span class="p">);</span><span class="c1">//指定下标赋值,下标可以是负数</span>
+   
+     <span class="cm">/*</span>
+<span class="cm">     申明时不赋值,后练赋值,可以指定下标,也可以不指定下标自动生成,注意自动生成</span>
+<span class="cm">     给数赋值不指定下标有两种情况:</span>
+<span class="cm">         1.如果原数组是空数组:下标从0开始,每次自动+1</span>
+<span class="cm">         2.如果原数组是非空数组,要看有没有大于0的键名.如果没有则从0开始,每次自动+1,如果原数组中有大于0的下标,则取最大值+1</span>
+<span class="cm">     */</span>
+    <span class="nv">$arr</span><span class="p">;</span>
+    <span class="nv">$arr</span><span class="p">[]</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+    <span class="nv">$arr</span><span class="p">[]</span> <span class="o">=</span> <span class="mi">22</span><span class="p">;</span>
+    <span class="nv">$arr</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="mi">33</span><span class="p">;</span>
+    <span class="nv">$arr</span><span class="p">[]</span> <span class="o">=</span> <span class="mi">44</span><span class="p">;</span><span class="c1">//此时它的下标是最大下标值+1,数组是[21]=&gt;44</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_3">关联数组</h3>
+
+<p class="md_block md_has_block_below md_has_block_below_ol">
+    <span class="md_line">下标为字符串的数组称关联数组</span>
+</p>
+
+
+<ol>
+<li>申明与赋值格式</li>
+</ol>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//申明时赋值</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;aaa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;bbb&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;ccc&#39;</span><span class="p">);</span>
+
+<span class="c1">//先申明,再赋值</span>
+<span class="nv">$arr</span><span class="p">;</span>
+<span class="nv">$arr</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;aaa&#39;</span><span class="p">;</span>
+<span class="nv">$arr</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;zzz&#39;</span><span class="p">;</span>
+<span class="nv">$arr</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;xxx&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_4">数组申明与赋值注意事项</h3>
+
+<ol>
+<li>注意:关联数组可以与索引数组混合在一起,当各种类型做为数组的下标时一定要注意,他会自动转换.</li>
+<li>数组的下标名唯一,如果一个数组中有两个下标名相同的,后面值的会覆盖前面的值.</li>
+</ol>
+<div class="codehilite code_lang_php  highlight"><pre><span></span>    <span class="c1">//各种类型的值当数组下标时,会进行转换</span>
+    <span class="cm">/*</span>
+<span class="cm">     * 字符串: 整数字符串会转成整数...非整数字符串保留原样</span>
+<span class="cm">     * 整数:      保留原样,</span>
+<span class="cm">     * 小数:      去掉小数部分.(向下取整)</span>
+<span class="cm">     * 布尔型: true转1,false转0</span>
+<span class="cm">     * null:    空字符串</span>
+<span class="cm">     * =========================</span>
+<span class="cm">     * 在一个数组中,下标是唯一的,如果存在下标相同,后面的覆盖前面的值.</span>
+<span class="cm">     */</span>
+        <span class="nv">$a</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;十班&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;aaaa&#39;</span><span class="c1">//----</span>
+    <span class="p">,</span><span class="s1">&#39;&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;空&#39;</span>
+    <span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;0000&#39;</span>
+    <span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;1111&#39;</span>
+    <span class="p">,</span><span class="s1">&#39;0.0&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;0.0&#39;</span><span class="c1">//----</span>
+    <span class="p">,</span><span class="s1">&#39;1.1&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;1.1&#39;</span><span class="c1">//----</span>
+    <span class="p">,</span><span class="s1">&#39;true&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;str-true&#39;</span>
+    <span class="p">,</span><span class="mf">1.5</span><span class="o">=&gt;</span><span class="s1">&#39;1.5&#39;</span>
+    <span class="p">,</span><span class="mf">8.0001</span> <span class="o">=&gt;</span><span class="s1">&#39;8.8&#39;</span>
+    <span class="p">,</span><span class="k">true</span><span class="o">=&gt;</span><span class="s1">&#39;true&#39;</span>
+    <span class="p">,</span><span class="k">false</span><span class="o">=&gt;</span><span class="s1">&#39;false&#39;</span>
+    <span class="p">,</span><span class="k">null</span><span class="o">=&gt;</span><span class="s1">&#39;null&#39;</span>
+    <span class="p">];</span>
+    <span class="nb">print_r</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_5">快速创建数组</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//快速生成连续下标的索引数组,下标都是从0开始,包含最小与最大值,</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nx">最小值</span><span class="p">,</span> <span class="nx">最大值</span><span class="p">,</span> <span class="p">[</span><span class="nx">步长</span><span class="p">]);</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span><span class="c1">//array[0,1,2,3,4,5,6,7,8,9,10]</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">105</span><span class="p">);</span><span class="c1">//array(100,101,102,103,104,105)</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span><span class="c1">//array(0,3,6,9)//指定步长</span>
+
+<span class="c1">//快速把多个变量转换成关联数组</span>
+    <span class="nv">$a</span> <span class="o">=</span> <span class="s1">&#39;aa&#39;</span><span class="p">;</span>
+    <span class="nv">$b</span> <span class="o">=</span> <span class="s1">&#39;bb&#39;</span><span class="p">;</span>
+    <span class="nv">$c</span> <span class="o">=</span> <span class="s1">&#39;cc&#39;</span><span class="p">;</span>
+    <span class="nv">$d</span> <span class="o">=</span> <span class="s1">&#39;abcd&#39;</span><span class="p">;</span>
+    <span class="nv">$arr</span> <span class="o">=</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">);</span><span class="c1">//要注意,传的参数是变量名的字符串.不包含$</span>
+    <span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//Array ( [a] =&gt; aa [b] =&gt; bb [c] =&gt; cc [d] =&gt; abcd )</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_6">数组与比较运算符</h2>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//+进行两个数组运算时,把右边的元素附加到左边的数组后面,如果键名[下标]重复,则保留左边数组中的元素,右边的丢弃.</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">];</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">];</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">+</span> <span class="nv">$b</span><span class="p">;</span><span class="c1">//$c = [1,2,3]</span>
+
+<span class="nv">$a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">];</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="o">=&gt;</span><span class="mi">5</span><span class="p">];</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">+</span> <span class="nv">$b</span><span class="p">;</span><span class="c1">//$c = Array ( [0] =&gt; 1 [1] =&gt; 2 [2] =&gt; 3 [3] =&gt; 4 [5] =&gt; 5 )</span>
+
+<span class="c1">//==   值与顺序相同时为true, 不管类型</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">];</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">];</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">==</span> <span class="nv">$b</span><span class="c1">//false</span>
+
+<span class="nv">$a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span> <span class="p">,</span> <span class="s1">&#39;2&#39;</span> <span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">];</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">==</span> <span class="nv">$b</span><span class="c1">//true</span>
+
+<span class="nv">$a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&quot;</span> <span class="p">,</span> <span class="k">true</span> <span class="p">,</span> <span class="s1">&#39;3x&#39;</span><span class="p">];</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="p">[</span><span class="k">null</span> <span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">==</span> <span class="nv">$b</span><span class="c1">//true</span>
+
+<span class="c1">//===  值与顺序相同时为true, 同时类型也要相同</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&quot;</span> <span class="p">,</span> <span class="k">true</span> <span class="p">,</span> <span class="s1">&#39;3x&#39;</span><span class="p">];</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="p">[</span><span class="k">null</span> <span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="k">echo</span> <span class="nv">$a</span> <span class="o">===</span> <span class="nv">$b</span><span class="c1">// false</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">数组遍历</h2>
+
+<h3 id="toc_8">for,与while循环遍历</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//它有个缺点,基本不合适PHP的数组遍历,因为它只能遍历连续下标的索引数组.</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span>
+<span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="nv">$i</span>  <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)){</span>
+    <span class="k">echo</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+    <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//============================</span>
+<span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>    
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_9">foreach循环遍历(增加for循环)</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="s1">&#39;aa&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;aaa&#39;</span><span class="p">];</span>
+<span class="c1">//遍历数组,只要值===========</span>
+<span class="k">foreach</span><span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$v</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="nv">$v</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//遍历数组,要下标也要值===========</span>
+<span class="k">foreach</span><span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$k</span><span class="o">=&gt;</span><span class="nv">$v</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="nv">$k</span><span class="o">.</span><span class="s1">&#39;=&gt;&#39;</span><span class="o">.</span><span class="nv">$v</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_10">数组指针结合循环遍历数组</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="s1">&#39;aa&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;aaa&#39;</span><span class="p">];</span>
+<span class="nb">current</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//得到当前指针处元素的值</span>
+<span class="nb">key</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//得到当前指针处的元素的键名(下标)</span>
+<span class="nb">next</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//1.把指针下移一位,2.并得到当前元素的值</span>
+<span class="nb">prev</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//1.把指针上移一位,2.并得到当前元素的值</span>
+<span class="nb">end</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//1.移到末尾,2.得到当前元素的值</span>
+<span class="nb">reset</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//1.重置指针到初始状态.就是指向第一个元素位置,2.得到当前元素的值</span>
+
+<span class="c1">//用普通for循环结合数组指针遍历数组==============</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="s1">&#39;aa&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;aaa&#39;</span><span class="p">];</span>
+<span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span>  <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="nb">key</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">.</span> <span class="s1">&#39;=&gt;&#39;</span> <span class="o">.</span> <span class="nb">current</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+    <span class="nb">next</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_11">list 结合 each遍历数组</h3>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//list做什么用的? list()小括号中有多个变量名,这几个变量名依次取它赋值的变量的从0开始的下标的值.</span>
+<span class="k">list</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span><span class="nv">$b</span><span class="p">,</span><span class="nv">$c</span><span class="o">...</span><span class="p">)</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$a</span><span class="p">;</span><span class="c1">//1,对应数组下标0的元素的值</span>
+<span class="k">echo</span> <span class="nv">$b</span><span class="p">;</span><span class="c1">//5,对应数组下标1的元素的值</span>
+<span class="k">echo</span> <span class="nv">$c</span><span class="p">;</span><span class="c1">//3,对应数组下标2的元素的值</span>
+
+<span class="c1">//each做什么用的?它也是一个指针函数,1.把数组当前指针处的元素的键与值获取到转换成一个数组(这个数组的结构是$arr = [10,20,30],第一次用each($arr); [&#39;key&#39;=&gt;0,&#39;value&#39;=&gt;10,0=&gt;0,1=&gt;10]),2.把指针下移一位.如果移到最后移不动了,就返回false.</span>
+<span class="k">list</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span><span class="nv">$b</span><span class="p">,</span><span class="nv">$c</span><span class="o">...</span><span class="p">)</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>
+<span class="k">while</span><span class="p">(</span><span class="k">list</span><span class="p">(</span><span class="nv">$k</span><span class="p">,</span><span class="nv">$v</span><span class="p">)</span> <span class="o">=</span> <span class="nb">each</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)){</span>
+    <span class="k">echo</span> <span class="nv">$k</span><span class="o">.</span><span class="s1">&#39;=&gt;&#39;</span><span class="o">.</span><span class="nv">$v</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_12">多维数组</h2>
+
+<p class="md_block">
+    <span class="md_line">//了解,多维数组就是一个数组的元素也是个数组.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$arr</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">);</span><span class="c1">//一维数组</span>
+<span class="nv">$arr1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;aa&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;aaa&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;bbbb&#39;</span><span class="p">];</span><span class="c1">//一维数组</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,[</span><span class="mi">21</span><span class="p">,</span><span class="mi">22</span><span class="p">],</span><span class="mi">30</span><span class="p">];</span><span class="c1">//多维数组</span>
+<span class="nv">$arr1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;aa&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;aaa&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="o">=&gt;</span><span class="p">[</span><span class="s1">&#39;bb1&#39;</span><span class="p">,</span><span class="s1">&#39;bbb2&#39;</span><span class="p">]];</span><span class="c1">//一维数组</span>
+<span class="c1">//调用,如果我们要取$arr1中的&#39;bbb2&#39;这个值,怎么取?</span>
+<span class="k">echo</span> <span class="nv">$arr1</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">];</span><span class="c1">//bbb2</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

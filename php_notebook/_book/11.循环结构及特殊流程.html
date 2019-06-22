@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>11.循环结构及特殊流程</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="selected">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 11.循环结构及特殊流程 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">11.循环结构及特殊流程</a>
+<ul>
+<li>
+<a href="#toc_1">while</a>
+</li>
+<li>
+<a href="#toc_2">do...while;</a>
+</li>
+<li>
+<a href="#toc_3">for</a>
+</li>
+<li>
+<a href="#toc_4">特殊流程</a>
+<ul>
+<li>
+<a href="#toc_5">break</a>
+</li>
+<li>
+<a href="#toc_6">continue</a>
+</li>
+<li>
+<a href="#toc_7">exit</a>
+</li>
+<li>
+<a href="#toc_8">die</a>
+</li>
+<li>
+<a href="#toc_9">goto</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">while</h2>
+
+<p class="md_block">
+    <span class="md_line">//基本语法  while(条件){条件成立时执行的循环体}</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span>    <span class="c1">//从1加到100(1+2+3+...+100)</span>
+    <span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="nv">$sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//用来存储结果</span>
+    <span class="k">while</span><span class="p">(</span><span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">){</span>
+        <span class="nv">$sum</span> <span class="o">+=</span> <span class="nv">$i</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="nv">$sum</span><span class="p">;</span><span class="c1">//5050</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">//注意,每次循环都执行while()中的条件表达式.只有条件成立循环体才会被执行,否则跳出循环继续往下执行.</span>
+</p>
+
+
+<h2 id="toc_2">do...while;</h2>
+
+<p class="md_block">
+    <span class="md_line">//要注意其实它就是while循环的改进版本,以后开发基本用不到.就是把while的大括号写在while之前,用do做开始标记.<br /></span>
+    <span class="md_line">//不管条件是否成立,先执行一遍循环体中内容,再判断是否循环.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="k">do</span><span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$i</span><span class="o">.</span><span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="o">++</span><span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">);</span><span class="c1">//即使达不到循环条件,但还是执行一遍.</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">for</h2>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">100</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nv">$sum</span> <span class="o">+=</span> <span class="nv">$i</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">echo</span> <span class="nv">$sum</span><span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">注意:什么时假用while,什么时候用for?<br /></span>
+    <span class="md_line">如果明确循环次数就是for,如果不明确次数时用while(比如读按行读取文件,按条件数读取数据表...)</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_4">特殊流程</h2>
+
+<h3 id="toc_5">break</h3>
+
+<p class="md_block">
+    <span class="md_line">break用于跳出循环或跳出switch语句.如果用在循环时还一般用在if语句中...</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">100</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nv">$sum</span> <span class="o">+=</span> <span class="nv">$i</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">50</span><span class="p">){</span>
+        <span class="k">break</span><span class="p">;</span><span class="c1">//break只要被执行到,它就跳出循环.</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">echo</span> <span class="nv">$sum</span><span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">在PHP中,break后面可以加数字作为参数.表示要跳出的层数.如果找不到则报错.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">for</span><span class="p">(</span><span class="nv">$i</span><span class="o">=</span><span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">9</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="nv">$j</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">;</span> <span class="nv">$j</span> <span class="o">&lt;=</span> <span class="mi">9</span> <span class="p">;</span> <span class="nv">$j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$j</span> <span class="o">&gt;</span> <span class="nv">$i</span><span class="p">){</span>
+                <span class="k">break</span> <span class="mi">2</span><span class="p">;</span><span class="c1">//break 2表示跳出for($i=1 ; $i &lt;= 9 ; $i++)的循环</span>
+            <span class="p">}</span>
+            <span class="k">echo</span> <span class="nv">$j</span><span class="o">.</span><span class="s1">&#39;*&#39;</span><span class="o">.</span><span class="nv">$i</span><span class="o">.</span><span class="s1">&#39;=&#39;</span><span class="o">.</span><span class="nv">$j</span><span class="o">*</span><span class="nv">$i</span><span class="o">.</span><span class="s1">&#39;    &#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+        <span class="c1">//echo &#39;break 1111!&#39;;</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="s1">&#39;break 2很强大!&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_6">continue</h3>
+
+<p class="md_block">
+    <span class="md_line">continue只用于循环语句,跳出本次循环,继续下一次循环.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//输出100以内3的倍数</span>
+    <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">100</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="k">echo</span> <span class="nv">$i</span><span class="o">.</span><span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="c1">//==============================    </span>
+    <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">100</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$i</span> <span class="o">%</span> <span class="mi">3</span><span class="p">){</span>
+            <span class="k">continue</span><span class="p">;</span>
+        <span class="p">}</span> 
+        <span class="k">echo</span> <span class="nv">$i</span><span class="o">.</span><span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_7">exit</h3>
+
+<p class="md_block">
+    <span class="md_line">跳出(退出,中断)当前脚本.里面可以跟一个参数输出在页面上.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">exit</span><span class="p">(</span><span class="s1">&#39;程序运行到这就结束了....&#39;</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_8">die</h3>
+
+<p class="md_block">
+    <span class="md_line">跳出(退出,中断)当前脚本.里面可以跟一个参数输出在页面上.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">die</span><span class="p">(</span><span class="s1">&#39;程序运行到这就结束了....&#39;</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_9">goto</h3>
+
+<p class="md_block">
+    <span class="md_line">无条件跳转到指定的标签处.<br /></span>
+    <span class="md_line">标签:   随便取名,以冒号结尾.要注意,取名以标识符为标准.<br /></span>
+    <span class="md_line">程序可以用goto随意跳转,但要注意赋值与死循环.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$a</span><span class="p">;</span><span class="c1">//10</span>
+<span class="nx">goto</span> <span class="nx">go</span><span class="p">;</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span><span class="c1">//执行不到.</span>
+<span class="nx">go</span><span class="o">:</span>
+<span class="k">echo</span> <span class="nv">$a</span><span class="p">;</span><span class="c1">//10</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">思考:学到这,我们可以实际开发了,可以模拟人类世界所有事情了.各种结构体可以随意嵌套使用.</span>
+</p>
+
+</blockquote> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

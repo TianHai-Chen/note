@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>01.MySQL的下载与安装</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="../16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../MySQL笔记/01.MySQL的下载与安装.html" class="selected">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 01.MySQL的下载与安装 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">01.MySQL的下载与安装</a>
+<ul>
+<li>
+<a href="#toc_1">下载</a>
+</li>
+<li>
+<a href="#toc_2">安装</a>
+<ul>
+<li>
+<a href="#toc_3">解压版安装</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">下载</h2>
+
+<p class="md_block">
+    <span class="md_line">解压版:https://dev.mysql.com/downloads/windows/installer/5.6.html<br /></span>
+    <span class="md_line">第一步:<br /></span>
+    <span class="md_line"><img onerror="this.src='../../MySQL笔记/_image/2018-12-12-09-36-57.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-09-36-57.jpg" alt="" title="" >第二步<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../MySQL笔记/_image/2018-12-12-09-38-17.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-09-38-17.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">第三步<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../MySQL笔记/_image/2018-12-12-09-38-44.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-09-38-44.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">第四步:是下载解压版本<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../MySQL笔记/_image/2018-12-12-09-39-35.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-09-39-35.jpg" alt="" title="" ><br /></span>
+    <span class="md_line">如果想下载安装版本,第四步页面上方点有张图片, 点击进去就能下载安装版<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../MySQL笔记/_image/2018-12-12-09-42-20.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-09-42-20.jpg" alt="" title="" ></span>
+</p>
+
+
+<h2 id="toc_2">安装</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_img">
+    <span class="md_line">第一步,同意协议</span>
+</p>
+
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-09-51-09.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-09-51-09.jpg" alt="" title="" >
+下一步:选择安装模式
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-09-55-59.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-09-55-59.jpg" alt="" title="" >
+下一步:选择安装目录与数据库存放目录,如果提示支 插件什么的,就必先安装好.
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-10-09-16.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-10-09-16.jpg" alt="" title="" >
+下一步:检查安装条件
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-10-12-45.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-10-12-45.jpg" alt="" title="" >
+下一步:需安装的软件列表
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-10-14-24.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-10-14-24.jpg" alt="" title="" >
+执行安装(Execute):等安装完成,开始配置[核心,重点]
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-10-24-40.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-10-24-40.jpg" alt="" title="" >
+安装配置[重要]
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-10-33-48.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-10-33-48.jpg" alt="" title="" >
+设置管理员密码,我们用:root
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-10-35-13.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-10-35-13.jpg" alt="" title="" >
+设置服务名
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-10-36-32.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-10-36-32.jpg" alt="" title="" >
+执行配置安装,等待完成,注意看别出错...最后完成
+<img onerror="this.src='../../MySQL笔记/_image/2018-12-12-10-38-34.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-10-38-34.jpg" alt="" title="" >
+<h3 id="toc_3">解压版安装</h3>
+
+<p class="md_block">
+    <span class="md_line">1.以管理员身份打开DOS窗口（避免权限不足）.</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">2.进入到指定文件夹下:cd /d D:\mysql-5.6.39-winx64\bin</span>
+</p>
+
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">3.在DOS中输出:mysqld -install MySQL5.6,出现:Service successfully installed.则成功安装.</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">注意:如果是安装5.7以上版本,记得初始化(对于Mysql 5.7.6以后的5.7系列版本，Mysql使用mysqld --initialize或mysqld --initialize-insecure命令来初始化数据库，后者可以不生成随机密码。但是安装Mysql时默认使用的是前一个命令，这个命令也会生成一个随机密码。改密码保存在了Mysql的日志文件中。).</span>
+</p>
+
+</blockquote>
+
+<p class="md_block">
+    <span class="md_line">4.以后想卸载也很方便:用DOS命令:sc delete MySQL5.6或mysqld -remove Mysql5.6来卸载mysql服务后,删除文件即可.卸载前记得停止服务.</span>
+</p>
+
+<div class="codehilite code_lang_shell  highlight"><pre><span></span>    <span class="c1"># 解压路径中尽量不要用空格,中文,万一有空格有中文,用双引号包起来.</span>
+    <span class="nb">cd</span> /d D:<span class="se">\p</span>hpserver<span class="se">\m</span>ysql-5.6.42-winx64<span class="se">\b</span>in
+    <span class="c1"># 执行安装 如果提示:Service successfully installed.则安装成功</span>
+    mysqld -install     <span class="c1"># 也可以指定服务名mysqld -install mysql5.6</span>
+    <span class="c1"># 启动服务,如果你的服务名不是mysql5.6则自己进服务中找找.</span>
+    net start mysql5.6
+    <span class="c1"># 如果服务不想要,也可以删除 1.用sc delete mysql5.6   2. 用 mysqld -remove mysql5.6</span>
+</pre></div>
+
+<!--block_code_end--><img onerror="this.src='../../MySQL笔记/_image/2018-12-12-11-23-55.jpg';this.onerror=null;"  class="" src="/MySQL笔记/_image/2018-12-12-11-23-55.jpg" alt="" title="" >
+<p class="md_block">
+    <span class="md_line">5.给大家一份配置文件</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>04.变量</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="selected">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 04.变量 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">04.变量</a>
+<ul>
+<li>
+<a href="#toc_1">什么是变量</a>
+</li>
+<li>
+<a href="#toc_2">变量申明,赋值,使用</a>
+</li>
+<li>
+<a href="#toc_3">变量命名规范</a>
+</li>
+<li>
+<a href="#toc_4">可变变量-等量代换</a>
+</li>
+<li>
+<a href="#toc_5">变量引用</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">什么是变量</h2>
+
+<p class="md_block">
+    <span class="md_line">变量就是程序运行过程中.用来存储数据的.</span>
+</p>
+
+
+<h2 id="toc_2">变量申明,赋值,使用</h2>
+
+<p class="md_block">
+    <span class="md_line">在PHP中,变量申明非常方便, 以$作为标识.后面紧跟变量名.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//申明一个变量,并赋值为10</span>
+<span class="nv">$userName</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="c1">//先申明,再赋值(以后尽量少用.)</span>
+<span class="nv">$a</span><span class="p">;</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="c1">//如果一次申明多个变量且都用同一个值,可以这么写</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="nv">$b</span> <span class="o">=</span>  <span class="nv">$c</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="c1">//使用变量</span>
+<span class="k">echo</span> <span class="nv">$a</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">建议:以后在申明变量时尽量同时赋值.</span>
+</p>
+
+
+<h2 id="toc_3">变量命名规范</h2>
+
+<p class="md_block">
+    <span class="md_line md_line_dom_embed"><strong>语言规定[重点]:以$开头,后面紧跟变量名,变量名只能以字母(a-zA-Z),数字(0-9),下划线(_)组成.且不能以数字开头,区分大小写.</strong><br /></span>
+    <span class="md_line">开发规范:起名要有意义(见名知意),以驼峰式或下划线式命名.<br /></span>
+    <span class="md_line">重点注意:在PHP中,变量名可以用中文,但切记,不要用.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span>    <span class="c1">//变量命名都用小骆驼.</span>
+    <span class="nv">$userName</span> <span class="o">=</span> <span class="s1">&#39;huodeming&#39;</span><span class="p">;</span>
+    <span class="c1">//下划线命名</span>
+    <span class="nv">$user_name</span> <span class="o">=</span> <span class="s1">&#39;huodeming&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_4">可变变量-等量代换</h2>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$a</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="s1">&#39;c&#39;</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="s1">&#39;d&#39;</span>
+<span class="k">echo</span> <span class="nv">$$a</span><span class="p">;</span><span class="c1">//输出:c</span>
+<span class="k">echo</span> <span class="nv">$$$a</span><span class="p">;</span><span class="c1">//输出:d</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_5">变量引用</h2>
+
+<p class="md_block">
+    <span class="md_line">变量引用就是取内存地址(变量存储在内存中的位置),用&amp;来取<br /></span>
+    <span class="md_line">```php<br /></span>
+    <span class="md_line">$a = 10;<br /></span>
+    <span class="md_line">$b = &amp;$a;<br /></span>
+    <span class="md_line">echo $a;//输出:10<br /></span>
+    <span class="md_line">echo $b;//输出:10<br /></span>
+    <span class="md_line">$b = 20;//赋值<br /></span>
+    <span class="md_line">unset($b);//释放$b(删除$b;)<br /></span>
+    <span class="md_line">echo $a;//输出:20<br /></span>
+    <span class="md_line">//===========================================<br /></span>
+    <span class="md_line">//变量的引用(起别名),在unset()时,只要还有变量名指向它,它就存在.....<br /></span>
+    <span class="md_line">$a = 10;<br><br /></span>
+    <span class="md_line">$c = &amp;$a; //$c引用了$a的内存地址...所以,它们是一个内存地址有多个变量名.<br /></span>
+    <span class="md_line">unset($a);<br /></span>
+    <span class="md_line">echo isset($c);</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

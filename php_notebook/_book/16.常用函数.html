@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>16.常用函数</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="selected">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 16.常用函数 </h1>
+            <div class="doc_post"> <p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">16.常用函数</a>
+<ul>
+<li>
+<a href="#toc_1">字符串函数</a>
+<ul>
+<li>
+<a href="#toc_2">获取长度</a>
+</li>
+<li>
+<a href="#toc_3">查找替换</a>
+</li>
+<li>
+<a href="#toc_4">大小写</a>
+</li>
+<li>
+<a href="#toc_5">截取</a>
+</li>
+<li>
+<a href="#toc_6">字符ASCII</a>
+</li>
+<li>
+<a href="#toc_7">加密</a>
+</li>
+<li>
+<a href="#toc_8">过滤</a>
+</li>
+<li>
+<a href="#toc_9">比较</a>
+</li>
+<li>
+<a href="#toc_10">拆分合并</a>
+</li>
+<li>
+<a href="#toc_11">格式化字符串</a>
+</li>
+<li>
+<a href="#toc_12">其他常用</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_13">数学函数库</a>
+</li>
+<li>
+<a href="#toc_14">日期时间函数库</a>
+</li>
+<li>
+<a href="#toc_15">数组相关函数</a>
+<ul>
+<li>
+<a href="#toc_16">键和值和搜索相关的函数</a>
+<ul>
+<li>
+<a href="#toc_17">键值相关</a>
+</li>
+<li>
+<a href="#toc_18">搜索相关</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_19">统计元素个数的函数</a>
+</li>
+<li>
+<a href="#toc_20">使用回调函数处理数组的函数[不常用]</a>
+</li>
+<li>
+<a href="#toc_21">数组的查找与排序[算法]</a>
+<ul>
+<li>
+<a href="#toc_22">顺序查找</a>
+</li>
+<li>
+<a href="#toc_23">二分查找</a>
+</li>
+<li>
+<a href="#toc_24">冒泡排序</a>
+</li>
+<li>
+<a href="#toc_25">查找排序</a>
+</li>
+<li>
+<a href="#toc_26">插入排序</a>
+</li>
+<li>
+<a href="#toc_27">快速排序(二分排序)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_28">数组的排序函数</a>
+<ul>
+<li>
+<a href="#toc_29">多维数组的排序函数</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_30">拆分,合并,分解与结合数组函数</a>
+</li>
+<li>
+<a href="#toc_31">数组与数据结构</a>
+</li>
+<li>
+<a href="#toc_32">数组串行化</a>
+<ul>
+<li>
+<a href="#toc_33">json格式</a>
+</li>
+<li>
+<a href="#toc_34">serialize格式</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_35">其它有用的数组处理函数</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_1">字符串函数</h2>
+
+<h3 id="toc_2">获取长度</h3>
+
+<p class="md_block">
+    <span class="md_line">strlen($string):得到字符串长度</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="nv">$str</span> <span class="o">=</span> <span class="s2">&quot;这是一段中文abc&quot;</span><span class="p">;</span>
+<span class="c1">//注意,我们经常用中文字符串,这时要用多字节的字符串函数才能正确统计字符串的实际字符数量.注意mb_strlen的第二个参数.指定字符编码.</span>
+<span class="k">echo</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$str</span><span class="p">);</span><span class="c1">//21</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">mb_strlen</span><span class="p">(</span><span class="nv">$str</span><span class="p">,</span><span class="s1">&#39;utf-8&#39;</span><span class="p">);</span><span class="c1">//9</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_3">查找替换</h3>
+
+<p class="md_block">
+    <span class="md_line">strpos($string,$search[,$offset]):在指定字符串中查找目标字符串第一次出现的位置<br /></span>
+    <span class="md_line">stripos($string,$search[,$offset]):忽略大小写的去查找<br /></span>
+    <span class="md_line">strrpos($string,$search[,$offset]):在指定字符串中查找目标字符串最后一次出现的位置<br /></span>
+    <span class="md_line">strripos($string,$search[,$offset]):忽略大小写的去查找最后一次出现的位置<br /></span>
+    <span class="md_line">strstr|strchr($string,$search[,$before_needle]):查找字符串的首次出现，返回的是字符串<br /></span>
+    <span class="md_line">stristr($string,$search[,$before_needle]):忽略大小写的去查找<br /></span>
+    <span class="md_line">strrchr($string,$search):查找指定字符在字符串中的最后一次出现<br /></span>
+    <span class="md_line">str_replace($search,$replace,$string):在指定字符串中查找另外一个字符串，找到之后将其替换成指定字符串<br /></span>
+    <span class="md_line">str_ireplace($search,$replace,$string):忽略大小写的去查找并替换</span>
+</p>
+
+
+<h3 id="toc_4">大小写</h3>
+
+<p class="md_block">
+    <span class="md_line">strtolower($string):返回小写之后的字符串<br /></span>
+    <span class="md_line">strtoupper($string):返回大写之后的字符串<br /></span>
+    <span class="md_line">ucwords($string):单词的首字母大写<br /></span>
+    <span class="md_line">ucfirst($string):字符串的单词的首字母大写<br /></span>
+    <span class="md_line">lcfirst($string):字符串的单词的首字母小写</span>
+</p>
+
+
+<h3 id="toc_5">截取</h3>
+
+<p class="md_block">
+    <span class="md_line">substr_replace($string,$replace,$start[,$length]):替换字符串的子串</span>
+</p>
+
+
+<h3 id="toc_6">字符ASCII</h3>
+
+<p class="md_block">
+    <span class="md_line">ord($char):得到指定字符的ASCII<br /></span>
+    <span class="md_line">chr($ascii):根据ASCII得到指定的字符</span>
+</p>
+
+
+<h3 id="toc_7">加密</h3>
+
+<p class="md_block">
+    <span class="md_line">md5($string):计算字符串的md5的散列值，返回32位长度的字符串<br /></span>
+    <span class="md_line">sha1($string):计算字符串的sha1的散列值，返回40位长度的字符串</span>
+</p>
+
+
+<h3 id="toc_8">过滤</h3>
+
+<p class="md_block">
+    <span class="md_line">trim($string[,$charlist]):默认过滤字符串两端的空格，也可以过滤指定字符串<br /></span>
+    <span class="md_line">ltrim($string[,$charlist]):过滤字符串左端<br /></span>
+    <span class="md_line">rtrim|chop($string[,$charlist]):过滤字符串右端<br /></span>
+    <span class="md_line">strip_tags($string[,$allowTag]):过滤字符串中的HTML标记<br /></span>
+    <span class="md_line">addslashes($string):使用反斜线引用字符串中的特殊字符<br /></span>
+    <span class="md_line">htmlentities($string[,$flag=ENT_COMPAT]):将所有字符转换成HTML实体<br /></span>
+    <span class="md_line">htmlspecialchars($string[,$flag=ENT_COMPAT]):将字符串中的特殊字符转换成HTML实体<br /></span>
+    <span class="md_line">nl2br($string):将字符串中的\n用<br/>替换</span>
+</p>
+
+
+<h3 id="toc_9">比较</h3>
+
+<p class="md_block">
+    <span class="md_line">strcmp($string1,$string2):比较两个字符串的大小<br /></span>
+    <span class="md_line">strcasecmp($string1,$string2):忽略大小写的比较字符串的大小<br /></span>
+    <span class="md_line">strnatcasecmp($string1,$string2):使用自然顺序算法比较字符串<br /></span>
+    <span class="md_line">strncasecmp($string1,$string2,$len):比较字符串的开始的若干个字符</span>
+</p>
+
+
+<h3 id="toc_10">拆分合并</h3>
+
+<p class="md_block">
+    <span class="md_line">explode($delimiter,$string):将指定字符串拆分成数组<br /></span>
+    <span class="md_line">implode|join($delimiter,$array):以指定分隔符将数组中的键值连接成字符串<br /></span>
+    <span class="md_line">str_split($string[,$split_length=1]):将字符串转换成数组</span>
+</p>
+
+
+<h3 id="toc_11">格式化字符串</h3>
+
+<p class="md_block">
+    <span class="md_line">printf($format[,$args]):格式化输出字符串<br /></span>
+    <span class="md_line">sprintf($format[,$args]):格式化输出字符串</span>
+</p>
+
+
+<h3 id="toc_12">其他常用</h3>
+
+<p class="md_block">
+    <span class="md_line">strrev($string):反转字符串<br /></span>
+    <span class="md_line">str_shuffle($string):随机打乱字符串<br /></span>
+    <span class="md_line">str_repeat($string):重复字符串<br /></span>
+    <span class="md_line">str_getcsv($input[,$delimiter=&#39;,&#39;[,$enclosure=&#39;&#39;[,$escape=&#39;\&#39;]]]):解析CSV字符串为一个数组<br /></span>
+    <span class="md_line">parse_str($str[,$arr]):将字符串解析成多个变量</span>
+</p>
+
+
+<h2 id="toc_13">数学函数库</h2>
+
+<p class="md_block">
+    <span class="md_line">abs($number):求绝对值<br /></span>
+    <span class="md_line">ceil($number):进一取整<br /></span>
+    <span class="md_line">floor($number):舍掉小数部分<br /></span>
+    <span class="md_line">round($number,$percision):四舍五入<br /></span>
+    <span class="md_line">pow($base,$exp):幂运算<br /></span>
+    <span class="md_line">sqrt($number):平方根<br /></span>
+    <span class="md_line">max($val1,$val2...):求最大值<br /></span>
+    <span class="md_line">min($val1,$val2...):求最小值<br /></span>
+    <span class="md_line">mt_rand($min,$max):产生随机数</span>
+</p>
+
+
+<h2 id="toc_14">日期时间函数库</h2>
+
+<p class="md_block">
+    <span class="md_line">date_default_timezone_get():得到默认时区<br /></span>
+    <span class="md_line">date_default_timezone_set($timezone):设置默认时区<br /></span>
+    <span class="md_line">date($format[,$time]):得到服务器的日期时间<br /></span>
+    <span class="md_line">time():得到当前的时间戳<br /></span>
+    <span class="md_line">mktime([$hour[,$minute[,$second[,$month[,$day[,$year]]]]]]):取得一个日期的unix时间戳<br /></span>
+    <span class="md_line">getdate($timestamp):取得日期时间信息<br /></span>
+    <span class="md_line">gettimeofday($return_float):取得当前时间<br /></span>
+    <span class="md_line">microtime([$get_as_float]):返回当前unix时间戳和微妙数<br /></span>
+    <span class="md_line">strtotime($time[,$now=time()]):将任何英文文本的日期时间描述解析为unix时间戳</span>
+</p>
+
+
+<h2 id="toc_15">数组相关函数</h2>
+
+<h3 id="toc_16">键和值和搜索相关的函数</h3>
+
+<h4 id="toc_17">键值相关</h4>
+
+<p class="md_block">
+    <span class="md_line">array_values();返回数组中所有的值<br /></span>
+    <span class="md_line">array_keys();返回数组中部分的或所有的键名,如果值出现多次,取最后一个键名作为它的值<br /></span>
+    <span class="md_line">array_flip();交换数组中的键和值,转换键值后键名重复.?函数是怎么处理的????取最后一个键名为值.</span>
+</p>
+
+
+<h4 id="toc_18">搜索相关</h4>
+
+<p class="md_block">
+    <span class="md_line">in_array();检查数组中是否存在某个值,也可以去数组中查数组,4.2以后可以在数组中找子数组<br /></span>
+    <span class="md_line">array_search();在数组中搜索给定的值，如果成功则返回相应的键名,如果搜索出多个结果,返回第一个键名.<br /></span>
+    <span class="md_line">array_key_exists();检查给定的键名或索引是否存在于数组中</span>
+</p>
+
+
+<h3 id="toc_19">统计元素个数的函数</h3>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">count();计算数组中的单元数目或对象中的属性个数</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">第二个参数如果可选的 mode 参数设为 COUNT_RECURSIVE（或 1），count() 将递归地对数组计数。对计算多维数组的所有单元尤其有用。mode 的默认值是 0。count() 识别不了无限递归。</span>
+</p>
+
+</blockquote>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">array_count_values();统计数组中所有的值出现的次数</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">返回一个关联数组，用 input 数组中的值作为键名，该值在数组中出现的次数作为值。<br /></span>
+    <span class="md_line">对数组里面的每个不是 string 和 integer 类型的元素抛出一个警告错误（E_WARNING）。</span>
+</p>
+
+</blockquote>
+
+<h3 id="toc_20">使用回调函数处理数组的函数[不常用]</h3>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">array_filter();用回调函数过滤数组中的单元 <br /></span>
+    <span class="md_line">array_walk();不常用,使用用户自定义函数对数组中的每个元素做回调处理</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">第二个参数典型情况下 funcname 接受两个参数。array 参数的值作为第一个，键名作为第二个。<br /></span>
+    <span class="md_line">第三个参数如果提供了可选参数 userdata，将被作为第三个参数传递给 callback funcname(给第二个参数做为函数的参数)。</span>
+</p>
+
+</blockquote>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">array_map();不常用,将回调函数作用到给定数组的单元上 </span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">第一个参数是回调函数,后面可以跟多个数组,跟几个数组前面的回调函数就要有几个参数.进行位置对应.如果传多个数组时,则最短的一个将被用空的单元扩充<br /></span>
+    <span class="md_line">回调返回值是一个新数组,用变量来接收.</span>
+</p>
+
+</blockquote>
+
+<h3 id="toc_21">数组的查找与排序[算法]</h3>
+
+<h4 id="toc_22">顺序查找</h4>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">find</span><span class="p">(</span><span class="nv">$search</span> <span class="p">,</span><span class="nv">$arr</span><span class="p">){</span>
+    <span class="k">foreach</span><span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$k</span><span class="o">=&gt;</span><span class="nv">$v</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$v</span> <span class="o">==</span> <span class="nv">$search</span><span class="p">){</span>
+            <span class="k">return</span> <span class="nv">$k</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h4 id="toc_23">二分查找</h4>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//二分查找:必须是个排好序的=======</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">58</span><span class="p">,</span><span class="mi">61</span><span class="p">,</span><span class="mi">79</span><span class="p">,</span><span class="mi">81</span><span class="p">];</span>
+<span class="k">function</span> <span class="nf">bind_find</span><span class="p">(</span><span class="nv">$search</span> <span class="p">,</span><span class="nv">$arr</span><span class="p">){</span>
+    <span class="nv">$lk</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">//最左边的KEY</span>
+    <span class="nv">$rk</span> <span class="o">=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="c1">//最右边的KEY</span>
+    <span class="k">while</span><span class="p">(</span><span class="nv">$lk</span> <span class="o">&lt;=</span> <span class="nv">$rk</span><span class="p">){</span>
+        <span class="nv">$ck</span> <span class="o">=</span> <span class="nb">floor</span><span class="p">((</span><span class="nv">$rk</span> <span class="o">+</span> <span class="nv">$lk</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span><span class="c1">//最中间的那个key,有可能是小数,向下取整</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$search</span> <span class="o">&gt;</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$ck</span><span class="p">]){</span>
+            <span class="nv">$lk</span> <span class="o">=</span> <span class="nv">$ck</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nv">$search</span> <span class="o">&lt;</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$ck</span><span class="p">]){</span>
+            <span class="nv">$rk</span> <span class="o">=</span> <span class="nv">$ck</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="k">return</span> <span class="k">true</span><span class="p">;</span><span class="c1">//或返回下标:$ck</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h4 id="toc_24">冒泡排序</h4>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//冒泡排序===传值返回新数组======</span>
+<span class="k">function</span> <span class="nf">arr_sort_01</span><span class="p">(</span><span class="nv">$arr</span><span class="p">){</span>
+    <span class="nv">$arr_len</span> <span class="o">=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//长度</span>
+    <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$arr_len</span><span class="o">-</span><span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="nv">$j</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$j</span> <span class="o">&lt;</span> <span class="nv">$arr_len</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="nv">$i</span> <span class="p">;</span> <span class="nv">$j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
+                <span class="nv">$temp</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">];</span>
+                <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+                <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$temp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nv">$arr</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//冒泡排序===传引用不需要返回,改变原数组====</span>
+<span class="k">function</span> <span class="nf">arr_sort_02</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$arr</span><span class="p">){</span>
+    <span class="nv">$arr_len</span> <span class="o">=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//长度</span>
+    <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$arr_len</span><span class="o">-</span><span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="nv">$j</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$j</span> <span class="o">&lt;</span> <span class="nv">$arr_len</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="nv">$i</span> <span class="p">;</span> <span class="nv">$j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
+                <span class="nv">$temp</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">];</span>
+                <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+                <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$temp</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">//为什么用使用冒泡排序??冒泡排序之高效=================================</span>
+<span class="c1">//冒泡排序===传引用不需要返回,改变原数组====</span>
+<span class="k">function</span> <span class="nf">arr_sort_02</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$arr</span><span class="p">){</span>
+    <span class="nv">$arr_len</span> <span class="o">=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span><span class="c1">//长度</span>
+    <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$arr_len</span><span class="o">-</span><span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="nv">$flag</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span><span class="c1">//定义一个布尔变量</span>
+        <span class="k">for</span><span class="p">(</span><span class="nv">$j</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$j</span> <span class="o">&lt;</span> <span class="nv">$arr_len</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="nv">$i</span> <span class="p">;</span> <span class="nv">$j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
+                <span class="nv">$temp</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">];</span>
+                <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+                <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$temp</span><span class="p">;</span>
+                <span class="nv">$flag</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span><span class="c1">//如果有值进行交换,则为true</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$flag</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span><span class="c1">//如果上面循环没有交换值,证明是个有序数组,不需要再进行排序</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h4 id="toc_25">查找排序</h4>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//每一轮都循环得到最小值,然后往前放,效率比冒泡略高</span>
+<span class="k">function</span> <span class="nf">select_sort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">){</span>
+    <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="c1">//假如$i就是最小值</span>
+        <span class="nv">$minval</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span><span class="c1">//记录最小值临时变量</span>
+        <span class="nv">$minkey</span> <span class="o">=</span> <span class="nv">$i</span><span class="p">;</span><span class="c1">//记录最小值的键的临时变量</span>
+        <span class="k">for</span><span class="p">(</span><span class="nv">$j</span> <span class="o">=</span> <span class="nv">$i</span><span class="o">+</span><span class="mi">1</span> <span class="p">;</span> <span class="nv">$j</span> <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="p">;</span> <span class="nv">$j</span><span class="o">++</span><span class="p">){</span>
+            <span class="c1">//拿每个值与最小元素去比</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$minval</span> <span class="o">&gt;</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">]){</span>
+                <span class="nv">$minval</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$j</span><span class="p">];</span>
+                <span class="nv">$minkey</span> <span class="o">=</span> <span class="nv">$j</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="c1">//每轮比完拿到最小值,进行交换,最小值往前(左)放</span>
+        <span class="nv">$temp</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+        <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$minkey</span><span class="p">];</span>
+        <span class="nv">$arr</span><span class="p">[</span><span class="nv">$minkey</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$temp</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h4 id="toc_26">插入排序</h4>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">insert_sort</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$arr</span><span class="p">){</span>
+    <span class="c1">//从1开始,把每个值提取出来,插在前面有序的数组中</span>
+    <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="nv">$insertval</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span><span class="c1">//准备插放的值临时变量,好把位置让出来</span>
+        <span class="nv">$insertkey</span> <span class="o">=</span> <span class="nv">$i</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="c1">//准备与左边有序的数组进行比软,所以-1</span>
+        <span class="c1">//在数组有效范围内,对前面的有序部进进行比较,如果条件满足,说明还没找到插入位置</span>
+        <span class="k">while</span><span class="p">(</span><span class="nv">$insertkey</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nv">$insertval</span> <span class="o">&lt;</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$insertkey</span><span class="p">]){</span>
+            <span class="c1">//把前面有序部分每个元素往后移一位</span>
+            <span class="nv">$arr</span><span class="p">[</span><span class="nv">$insertkey</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$insertkey</span><span class="p">];</span>
+            <span class="c1">//移完再把索引--</span>
+            <span class="nv">$insertkey</span><span class="o">--</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="c1">//等上面while循环条件不成立了,说明找到了插入点,进行插入就行了</span>
+        <span class="nv">$arr</span><span class="p">[</span><span class="nv">$insertkey</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$insertval</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h4 id="toc_27">快速排序(二分排序)</h4>
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="k">function</span> <span class="nf">qsort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">is_array</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">||</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)){</span>
+        <span class="k">return</span> <span class="nv">$arr</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//获取数组长度</span>
+    <span class="nv">$len</span> <span class="o">=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+    <span class="c1">//如果只有一个元素,则马上返回</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$len</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">){</span>
+        <span class="k">return</span> <span class="nv">$arr</span><span class="p">;</span>    
+    <span class="p">}</span>
+    <span class="c1">//以第0个元素进行参考,进行插入</span>
+    <span class="nv">$key</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="nv">$left</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+    <span class="nv">$right</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+    <span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$len</span> <span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nv">$key</span><span class="p">){</span>
+            <span class="nv">$left</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="nv">$right</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">//得到左数组,$key,右数组,最后把两数组进行递归再组合</span>
+    <span class="nv">$left</span> <span class="o">=</span> <span class="nx">qsort</span><span class="p">(</span><span class="nv">$left</span><span class="p">);</span><span class="c1">//递归</span>
+    <span class="nv">$right</span> <span class="o">=</span> <span class="nx">qsort</span><span class="p">(</span><span class="nv">$right</span><span class="p">);</span><span class="c1">//递归</span>
+    <span class="k">return</span> <span class="nb">array_merge</span><span class="p">(</span><span class="nv">$left</span><span class="p">,</span><span class="k">array</span><span class="p">(</span><span class="nv">$key</span><span class="p">),</span><span class="nv">$right</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_28">数组的排序函数</h3>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">array_reverse()反转数组<br /></span>
+    <span class="md_line">sort()对数组排序(会改变原下标)</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">可选的第二个参数 sort_flags 可以用以下值改变排序的行为： <br /></span>
+    <span class="md_line">排序类型标记： <br /></span>
+    <span class="md_line">◦ SORT_REGULAR - 正常比较单元（不改变类型） <br /></span>
+    <span class="md_line">◦ SORT_NUMERIC - 单元被作为数字来比较 <br /></span>
+    <span class="md_line">◦ SORT_STRING - 单元被作为字符串来比较 <br /></span>
+    <span class="md_line">◦ SORT_LOCALE_STRING - 根据当前的区域（locale）设置来把单元当作字符串比较，可以用 setlocale() 来改变。<br><br /></span>
+    <span class="md_line">◦ SORT_NATURAL - 和 natsort() 类似对每个单元以&quot;自然的顺序&quot;对字符串进行排序。 PHP 5.4.0 中新增的。 <br /></span>
+    <span class="md_line">◦ SORT_FLAG_CASE - 能够与 SORT_STRING 或 SORT_NATURAL 合并（OR 位运算），不区分大小写排序字符串。 </span>
+</p>
+
+</blockquote>
+
+<p class="md_block">
+    <span class="md_line">rsort();对数组逆向排序(会改变原下标)<br /></span>
+    <span class="md_line">krsort();对数组按照键名逆向排序<br /></span>
+    <span class="md_line">asort();对数组进行排序并保持索引关系(保留原下标)<br /></span>
+    <span class="md_line">arsort();对数组进行逆向排序并保持索引关系(保留原下标)<br /></span>
+    <span class="md_line">natsort();用&quot;自然排序&quot;算法对数组排序 <br /></span>
+    <span class="md_line">natcasesort();用&quot;自然排序&quot;算法对数组进行不区分大小写字母的排序 <br /></span>
+    <span class="md_line">usort();使用用户自定义的比较函数对数组中的值进行排序<br /></span>
+    <span class="md_line">uksort();使用用户自定义的比较函数对数组中的键名进行排序 </span>
+</p>
+
+
+<h4 id="toc_29">多维数组的排序函数</h4>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">array_multisort();— 对多个数组或多个数组或一个多维数组进行排序</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">用处好像不大,如果是二个数组且第二个数组元素少会报错<br /></span>
+    <span class="md_line">1.提取某个字段为一个一维数组<br /></span>
+    <span class="md_line">2.把两个数组进行排序,提取的数组放在第一个参数<br /></span>
+    <span class="md_line">$data = 查询结果的二维数组<br /></span>
+    <span class="md_line">$ids = array();<br /></span>
+    <span class="md_line">$foreach($data as $value){<br /></span>
+    <span class="md_line">    $ids[] = $vales[&#39;id&#39;];<br /></span>
+    <span class="md_line">}<br /></span>
+    <span class="md_line">array_multisort($ids,$data);<br /></span>
+    <span class="md_line">//可扩展成多个列排序....</span>
+</p>
+
+</blockquote>
+
+<h3 id="toc_30">拆分,合并,分解与结合数组函数</h3>
+
+<p class="md_block">
+    <span class="md_line">array_slice从数组中取出一段<br /></span>
+    <span class="md_line">array_splice去掉数组中的某一部分并用其它值取代 <br /></span>
+    <span class="md_line">array_merge合并一个或多个数组<br /></span>
+    <span class="md_line">array_intersect取交集<br /></span>
+    <span class="md_line">rray_diff取差集(返回的是第一个数组中第二个数组没有的值)</span>
+</p>
+
+
+<h3 id="toc_31">数组与数据结构</h3>
+
+<p class="md_block">
+    <span class="md_line">array_push将一个或多个单元压入数组的末尾（入栈） <br /></span>
+    <span class="md_line">array_pop弹出数组最后一个单元（出栈）<br /></span>
+    <span class="md_line">array_unshift在数组开头插入一个或多个单元 <br /></span>
+    <span class="md_line">array_shift将数组开头的单元移出数组 </span>
+</p>
+
+
+<h3 id="toc_32">数组串行化</h3>
+
+<h4 id="toc_33">json格式</h4>
+
+<p class="md_block">
+    <span class="md_line">json_encode();把数组转换成特定格式的字符串<br /></span>
+    <span class="md_line">json_decode();把特定格式的字符串转换成数组</span>
+</p>
+
+
+<h4 id="toc_34">serialize格式</h4>
+
+<p class="md_block">
+    <span class="md_line">serialize() 把数组转换成特定格式的字符串,可用于对象<br /></span>
+    <span class="md_line">unserialize()把特定格式的字符串转换成数组,可用于对象</span>
+</p>
+
+
+<h3 id="toc_35">其它有用的数组处理函数</h3>
+
+<p class="md_block">
+    <span class="md_line">array_rand() 从数组中随机取出一个或多个单元<br /></span>
+    <span class="md_line">shuffle()打乱数组<br /></span>
+    <span class="md_line">array_sum() 对数组中所有值求和<br /></span>
+    <span class="md_line">array_fill()用给定的值填充数组</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

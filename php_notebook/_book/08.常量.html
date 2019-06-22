@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>08.常量</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="./index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./02.开发工具介绍与配置.html" class="">开发工具介绍与配置</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./03.PHP基础语法.html" class="">03.PHP基础语法</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./04.变量.html" class="">04.变量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./05.数据类型.html" class="">05.数据类型</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./06.数据类型转换.html" class="">06.数据类型转换</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./07.变量与数据类型常用函数.html" class="">07.变量与数据类型常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./08.常量.html" class="selected">08.常量</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./09.运算符.html" class="">09.运算符</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./10.条件结构.html" class="">10.条件结构</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./11.循环结构及特殊流程.html" class="">11.循环结构及特殊流程</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试.html" class="">12.开启PHP的XDebug或zend_debugger配合Hbuilder进行断点调试</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./13.数组.html" class="">13.数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./14.九大超全局数组.html" class="">14.九大超全局数组</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./15.函数.html" class="">15.函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                <li class="level_1 file">
+                    <a href="./16.常用函数.html" class="">16.常用函数</a>
+                </li>
+            
+
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">MySQL笔记</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="./MySQL笔记/01.MySQL的下载与安装.html" class="">01.MySQL的下载与安装</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 08.常量 </h1>
+            <div class="doc_post"> <h1 id="toc_0">08.常量</h1>
+
+<p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">08.常量</a>
+</li>
+<li>
+<a href="#toc_1">09 常量</a>
+<ul>
+<li>
+<a href="#toc_2">常量定义时注意</a>
+</li>
+<li>
+<a href="#toc_3">常量的定义</a>
+</li>
+<li>
+<a href="#toc_4">系统常量 与 常量的使用</a>
+</li>
+<li>
+<a href="#toc_5">得到所有常量集合</a>
+</li>
+<li>
+<a href="#toc_6">魔术常量</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h1 id="toc_1">09 常量</h1>
+
+<p class="md_block">
+
+<div class="toc"><ul>
+<li>
+<a href="#toc_0">08.常量</a>
+</li>
+<li>
+<a href="#toc_1">09 常量</a>
+<ul>
+<li>
+<a href="#toc_2">常量定义时注意</a>
+</li>
+<li>
+<a href="#toc_3">常量的定义</a>
+</li>
+<li>
+<a href="#toc_4">系统常量 与 常量的使用</a>
+</li>
+<li>
+<a href="#toc_5">得到所有常量集合</a>
+</li>
+<li>
+<a href="#toc_6">魔术常量</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+<h2 id="toc_2">常量定义时注意</h2>
+
+<p class="md_block">
+    <span class="md_line">1.常量用define定义,在定义时必须赋值.而且后面不能更改它的值.<br /></span>
+    <span class="md_line">2.在使用常量时,如果没申明,会把常量名自动转换成字符串(但是效率极低)<br /></span>
+    <span class="md_line">3.定义常量时,常量名前不需要加$;<br /></span>
+    <span class="md_line">4.常量名默认是区分大小写的,开发中要求全大写,多个单词组成用_连接.<br /></span>
+    <span class="md_line">5.常量名支持不区分大小写,用define定义时第三个参数写true.默认是false;<br /></span>
+    <span class="md_line">6.常量的值只能是标量:换句话说只支持四种数据类型(标量:int float bool string);<br /></span>
+    <span class="md_line">7.常量一旦定义,不能使用unset()去释放.<br /></span>
+    <span class="md_line">8.常量使用直接使用常量名,也可以用constant(&#39;常量名&#39;); 来得到值.<br /></span>
+    <span class="md_line">9.检测一个常量是否存在:用defined(&#39;常量名&#39;);来检测是否存在,返回true或false;<br /></span>
+    <span class="md_line">10.用get_defined_constants();函数获取所有的常量列表(包括系统预定义常量与用户定义常量).</span>
+</p>
+
+
+<h2 id="toc_3">常量的定义</h2>
+
+<p class="md_block">
+    <span class="md_line">1.用define定义</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span>    <span class="nb">define</span><span class="p">(</span><span class="s1">&#39;USER_NAME&#39;</span><span class="p">,</span><span class="s1">&#39;HuoDeming&#39;</span><span class="p">);</span><span class="c1">//定义一个常量,值为HuoDeming</span>
+    <span class="k">const</span> <span class="no">USER_AGE</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span><span class="c1">// 定义常量的第二种方法,注意老版本不支持,</span>
+    <span class="c1">//定义常量时,可以让常量名不区分大小写</span>
+    <span class="nb">define</span><span class="p">(</span><span class="s1">&#39;USER_SEX&#39;</span><span class="p">,</span><span class="s1">&#39;男&#39;</span><span class="p">,</span><span class="k">true</span><span class="p">);</span><span class="c1">//第三个参数为TRUE时,该常量名在调用时不区分大小写.</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_4">系统常量 与 常量的使用</h2>
+
+<p class="md_block">
+    <span class="md_line">系统常量是PHP在系统中预定义好的常量.我们直接使用就好了.</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//举例说明使用系统常量</span>
+<span class="k">echo</span> <span class="k">PHP_VERSION</span><span class="p">;</span><span class="c1">//输出当前使用PHP的版本号:4.5.45</span>
+<span class="k">echo</span> <span class="k">PHP_OS</span><span class="p">;</span><span class="c1">//输出当前服务器所使用的操作系统.:WINNT</span>
+<span class="c1">//调用(使用)常量也可以用constant(&#39;常量名&#39;);来获取它的值.</span>
+<span class="k">echo</span> <span class="nb">constant</span><span class="p">(</span><span class="s1">&#39;PHP_OS&#39;</span><span class="p">);</span>
+<span class="c1">//写个程序员常用的,用变量作为常量名,非常的灵活.</span>
+<span class="nv">$var</span> <span class="o">=</span> <span class="s1">&#39;USER_B_NAME&#39;</span><span class="p">;</span><span class="c1">//定义一个变量并赋值.</span>
+<span class="nb">define</span><span class="p">(</span><span class="nv">$var</span><span class="p">,</span><span class="s1">&#39;HuoDeming&#39;</span><span class="p">);</span><span class="c1">//常量名取变量的值</span>
+<span class="k">echo</span> <span class="nb">constant</span><span class="p">(</span><span class="nv">$var</span><span class="p">);</span><span class="c1">//这时,constant()就是必须的.</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_5">得到所有常量集合</h2>
+
+<p class="md_block">
+    <span class="md_line">常量集合,除了系统预定义常量,就是用户定义常量.get_defined_constant();返回的是数组</span>
+</p>
+
+<div class="codehilite code_lang_php  highlight"><pre><span></span> <span class="nb">print_r</span><span class="p">(</span><span class="nx">get_defined_constant</span><span class="p">());</span><span class="c1">// 输出很多常量,查看不方便请在浏览器中查看源代码.</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_6">魔术常量</h2>
+<table>
+ <thead><tr><th style="text-align:left">名称</th>
+<th style="text-align:left">说明</th>
+ </tr>
+</thead>
+ <tbody><tr><td style="text-align:left">__LINE__ </td>
+<td style="text-align:left">文件中的当前行号。</td>
+</tr>
+<tr><td style="text-align:left">__FILE__</td>
+<td style="text-align:left"> 文件的完整路径和文件名。如果用在被包含文件中，则返回被包含的文件名。自 PHP 4.0.2起，__FILE__ 总是包含一个绝对路径（如果是符号连接，则是解析后的绝对路径），而在此之前的版有时会包含一个相对路径。</td>
+</tr>
+<tr><td style="text-align:left">__DIR__ </td>
+<td style="text-align:left">文件所在的目录。如果用在被包括文件中，则返回被包括的文件所在的目录。它等价于 dirname(__FILE__)。除非是根目录，否则目录中名不包括末尾的斜杠。（PHP 5.3.0中新增） =</td>
+</tr>
+<tr><td style="text-align:left">__FUNCTION__ </td>
+<td style="text-align:left">函数名称（PHP 4.3.0 新加）。自 PHP 5 起本常量返回该函数被定义时的名字（区分大小写）。在 PHP 4 中该值总是小写字母的。</td>
+</tr>
+<tr><td style="text-align:left">__CLASS__ </td>
+<td style="text-align:left">类的名称（PHP 4.3.0 新加）。自 PHP 5 起本常量返回该类被定义时的名字（区分大小写）。在 PHP 4 中该值总是小写字母的。类名包括其被声明的作用区域（例如 Foo\Bar）。注意自 PHP 5.4 起 __CLASS__ 对 trait 也起作用。当用在 trait 方法中时，__CLASS__ 是调用 trait 方法的类的名字。</td>
+</tr>
+<tr><td style="text-align:left">__TRAIT__ </td>
+<td style="text-align:left">[后续学到了讲解]Trait 的名字（PHP 5.4.0 新加）。自 PHP 5.4 起此常量返回 trait 被定义时的名字（区分大小写）。Trait 名包括其被声明的作用区域（例如 Foo\Bar）。</td>
+</tr>
+<tr><td style="text-align:left">__METHOD__</td>
+<td style="text-align:left"> 类的方法名（PHP 5.0.0 新加）。返回该方法被定义时的名字（区分大小写）。</td>
+</tr>
+<tr><td style="text-align:left">__NAMESPACE__ </td>
+<td style="text-align:left">[后续学到了讲解]当前命名空间的名称（区分大小写）。此常量是在编译时定义的（PHP 5.3.0 新增）。</td>
+</tr>
+</tbody> 
+</table>
+<!--block_code_end--><div class="codehilite code_lang_php  highlight"><pre><span></span><span class="c1">//魔术常量</span>
+    <span class="c1">//__LINE__:得到当前行号</span>
+    <span class="k">echo</span> <span class="k">__LINE__</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="k">__FILE__</span><span class="p">;</span><span class="c1">//当前文件的绝对路径</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="nx">__DIR__</span><span class="p">;</span><span class="c1">//当前文件的绝对路径的目录</span>
+    <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+    
+    <span class="c1">//__FUNCTION__</span>
+    <span class="k">function</span> <span class="nf">userName</span><span class="p">(){</span>
+        <span class="k">echo</span> <span class="nx">__FUNCTION__</span><span class="p">;</span><span class="c1">//写在函数或方法里面,得到函数名或方法名.</span>
+    <span class="p">}</span>
+    <span class="nx">userName</span><span class="p">();</span><span class="c1">//执行函数名</span>
+    
+    <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+    <span class="c1">//__CLASS__</span>
+    <span class="k">class</span> <span class="nc">User</span><span class="p">{</span>
+        <span class="k">var</span> <span class="nv">$uname</span> <span class="o">=</span> <span class="s1">&#39;huodeming&#39;</span><span class="p">;</span>
+        <span class="k">var</span> <span class="nv">$age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+        <span class="k">var</span> <span class="nv">$sex</span> <span class="o">=</span> <span class="s1">&#39;男&#39;</span><span class="p">;</span>
+        <span class="c1">//构造函数: 也可以把函数名写成类名(像JAVA一样写)....</span>
+        <span class="k">function</span> <span class="nf">__construct</span><span class="p">(){</span>
+            <span class="k">echo</span> <span class="nx">__FUNCTION__</span><span class="p">;</span><span class="c1">//输出函数名</span>
+            <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="nx">__CLASS__</span><span class="p">;</span><span class="c1">//输出类名</span>
+            <span class="k">echo</span> <span class="s1">&#39;&lt;hr /&gt;&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="c1">//这是一个普通方法.</span>
+        <span class="k">function</span> <span class="nf">sey</span><span class="p">(){</span>
+            <span class="k">echo</span> <span class="nx">__METHOD__</span><span class="o">.</span><span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">;</span><span class="c1">//类名::方法名</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">();</span><span class="c1">//创建对象</span>
+    <span class="nv">$obj</span><span class="o">-&gt;</span><span class="na">sey</span><span class="p">();</span><span class="c1">//调用对象的成员方法</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>
